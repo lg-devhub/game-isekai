@@ -1,0 +1,62 @@
+{
+  "id": "PUZ_SCI_001",
+  "title": "O Mecanismo de Alavanca do Abrigo",
+  "educational_area": "SCIENCES",
+  "subcategory": "SCI-FIS",
+  "target_skill": "Compreender a condição de equilíbrio de corpos rígidos em alavancas interfixas.",
+  "prior_knowledge": ["Conceito de força, ponto de apoio e braço de alavanca"],
+  "difficulty": 1,
+  "chapter": 0,
+  "is_mandatory": true,
+  "narrative_context": "Para erguer uma pesada laje de pedra que bloqueia a escotilha do abrigo subterrâneo, o protagonista usa uma barra de ferro apoiada sobre uma rocha firme. A laje exerce uma força resistente equivalente a 300 Newtons a 1 metro do fulcro. O protagonista pode aplicar sua força no extremo a 3 metros do ponto de apoio.",
+  "prompt": "Qual é a força mínima, em Newtons, que o protagonista precisa aplicar no extremo mais longo da alavanca para começar a erguer a laje?",
+  "data_and_constraints": {
+    "resistant_force_n": 300,
+    "resistant_arm_m": 1,
+    "potent_arm_m": 3
+  },
+  "input_type": "NUMERIC_INPUT",
+  "solution": "100",
+  "step_by_step_explanation": "1. Aplica-se a Lei das Alavancas: Fp * dp = Fr * dr\n2. Fp * 3 = 300 * 1\n3. 3 * Fp = 300 => Fp = 300 / 3 = 100 Newtons.\n4. A vantagem mecânica de fator 3 reduz a força necessária a um terço.",
+  "accepted_answers": [
+    "100",
+    "100 N",
+    "100 newtons",
+    "100n"
+  ],
+  "common_errors": [
+    {
+      "pattern": "900",
+      "feedback": "Quanto mais longe do ponto de apoio você empurrar a barra, menor será a força necessária. Divida o peso pela proporção dos braços."
+    },
+    {
+      "pattern": "300",
+      "feedback": "Uma alavanca permite multiplicar a sua força. Como o braço onde você atua é 3 vezes mais longo, você precisa de 3 vezes menos força."
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "cost_lumis": 0,
+      "text": "Lembre-se da regra de Arquimedes: quanto mais longo for o lado onde você empurra a barra, mais leve fica o peso."
+    },
+    {
+      "level": 2,
+      "cost_lumis": 10,
+      "text": "O lado onde você empurra é 3 vezes mais comprido que o lado da pedra. Isso divide o esforço por 3."
+    },
+    {
+      "level": 3,
+      "cost_lumis": 20,
+      "text": "Divida 300 Newtons por 3 para encontrar a força necessária: 100 Newtons."
+    }
+  ],
+  "transfer_example": "Uso de pés-de-cabra para abrir caixotes e tesouras para cortar papelão grosso.",
+  "rewards": {
+    "erudition_xp": 50,
+    "lumis": 25,
+    "codex_entry_id": "COD_SCI_001"
+  },
+  "prerequisites": ["PUZ_MATH_001"],
+  "validation_criteria": "Equilíbrio de momentos de torque estático: sum(tau) = 0."
+}

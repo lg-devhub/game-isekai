@@ -1,0 +1,264 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6v2n4g8j7q1"]
+
+[ext_resource type="Script" path="res://scenes/puzzle/puzzle_view.gd" id="1_pview"]
+
+[node name="PuzzleView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pview")
+
+[node name="ColorRectBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09, 0.11, 0.16, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 60
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxSelector" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="LabelSelect" type="Label" parent="MarginContainer/VBoxContainer/HBoxSelector"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Desafio:"
+
+[node name="OptionButtonPuzzles" type="OptionButton" parent="MarginContainer/VBoxContainer/HBoxSelector"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+
+[node name="PanelHeader" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelHeader"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="HBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PanelHeader/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BtnBack" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
+custom_minimum_size = Vector2(120, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "‹ Menu"
+
+[node name="LabelArea" type="Label" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.4, 0.7, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "ÁREA: MATEMÁTICA"
+vertical_alignment = 1
+
+[node name="LabelLumis" type="Label" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 24
+text = "💎 50 Lúmis"
+vertical_alignment = 1
+
+[node name="BtnCodice" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
+custom_minimum_size = Vector2(140, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "📖 Códice"
+
+[node name="PanelContent" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelContent"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 28
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="LabelTitle" type="Label" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Título do Enigma"
+
+[node name="LabelContext" type="Label" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.75, 0.85, 1)
+theme_override_font_sizes/font_size = 20
+text = "Contexto narrativo..."
+autowrap_mode = 3
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
+layout_mode = 2
+
+[node name="ScrollPrompt" type="ScrollContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LabelPrompt" type="Label" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox/ScrollPrompt"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 26
+text = "Enunciado do quebra-cabeça investigativo..."
+autowrap_mode = 3
+
+[node name="HBoxHints" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="BtnHint1" type="Button" parent="MarginContainer/VBoxContainer/HBoxHints"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Dica 1 (Grátis)"
+
+[node name="BtnHint2" type="Button" parent="MarginContainer/VBoxContainer/HBoxHints"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Dica 2 (10 Lúmis)"
+
+[node name="BtnHint3" type="Button" parent="MarginContainer/VBoxContainer/HBoxHints"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Dica 3 (20 Lúmis)"
+
+[node name="PanelFeedback" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelFeedback"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelFeedback/Margin"]
+layout_mode = 2
+
+[node name="LabelFeedbackText" type="Label" parent="MarginContainer/VBoxContainer/PanelFeedback/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.75, 0.4, 1)
+theme_override_font_sizes/font_size = 22
+text = "Feedback Diagnóstico construtivo..."
+autowrap_mode = 3
+
+[node name="VBoxInput" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="HBoxTextInput" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxInput"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="LineEditAnswer" type="LineEdit" parent="MarginContainer/VBoxContainer/VBoxInput/HBoxTextInput"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+placeholder_text = "Digite sua dedução aqui..."
+
+[node name="BtnSubmit" type="Button" parent="MarginContainer/VBoxContainer/VBoxInput/HBoxTextInput"]
+custom_minimum_size = Vector2(240, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Verificar Dedução"
+
+[node name="VBoxMultiChoice" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxInput"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="OverlaySuccess" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -300.0
+offset_right = 450.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="OverlaySuccess"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBox" type="VBoxContainer" parent="OverlaySuccess/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 28
+alignment = 1
+
+[node name="LabelSuccessTitle" type="Label" parent="OverlaySuccess/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 48
+text = "DEDUÇÃO CORRETA!"
+horizontal_alignment = 1
+
+[node name="LabelRewards" type="Label" parent="OverlaySuccess/Margin/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Recompensas obtidas..."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxSuccessBtns" type="HBoxContainer" parent="OverlaySuccess/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BtnViewCodice" type="Button" parent="OverlaySuccess/Margin/VBox/HBoxSuccessBtns"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
+text = "Consultar Códice"
+
+[node name="BtnNextPuzzle" type="Button" parent="OverlaySuccess/Margin/VBox/HBoxSuccessBtns"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
+text = "Próximo Desafio ›"

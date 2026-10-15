@@ -1,0 +1,10 @@
+{
+  "id": "ITEM_DIARIO_DE_CAMPO",
+  "name": "Diário de Campo",
+  "type": "KEY",
+  "icon_key": "icon_journal",
+  "description": "Um caderno de capa dura com páginas em branco. Erwyn insistiu que você deveria registrar tudo que observar.",
+  "lore": "Em Velathys, a escrita é considerada sagrada pelos Eruditos do Véu. Um viajante sem diário é um viajante sem memória.",
+  "stackable": false,
+  "max_stack": 1
+}

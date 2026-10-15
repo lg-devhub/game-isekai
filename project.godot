@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; but it can be edited by hand if needed.
+
+config_version=5
+
+[application]
+
+config/name="Echoes of the Veil"
+config/description="RPG educativo narrativo de fantasia isekai centrado em investigacao, raciocinio logico e ciencias."
+config/version="0.2.0-dev"
+run/main_scene="res://scenes/boot/Boot.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*res://scripts/core/game_manager.gd"
+SceneManager="*res://scripts/core/scene_manager.gd"
+SaveSystem="*res://scripts/core/save_system.gd"
+SettingsManager="*res://scripts/core/settings_manager.gd"
+AudioManager="*res://scripts/audio/audio_manager.gd"
+AssetManager="*res://scripts/core/asset_manager.gd"
+ProgressionManager="*res://scripts/gameplay/progression_manager.gd"
+InventoryManager="*res://scripts/gameplay/inventory_manager.gd"
+QuestManager="*res://scripts/gameplay/quest_manager.gd"
+CodiceManager="*res://scripts/gameplay/codice_manager.gd"
+PuzzleEngine="*res://scripts/puzzle/puzzle_engine.gd"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/mode=0
+window/size/resizable=true
+window/handheld/orientation=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.08, 0.09, 0.12, 1.0)

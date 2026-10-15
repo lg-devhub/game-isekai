@@ -1,0 +1,63 @@
+{
+  "id": "QP_PROLOGO_02",
+  "title": "A Língua do Estranho",
+  "category": "principal",
+  "chapter": "prologo",
+  "description": "Os moradores de Valdrim desconfiam de você. Demonstre que pode ser útil resolvendo um problema antigo da aldeia.",
+  "lore_context": "A aldeia de Valdrim fica na borda do Território Neutro, longe das grandes cidades-estado. Seus moradores são práticos e desconfiados de forasteiros.",
+  "stages": [
+    {
+      "index": 0,
+      "title": "Desconfiança dos Moradores",
+      "description": "Fale com ao menos dois moradores de Valdrim e entenda a situação da aldeia.",
+      "required_objectives": ["OBJ_FALAR_FERREIRO", "OBJ_FALAR_ANCIAO"]
+    },
+    {
+      "index": 1,
+      "title": "O Registro Confuso",
+      "description": "O ancião Mordrek tem um registro corrompido que ninguém consegue interpretar há anos.",
+      "required_objectives": ["OBJ_RESOLVER_REGISTRO"],
+      "puzzle_id": "PUZ_LOG_001"
+    },
+    {
+      "index": 2,
+      "title": "Confiança Conquistada",
+      "description": "Com o registro resolvido, Mordrek revela uma pista sobre o Eco do Véu.",
+      "required_objectives": ["OBJ_OUVIR_MORDREK"]
+    }
+  ],
+  "objectives": [
+    {
+      "id": "OBJ_FALAR_FERREIRO",
+      "description": "Converse com Hessa, a ferreiro da aldeia.",
+      "type": "dialogue",
+      "npc_id": "NPC_HESSA_FERREIRO"
+    },
+    {
+      "id": "OBJ_FALAR_ANCIAO",
+      "description": "Apresente-se ao ancião Mordrek.",
+      "type": "dialogue",
+      "npc_id": "NPC_MORDREK_ANCIAO"
+    },
+    {
+      "id": "OBJ_RESOLVER_REGISTRO",
+      "description": "Interprete o registro do agrimensor e descubra qual instrumento está faltando.",
+      "type": "puzzle",
+      "puzzle_id": "PUZ_LOG_001"
+    },
+    {
+      "id": "OBJ_OUVIR_MORDREK",
+      "description": "Ouça o que Mordrek tem a dizer sobre o Eco do Véu.",
+      "type": "dialogue",
+      "npc_id": "NPC_MORDREK_ANCIAO",
+      "requires_objective": "OBJ_RESOLVER_REGISTRO"
+    }
+  ],
+  "rewards": {
+    "lumis": 10,
+    "items": ["ITEM_DIARIO_DE_CAMPO", "FOR_DOC_REGISTRO_AGRIMENSOR"],
+    "codex_entries": ["COD_LOG_001"],
+    "xp": 40
+  },
+  "next_quest": "QP_CAP1_01"
+}

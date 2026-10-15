@@ -1,0 +1,17 @@
+{
+  "id": "COD_SCI_001",
+  "title": "Princípio das Alavancas e Vantagem Mecânica",
+  "educational_area": "SCIENCES",
+  "subcategory": "SCI-FIS",
+  "target_skill": "Compreender o equilíbrio estático de momentos de torque em corpos rígidos.",
+  "concept_summary": "Uma alavanca é uma máquina simples composta por uma barra rígida que gira em torno de um ponto fixo (fulcro). O torque (momento de uma força) é o produto da força aplicada pela distância até o ponto de giro. Para equilibrar uma carga pesada com pouca força, basta aumentar o braço de alavanca.",
+  "formal_explanation": "Condição de equilíbrio rotacional: sum(tau) = 0 => F_potente * d_potente = F_resistente * d_resistente.",
+  "solved_examples": [
+    {
+      "problem": "Uma pedra de 600 N está a 0,5 m do apoio de uma gangorra. A que distância do apoio uma pessoa de 300 N deve sentar para equilibrá-la?",
+      "solution_steps": "1. 300 * d = 600 * 0,5\n2. 300 * d = 300\n3. d = 300 / 300 = 1 metro do ponto de apoio."
+    }
+  ],
+  "voluntary_revision_puzzle_ids": ["PUZ_SCI_001"],
+  "related_real_world_application": "Funcionamento de tesouras, carrinhos de mão, pinças, guindastes e alicates de pressão."
+}

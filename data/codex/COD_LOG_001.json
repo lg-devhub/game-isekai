@@ -1,0 +1,17 @@
+{
+  "id": "COD_LOG_001",
+  "title": "Matrizes de Dedução Lógica e Eliminação",
+  "educational_area": "LOGIC",
+  "subcategory": "LOG-DED",
+  "target_skill": "Construir tabelas de verdade e eliminar hipóteses contraditórias.",
+  "concept_summary": "O raciocínio dedutivo por eliminação baseia-se no princípio da não-contradição: uma proposição não pode ser verdadeira e falsa ao mesmo tempo. Ao organizar informações em uma grade ou tabela de correspondência, cada pista que elimina uma possibilidade nos aproxima da única verdade remanescente.",
+  "formal_explanation": "Se um conjunto universo possui elementos {A, B, C} e as evidências provam que x != A e x != B, então necessariamente x = C.",
+  "solved_examples": [
+    {
+      "problem": "Três amigos têm camisas de cores Azul, Verde e Vermelha. Lucas não usa Azul nem Verde. Qual é a cor da camisa de Lucas?",
+      "solution_steps": "1. Opções possíveis: {Azul, Verde, Vermelha}.\n2. Elimina-se Azul e Verde pelas pistas.\n3. Por dedução direta, a cor de Lucas é Vermelha."
+    }
+  ],
+  "voluntary_revision_puzzle_ids": ["PUZ_LOG_001"],
+  "related_real_world_application": "Diagnósticos médicos diferenciais, investigação forense e depuração de erros de software."
+}

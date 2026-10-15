@@ -1,0 +1,62 @@
+{
+  "id": "QP_PROLOGO_01",
+  "title": "O Véu se Rasga",
+  "category": "principal",
+  "chapter": "prologo",
+  "description": "Você acordou em terra estranha, sem memórias do que aconteceu. Encontre abrigo e descubra onde está.",
+  "lore_context": "O Véu — barreira entre mundos — raramente se manifesta de forma perceptível. Sua ruptura deixa rastros que os Velathyanos chamam de 'Eco do Além'.",
+  "stages": [
+    {
+      "index": 0,
+      "title": "Primeiros Passos",
+      "description": "Examine os arredores e encontre sinais de civilização.",
+      "required_objectives": ["OBJ_EXAMINAR_ARVORE", "OBJ_SEGUIR_TRILHA"]
+    },
+    {
+      "index": 1,
+      "title": "Abrigo Provisório",
+      "description": "Chegue à aldeia de Valdrim e fale com o primeiro morador.",
+      "required_objectives": ["OBJ_CHEGAR_VALDRIM"]
+    },
+    {
+      "index": 2,
+      "title": "A Conta do Curandeiro",
+      "description": "O curandeiro Erwyn precisa de sua ajuda para preparar uma tisana corretamente.",
+      "required_objectives": ["OBJ_RESOLVER_TISANA"],
+      "puzzle_id": "PUZ_MATH_001"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "OBJ_EXAMINAR_ARVORE",
+      "description": "Examine a árvore com marcações estranhas.",
+      "type": "exploration",
+      "auto_complete_on_interaction": "node_arvore_marcada"
+    },
+    {
+      "id": "OBJ_SEGUIR_TRILHA",
+      "description": "Siga a trilha de pegadas até o topo da colina.",
+      "type": "exploration",
+      "auto_complete_on_interaction": "node_topo_colina"
+    },
+    {
+      "id": "OBJ_CHEGAR_VALDRIM",
+      "description": "Entre nos limites da aldeia de Valdrim.",
+      "type": "exploration",
+      "auto_complete_on_interaction": "trigger_entrada_valdrim"
+    },
+    {
+      "id": "OBJ_RESOLVER_TISANA",
+      "description": "Ajude Erwyn a calcular as proporções corretas da tisana de miravel.",
+      "type": "puzzle",
+      "puzzle_id": "PUZ_MATH_001"
+    }
+  ],
+  "rewards": {
+    "lumis": 5,
+    "items": ["ITEM_MOCHILA_BASICA"],
+    "codex_entries": ["COD_MATH_001"],
+    "xp": 30
+  },
+  "next_quest": "QP_PROLOGO_02"
+}

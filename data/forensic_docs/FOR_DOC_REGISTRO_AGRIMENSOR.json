@@ -1,0 +1,14 @@
+{
+  "id": "FOR_DOC_REGISTRO_AGRIMENSOR",
+  "name": "Registro do Agrimensor",
+  "type": "FORENSIC",
+  "icon_key": "icon_document",
+  "description": "Um pergaminho dobrado com anotações comparativas de instrumentos de medição. Mordrek o guardou por décadas sem compreendê-lo.",
+  "lore": "O agrimensor Calhen percorreu o Território Neutro há cinquenta anos catalogando instrumentos usados por diferentes povos.",
+  "inspectable_details": {
+    "cabecalho": "Inventário Comparativo — Instrumentos de Mensuração — Calhen, Agrimensor Real, Ano 412 do Calendário de Velathys",
+    "tabela_comparativa": "Aldeia A: Régua, Compasso, Trena. Aldeia B: Régua, Compasso, Trena, Luneta. Aldeia C: Régua, Trena, Luneta. Aldeia D: Régua, Compasso. A aldeia com todos os quatro instrumentos consegue triangular posições com precisão total.",
+    "nota_rodape": "FALTANTE na lista de Valdrim: o instrumento que permite observação a distância e completaria o conjunto de Calhen para triangulação. Identificar este instrumento é essencial para o mapeamento correto.",
+    "marca_dagua": "Selo do Escritório Real de Cartografia — categoria: CONFIDENCIAL"
+  }
+}

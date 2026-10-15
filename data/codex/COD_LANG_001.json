@@ -1,0 +1,17 @@
+{
+  "id": "COD_LANG_001",
+  "title": "Leitura Forense e Localização de Dados em Documentos",
+  "educational_area": "LANGUAGE",
+  "subcategory": "LANG-INT",
+  "target_skill": "Identificar informações explícitas e contrastá-las com dados declarados em textos formais.",
+  "concept_summary": "A leitura atenta de documentos técnicos, contratos e relatórios exige a distinção rigorosa entre o que está textualmente explícito e o que é mera suposição. Ao analisar faturas e inventários, cada dado numérico associado a substantivos deve ser conferido antes de aceitar conclusões apressadas.",
+  "formal_explanation": "A compreensão literal localiza proposições declarativas expressas diretamente no texto sem necessidade de inferência dedutiva complexa.",
+  "solved_examples": [
+    {
+      "problem": "O recibo declara: 'Recebidos 50 tijolos. 10 foram usados no muro e o restante foi guardado no depósito.' Quantos tijolos estão no depósito?",
+      "solution_steps": "1. Quantidade explícita total = 50.\n2. Quantidade explícita utilizada = 10.\n3. Saldo explícito no depósito = 50 - 10 = 40 tijolos."
+    }
+  ],
+  "voluntary_revision_puzzle_ids": ["PUZ_LANG_001"],
+  "related_real_world_application": "Conferência de extratos bancários, contratos de prestação de serviços e relatórios de auditoria."
+}

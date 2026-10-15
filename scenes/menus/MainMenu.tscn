@@ -1,0 +1,106 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm4k0x2xvw3y"]
+
+[ext_resource type="Script" path="res://scenes/menus/main_menu.gd" id="1_menu"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_menu")
+
+[node name="ColorRectBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.1, 0.15, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 120
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 80
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="VBoxHeader" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="LabelTitle" type="Label" parent="MarginContainer/VBoxContainer/VBoxHeader"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "ECHOES OF THE VEIL"
+horizontal_alignment = 1
+
+[node name="LabelSubtitle" type="Label" parent="MarginContainer/VBoxContainer/VBoxHeader"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.7, 0.4, 1)
+theme_override_font_sizes/font_size = 28
+text = "RPG Educativo de Fantasia Isekai"
+horizontal_alignment = 1
+
+[node name="LabelDescription" type="Label" parent="MarginContainer/VBoxContainer/VBoxHeader"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.75, 0.85, 1)
+theme_override_font_sizes/font_size = 22
+text = "Matemática • Lógica • Linguagem • Ciências"
+horizontal_alignment = 1
+
+[node name="ControlSpacer" type="Control" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+
+[node name="VBoxButtons" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="BtnStart" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Iniciar Investigação (Protótipo)"
+
+[node name="BtnCodice" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Códice do Conhecimento"
+
+[node name="BtnCustomization" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Personalização do Viajante"
+
+[node name="BtnSettings" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Configurações"
+
+
+[node name="ControlSpacer2" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LabelVersion" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.55, 0.65, 1)
+theme_override_font_sizes/font_size = 20
+text = "Echoes of the Veil v0.2.0-dev | 100% Offline"
+horizontal_alignment = 1

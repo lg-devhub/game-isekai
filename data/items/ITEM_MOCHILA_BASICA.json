@@ -1,0 +1,10 @@
+{
+  "id": "ITEM_MOCHILA_BASICA",
+  "name": "Mochila de Viajante",
+  "type": "KEY",
+  "icon_key": "icon_backpack",
+  "description": "Uma mochila de couro gasto encontrada na floresta. Parece resistente e tem espaço suficiente para seus pertences.",
+  "lore": "Fabricada por artesãos de Valdrim, é o equipamento básico de qualquer viajante no Território Neutro.",
+  "stackable": false,
+  "max_stack": 1
+}

@@ -1,0 +1,250 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6v2n9q3k8m1p"]
+
+[ext_resource type="Script" path="res://scenes/settings/settings_view.gd" id="1_settings"]
+
+[node name="SettingsView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_settings")
+
+[node name="ColorRectBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.09, 0.13, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 60
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="LabelTitle" type="Label" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "CONFIGURAÇÕES"
+horizontal_alignment = 1
+
+[node name="HSeparator1" type="HSeparator" parent="MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="Section_Audio" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelAudio" type="Label" parent="MarginContainer/VBox/Section_Audio"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.45, 1)
+theme_override_font_sizes/font_size = 28
+text = "Volumes de Áudio"
+
+[node name="LabelMaster" type="Label" parent="MarginContainer/VBox/Section_Audio"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Volume Geral (Master)"
+
+[node name="SliderMaster" type="HSlider" parent="MarginContainer/VBox/Section_Audio"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="LabelMusic" type="Label" parent="MarginContainer/VBox/Section_Audio"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Música (BGM)"
+
+[node name="SliderMusic" type="HSlider" parent="MarginContainer/VBox/Section_Audio"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="LabelAmbience" type="Label" parent="MarginContainer/VBox/Section_Audio"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Ambiência (BGS)"
+
+[node name="SliderAmbience" type="HSlider" parent="MarginContainer/VBox/Section_Audio"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.7
+
+[node name="LabelSFX" type="Label" parent="MarginContainer/VBox/Section_Audio"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Efeitos Sonoros (SFX)"
+
+[node name="SliderSFX" type="HSlider" parent="MarginContainer/VBox/Section_Audio"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.9
+
+[node name="LabelUI" type="Label" parent="MarginContainer/VBox/Section_Audio"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Sons de Interface (UI)"
+
+[node name="SliderUI" type="HSlider" parent="MarginContainer/VBox/Section_Audio"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="Section_Legibility" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelLegibility" type="Label" parent="MarginContainer/VBox/Section_Legibility"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.45, 1)
+theme_override_font_sizes/font_size = 28
+text = "Legibilidade & Leitura"
+
+[node name="LabelFontSize" type="Label" parent="MarginContainer/VBox/Section_Legibility"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Tamanho do Texto"
+
+[node name="OptionFontSize" type="OptionButton" parent="MarginContainer/VBox/Section_Legibility"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+item_count = 3
+selected = 0
+popup/item_0/text = "Padrão (100%)"
+popup/item_0/id = 0
+popup/item_1/text = "Grande (120%)"
+popup/item_1/id = 1
+popup/item_2/text = "Extra Grande (150%)"
+popup/item_2/id = 2
+
+[node name="HSeparator3" type="HSeparator" parent="MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="Section_Accessibility" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="LabelAccessibility" type="Label" parent="MarginContainer/VBox/Section_Accessibility"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.45, 1)
+theme_override_font_sizes/font_size = 28
+text = "Acessibilidade"
+
+[node name="ToggleColorblind" type="CheckButton" parent="MarginContainer/VBox/Section_Accessibility"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Modo Daltonismo (Alto Contraste de Cores)"
+
+[node name="ToggleReduceMotion" type="CheckButton" parent="MarginContainer/VBox/Section_Accessibility"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Reduzir Movimento e Transições"
+
+[node name="HSeparator4" type="HSeparator" parent="MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="Section_Saves" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelSaves" type="Label" parent="MarginContainer/VBox/Section_Saves"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.75, 0.45, 1)
+theme_override_font_sizes/font_size = 28
+text = "Armazenamento Local"
+
+[node name="BtnResetSaves" type="Button" parent="MarginContainer/VBox/Section_Saves"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.4, 0.4, 1)
+theme_override_font_sizes/font_size = 22
+text = "Reiniciar Progresso Local (Resetar Save)"
+
+[node name="Spacer" type="Control" parent="MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BtnBack" type="Button" parent="MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Voltar ao Menu Principal"
+
+[node name="ConfirmPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -200.0
+offset_right = 400.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="ConfirmPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="LabelConfirm" type="Label" parent="ConfirmPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.4, 1)
+theme_override_font_sizes/font_size = 26
+text = "Tem certeza que deseja apagar o save local?
+Todo o progresso será reiniciado."
+horizontal_alignment = 1
+
+[node name="BtnConfirmYes" type="Button" parent="ConfirmPanel/VBox"]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 24
+text = "Sim, Apagar Tudo"
+
+[node name="BtnConfirmNo" type="Button" parent="ConfirmPanel/VBox"]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "Cancelar"

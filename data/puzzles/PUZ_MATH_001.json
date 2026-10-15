@@ -1,0 +1,62 @@
+{
+  "id": "PUZ_MATH_001",
+  "title": "A Proporção da Tisana Botânica",
+  "educational_area": "MATHEMATICS",
+  "subcategory": "MATH-PRO",
+  "target_skill": "Calcular proporções diretas simples para dimensionar quantidades de reagentes.",
+  "prior_knowledge": ["Operações fundamentais de multiplicação e divisão"],
+  "difficulty": 1,
+  "chapter": 0,
+  "is_mandatory": true,
+  "narrative_context": "Lyra precisa preparar uma infusão para estabilizar a respiração do protagonista na atmosfera da cratera. A receita base produz 1 dose com 4 folhas de anis e 6 gotas de óleo de linho, mas são necessárias 3 doses completas.",
+  "prompt": "Para cada dose da tisana, misturam-se 4 folhas de anis e 6 gotas de óleo de linho. Quantas folhas de anis e quantas gotas de óleo de linho são necessárias para produzir exatamente 3 doses?",
+  "data_and_constraints": {
+    "ratio": "4:6",
+    "target_doses": 3
+  },
+  "input_type": "TEXT_INPUT",
+  "solution": "12, 18",
+  "step_by_step_explanation": "1. Identifica-se a quantidade unitária por dose: 4 folhas e 6 gotas.\n2. Multiplica-se cada quantidade pelo número de doses desejadas (3):\n   Folhas = 4 * 3 = 12\n   Gotas = 6 * 3 = 18\n3. A proporção original 4/6 = 2/3 mantém-se equivalente a 12/18 = 2/3.",
+  "accepted_answers": [
+    "12, 18",
+    "12; 18",
+    "12 e 18",
+    "12 folhas e 18 gotas",
+    "12,18"
+  ],
+  "common_errors": [
+    {
+      "pattern": "7, 9",
+      "feedback": "Lembre-se de que triplicar uma receita exige multiplicar cada ingrediente por 3, e não somar 3 unidades."
+    },
+    {
+      "pattern": "12, 6",
+      "feedback": "Para manter a concentração correta do remédio, ambos os reagentes devem ser escalados na mesma proporção."
+    }
+  ],
+  "hints": [
+    {
+      "level": 1,
+      "cost_lumis": 0,
+      "text": "Pense em fazer uma dose, depois outra igual, e uma terceira igual. O que acontece com o total de cada item?"
+    },
+    {
+      "level": 2,
+      "cost_lumis": 10,
+      "text": "Se 1 dose usa 4 folhas, 3 doses usarão 4 x 3. Aplique o mesmo raciocínio às gotas."
+    },
+    {
+      "level": 3,
+      "cost_lumis": 20,
+      "text": "Calcule 4 x 3 para obter as folhas (12) e 6 x 3 para as gotas (18)."
+    }
+  ],
+  "transfer_example": "Ajustar os ingredientes de uma receita culinária de bolo para 4 pessoas quando se deseja servir 12 convidados.",
+  "rewards": {
+    "erudition_xp": 50,
+    "lumis": 25,
+    "codex_entry_id": "COD_MATH_001"
+  },
+  "prerequisites": [],
+  "validation_criteria": "Homotetia direta com fator de escala k=3."
+}

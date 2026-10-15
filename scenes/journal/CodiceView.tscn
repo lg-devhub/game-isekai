@@ -1,0 +1,154 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5m7v3q1x2w4"]
+
+[ext_resource type="Script" path="res://scenes/journal/codice_view.gd" id="1_cview"]
+
+[node name="CodiceView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cview")
+
+[node name="ColorRectBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.09, 0.13, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 50
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="PanelHeader" type="PanelContainer" parent="MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelHeader"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="HBox" type="HBoxContainer" parent="MarginContainer/VBox/PanelHeader/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BtnBack" type="Button" parent="MarginContainer/VBox/PanelHeader/Margin/HBox"]
+custom_minimum_size = Vector2(140, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "‹ Voltar"
+
+[node name="LabelHeaderTitle" type="Label" parent="MarginContainer/VBox/PanelHeader/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.9, 0.8, 0.5, 1)
+theme_override_font_sizes/font_size = 28
+text = "CÓDICE DO CONHECIMENTO"
+vertical_alignment = 1
+
+[node name="TabBarAreas" type="TabBar" parent="MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+
+[node name="HSplit" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="PanelList" type="PanelContainer" parent="MarginContainer/VBox/HSplit"]
+custom_minimum_size = Vector2(0, 320)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/HSplit/PanelList"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/HSplit/PanelList/Margin"]
+layout_mode = 2
+
+[node name="ItemListEntries" type="ItemList" parent="MarginContainer/VBox/HSplit/PanelList/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+
+[node name="PanelDetails" type="PanelContainer" parent="MarginContainer/VBox/HSplit"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/HSplit/PanelDetails"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelEntryTitle" type="Label" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Título do Verbete"
+
+[node name="LabelTargetSkill" type="Label" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "Competência Alvo..."
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox"]
+layout_mode = 2
+
+[node name="ScrollDetails" type="ScrollContainer" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox/ScrollDetails"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="LabelSummary" type="Label" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox/ScrollDetails/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 3
+
+[node name="LabelFormal" type="Label" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox/ScrollDetails/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.9, 0.95, 1)
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 3
+
+[node name="LabelExamples" type="Label" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox/ScrollDetails/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 0.75, 1)
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+
+[node name="LabelApplication" type="Label" parent="MarginContainer/VBox/HSplit/PanelDetails/Margin/VBox/ScrollDetails/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.6, 1)
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3

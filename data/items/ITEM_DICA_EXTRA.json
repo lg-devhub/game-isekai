@@ -1,0 +1,11 @@
+{
+  "id": "ITEM_DICA_EXTRA",
+  "name": "Runa de Clareza",
+  "type": "USABLE",
+  "icon_key": "icon_hint_rune",
+  "description": "Uma runa gravada em pedra leve. Ao tocar e concentrar-se, revela um nível adicional de dica num enigma.",
+  "lore": "Runas de Clareza são fabricadas pelos Eruditos do Véu e vendidas em mercados de cidades maiores.",
+  "stackable": true,
+  "max_stack": 9,
+  "use_effect": "unlock_extra_hint"
+}
