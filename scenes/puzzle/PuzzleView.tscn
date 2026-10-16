@@ -84,8 +84,14 @@ theme_override_font_sizes/font_size = 24
 text = "💎 50 Lúmis"
 vertical_alignment = 1
 
+[node name="BtnJournal" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
+custom_minimum_size = Vector2(130, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "📜 Diário"
+
 [node name="BtnCodice" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
-custom_minimum_size = Vector2(140, 56)
+custom_minimum_size = Vector2(130, 56)
 layout_mode = 2
 theme_override_font_sizes/font_size = 22
 text = "📖 Códice"

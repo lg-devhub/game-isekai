@@ -44,9 +44,12 @@ func get_default_save_data() -> Dictionary:
 			"total_lumis_spent": 0
 		},
 		"inventory": {
-			"items": {},
-			"forensic_documents": [],
-			"forensic_docs": []
+			"items": {
+				"ITEM_DIARIO_DE_CAMPO": 1,
+				"ITEM_DICA_EXTRA": 2
+			},
+			"forensic_documents": ["FOR_DOC_REGISTRO_AGRIMENSOR"],
+			"forensic_docs": ["FOR_DOC_REGISTRO_AGRIMENSOR"]
 		},
 		"quests": {
 			"active_quests": ["QP_PROLOGO_01"],

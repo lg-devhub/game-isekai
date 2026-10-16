@@ -3,6 +3,7 @@ extends Control
 @onready var label_area: Label = $MarginContainer/VBoxContainer/PanelHeader/Margin/HBox/LabelArea
 @onready var label_lumis: Label = $MarginContainer/VBoxContainer/PanelHeader/Margin/HBox/LabelLumis
 @onready var btn_back: Button = $MarginContainer/VBoxContainer/PanelHeader/Margin/HBox/BtnBack
+@onready var btn_journal: Button = $MarginContainer/VBoxContainer/PanelHeader/Margin/HBox/BtnJournal
 @onready var btn_codice: Button = $MarginContainer/VBoxContainer/PanelHeader/Margin/HBox/BtnCodice
 
 @onready var label_title: Label = $MarginContainer/VBoxContainer/PanelContent/Margin/VBox/LabelTitle
@@ -40,6 +41,7 @@ func _ready() -> void:
 	AudioManager.play_music("BGM_PUZZLE_CONTEMPLATION")
 	
 	btn_back.pressed.connect(_on_btn_back_pressed)
+	btn_journal.pressed.connect(_on_btn_journal_pressed)
 	btn_codice.pressed.connect(_on_btn_codice_pressed)
 	btn_submit_text.pressed.connect(_on_submit_text_pressed)
 	input_line_edit.text_submitted.connect(func(_t): _on_submit_text_pressed())
@@ -169,6 +171,10 @@ func _on_next_puzzle_pressed() -> void:
 func _on_btn_back_pressed() -> void:
 	AudioManager.play_ui("SFX_UI_TAP")
 	SceneManager.change_scene("res://scenes/menus/MainMenu.tscn")
+
+func _on_btn_journal_pressed() -> void:
+	AudioManager.play_ui("SFX_UI_TAP")
+	SceneManager.change_scene("res://scenes/journal/JournalView.tscn")
 
 func _on_btn_codice_pressed() -> void:
 	AudioManager.play_ui("SFX_UI_TAP")

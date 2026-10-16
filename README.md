@@ -1,6 +1,6 @@
 # Echoes of the Veil (Ecos do Véu) — RPG Educativo Isekai
 
-> **AVISO IMPORTANTE:** Este repositório encontra-se atualmente na **Fase 1: Documentação Canônica e Planejamento Arquitetural**. Não há código executável ou versão jogável implementada nesta etapa, e nenhum asset audiovisual artificial foi gerado. Toda a base técnica, narrativa e pedagógica está sendo estabelecida como fonte de verdade para as fases subsequentes de desenvolvimento.
+> **ESTADO ATUAL:** O projeto concluiu a **Fase 3: Sistemas Essenciais de Gameplay** na **Godot Engine 4.x** (arquitetura modular offline, validadores pedagógicos, Códice do Conhecimento, Quests, Inventário Forense, Configurações e Customização). A próxima etapa oficial é a **Fase 4: Conteúdo, Códice & Economia Local**. Nenhum asset audiovisual artificial foi gerado.
 
 ---
 

@@ -23,9 +23,8 @@ O jogo adota o princípio central de **"Educação acima de tudo"**: a fantasia,
 | **Conectividade** | Totalmente offline após a instalação | **Confirmada** | [`docs/technical/PERFORMANCE-AND-SECURITY.md`](file:///c:/Users/ogust/Desktop/game-isekai/docs/technical/PERFORMANCE-AND-SECURITY.md) |
 | **Idioma Inicial** | Português do Brasil (`pt-BR`) com i18n | **Confirmada** | [`docs/technical/DATA-MODEL.md`](file:///c:/Users/ogust/Desktop/game-isekai/docs/technical/DATA-MODEL.md) |
 | **Foco Pedagógico** | Matemática, Lógica, Linguagem e Ciências | **Confirmada** | [`docs/game-design/LEARNING-DESIGN.md`](file:///c:/Users/ogust/Desktop/game-isekai/docs/game-design/LEARNING-DESIGN.md) |
-| **Estrutura de Desafios**| 5 níveis principais de dificuldade | **Confirmada** | [`docs/puzzles/PUZZLE-TAXONOMY.md`](file:///c:/Users/ogust/Desktop/game-isekai/docs/puzzles/PUZZLE-TAXONOMY.md) |
 | **Recursos Audiovisuais**| Fornecidos manualmente pelo usuário | **Confirmada** | [`assets/README.md`](file:///c:/Users/ogust/Desktop/game-isekai/assets/README.md) |
-| **Estado Atual** | Planejamento e documentação (sem jogo implementado) | **Confirmada** | [`README.md`](file:///c:/Users/ogust/Desktop/game-isekai/README.md) |
+| **Estado Atual** | Fase 3 Concluída (Sistemas Essenciais de Gameplay implementados) | **Confirmada** | [`README.md`](file:///c:/Users/ogust/Desktop/game-isekai/README.md) |
 
 ---
 

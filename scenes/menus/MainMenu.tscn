@@ -75,6 +75,12 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Iniciar Investigação (Protótipo)"
 
+[node name="BtnJournal" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Diário do Investigador (Quests & Itens)"
+
 [node name="BtnCodice" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
 custom_minimum_size = Vector2(0, 96)
 layout_mode = 2

@@ -97,5 +97,7 @@ func _display_empty_details() -> void:
 
 func _on_btn_back_pressed() -> void:
 	AudioManager.play_ui("SFX_UI_TAP")
-	GameManager.return_to_previous_state()
-	SceneManager.change_scene("res://scenes/puzzle/PuzzleView.tscn")
+	if GameManager.previous_state == GameManager.GameState.PUZZLE:
+		SceneManager.change_scene("res://scenes/puzzle/PuzzleView.tscn")
+	else:
+		SceneManager.change_scene("res://scenes/menus/MainMenu.tscn")

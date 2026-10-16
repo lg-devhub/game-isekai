@@ -13,10 +13,10 @@ Este documento apresenta o planejamento estratégico e operacional oficial de **
 [Fase 2: Protótipo Educativo & Vertical Slice] (CONCLUÍDA)
        │
        ▼
-[Fase 3: Sistemas Essenciais de Gameplay] (PRÓXIMA ETAPA)
+[Fase 3: Sistemas Essenciais de Gameplay] (CONCLUÍDA)
        │
        ▼
-[Fase 4: Conteúdo, Códice & Economia Local]
+[Fase 4: Conteúdo, Códice & Economia Local] (PRÓXIMA ETAPA)
        │
        ▼
 [Fase 5: Integração Audiovisual dos Assets Manuais]
@@ -50,12 +50,12 @@ Este documento apresenta o planejamento estratégico e operacional oficial de **
 - [x] Implementação de dicas graduais de três níveis e sistema de feedback respeitoso e diagnóstico (`PuzzleEngine.gd` e validadores).
 - [x] Implementação do salvamento local automático e Códice do Conhecimento offline (`CodiceView.tscn` e `CodiceManager.gd`).
 
-### Fase 3: Sistemas Essenciais de Gameplay
-- [ ] Implementação do sistema de quests e objetivos investigativos (`QuestManager`).
-- [ ] Implementação da progressão de Erudição baseada em compreensão e persistência (`ProgressionManager`).
-- [ ] Implementação do inventário forense e inspeção de documentos (`InventoryManager`).
-- [ ] Implementação do menu de configurações (áudio, legibilidade, acessibilidade e gerenciamento de saves locais).
-- [ ] Sistema de customização estética do protagonista respeitando a coerência da história.
+### Fase 3: Sistemas Essenciais de Gameplay (Concluída)
+- [x] Implementação do sistema de quests e objetivos investigativos (`QuestManager` e tela `JournalView.tscn` com rastreamento de missões ativas e concluídas).
+- [x] Implementação da progressão de Erudição baseada em compreensão e persistência (`ProgressionManager` com 15 níveis, títulos diegéticos e maestria nas 4 áreas).
+- [x] Implementação do inventário forense e inspeção de documentos (`InventoryManager`, bolsa de itens utilizáveis e exame pericial com lupa em `FOR_DOC_REGISTRO_AGRIMENSOR`).
+- [x] Implementação do menu de configurações (áudio, legibilidade, acessibilidade e gerenciamento seguro de saves locais em `SettingsView.tscn`).
+- [x] Sistema de customização estética do protagonista respeitando a coerência da história (`CustomizationView.tscn`).
 
 ### Fase 4: Conteúdo, Códice & Economia Local
 - [ ] Injeção de todos os 60 puzzles pedagógicos estruturados em arquivos JSON externos.

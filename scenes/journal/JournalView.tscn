@@ -1,0 +1,306 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6j8n2m9k4vx1"]
+
+[ext_resource type="Script" path="res://scenes/journal/journal_view.gd" id="1_jview"]
+
+[node name="JournalView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jview")
+
+[node name="ColorRectBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.09, 0.13, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 50
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="PanelHeader" type="PanelContainer" parent="MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelHeader"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+
+[node name="HBox" type="HBoxContainer" parent="MarginContainer/VBox/PanelHeader/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BtnBack" type="Button" parent="MarginContainer/VBox/PanelHeader/Margin/HBox"]
+custom_minimum_size = Vector2(140, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "‹ Voltar"
+
+[node name="LabelHeaderTitle" type="Label" parent="MarginContainer/VBox/PanelHeader/Margin/HBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.8, 0.5, 1)
+theme_override_font_sizes/font_size = 28
+text = "DIÁRIO DO INVESTIGADOR"
+vertical_alignment = 1
+
+[node name="LabelPlayerStatus" type="Label" parent="MarginContainer/VBox/PanelHeader/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.8, 0.95, 1)
+theme_override_font_sizes/font_size = 20
+text = "Nível 1: Aprendiz | 💎 50 Lúmis"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TabBarMain" type="TabBar" parent="MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+
+[node name="PanelQuests" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="TabBarQuestFilter" type="TabBar" parent="MarginContainer/VBox/PanelQuests"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+
+[node name="HSplit" type="VBoxContainer" parent="MarginContainer/VBox/PanelQuests"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="PanelList" type="PanelContainer" parent="MarginContainer/VBox/PanelQuests/HSplit"]
+custom_minimum_size = Vector2(0, 240)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelList"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelList/Margin"]
+layout_mode = 2
+
+[node name="ItemListQuests" type="ItemList" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelList/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+
+[node name="PanelDetails" type="PanelContainer" parent="MarginContainer/VBox/PanelQuests/HSplit"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Scroll" type="ScrollContainer" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin"]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="LabelQuestTitle" type="Label" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.5, 1)
+theme_override_font_sizes/font_size = 28
+text = "Título da Quest"
+
+[node name="LabelQuestCategory" type="Label" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 20
+text = "Categoria: Principal • Prólogo"
+
+[node name="LabelQuestLore" type="Label" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.9, 1)
+theme_override_font_sizes/font_size = 22
+text = "Contexto narrativo..."
+autowrap_mode = 3
+
+[node name="HSeparator1" type="HSeparator" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+
+[node name="LabelStageInfo" type="Label" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.75, 0.4, 1)
+theme_override_font_sizes/font_size = 22
+text = "ESTÁGIO ATUAL"
+autowrap_mode = 3
+
+[node name="BtnSolvePuzzle" type="Button" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Resolver Enigma do Estágio"
+
+[node name="HSeparator2" type="HSeparator" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+
+[node name="LabelObjectives" type="Label" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 0.8, 1)
+theme_override_font_sizes/font_size = 22
+text = "OBJETIVOS:"
+autowrap_mode = 3
+
+[node name="HSeparator3" type="HSeparator" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+
+[node name="LabelRewards" type="Label" parent="MarginContainer/VBox/PanelQuests/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.8, 0.95, 1)
+theme_override_font_sizes/font_size = 20
+text = "RECOMPENSAS:"
+autowrap_mode = 3
+
+[node name="PanelInventory" type="VBoxContainer" parent="MarginContainer/VBox"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="TabBarInvFilter" type="TabBar" parent="MarginContainer/VBox/PanelInventory"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+
+[node name="HSplit" type="VBoxContainer" parent="MarginContainer/VBox/PanelInventory"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="PanelList" type="PanelContainer" parent="MarginContainer/VBox/PanelInventory/HSplit"]
+custom_minimum_size = Vector2(0, 240)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelList"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelList/Margin"]
+layout_mode = 2
+
+[node name="ItemListInv" type="ItemList" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelList/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+
+[node name="PanelDetails" type="PanelContainer" parent="MarginContainer/VBox/PanelInventory/HSplit"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Scroll" type="ScrollContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin"]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="LabelItemName" type="Label" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.5, 1)
+theme_override_font_sizes/font_size = 28
+text = "Nome do Item"
+
+[node name="LabelItemType" type="Label" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 20
+text = "Tipo • Quantidade"
+
+[node name="LabelItemDesc" type="Label" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.9, 1)
+theme_override_font_sizes/font_size = 22
+text = "Descrição do item..."
+autowrap_mode = 3
+
+[node name="LabelItemLore" type="Label" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.75, 0.8, 1)
+theme_override_font_sizes/font_size = 20
+text = "Lore do item..."
+autowrap_mode = 3
+
+[node name="BtnUseItem" type="Button" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Usar Item"
+
+[node name="VBoxForensic" type="VBoxContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="HSeparatorForensic" type="HSeparator" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox/VBoxForensic"]
+layout_mode = 2
+
+[node name="LabelForensicPrompt" type="Label" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox/VBoxForensic"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.8, 0.4, 1)
+theme_override_font_sizes/font_size = 22
+text = "🔍 EXAME PERICIAL DE DETALHES (Toque para examinar):"
+
+[node name="HBoxDetailButtons" type="HBoxContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox/VBoxForensic"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PanelResult" type="PanelContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox/VBoxForensic"]
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox/VBoxForensic/PanelResult"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="LabelForensicResult" type="Label" parent="MarginContainer/VBox/PanelInventory/HSplit/PanelDetails/Margin/Scroll/VBox/VBoxForensic/PanelResult/Margin"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.8, 1)
+theme_override_font_sizes/font_size = 22
+text = "Selecione uma área do documento acima para realizar perícia detalhada."
+autowrap_mode = 3

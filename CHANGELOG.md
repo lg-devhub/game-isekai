@@ -7,6 +7,34 @@ Como o projeto está em fase de planejamento, os registros refletem marcos docum
 
 ---
 
+## [Fase 3 — Sistemas Essenciais de Gameplay] - 2026-10-15
+
+### Adicionado
+- **Diário do Investigador e Inventário Forense Integrado (`JournalView.tscn` / `journal_view.gd`):**
+  - Aba de Quests e Investigações: visualização de missões ativas e concluídas, contexto de lore, acompanhamento de estágios, checklist de objetivos investigativos com status dinâmico (`[✔] Concluído` / `[⏳] Pendente`), exibição de recompensas e atalho para resolução de enigmas vinculados.
+  - Aba de Inventário e Evidências: gerenciamento de bolsa de itens (itens chave, consumíveis com uso e feedback imediato) e acervo de documentos forenses.
+  - Sistema de Exame Pericial Interativo: lupa forense que permite inspecionar detalhes pontuais de documentos (`cabecalho`, `tabela_comparativa`, `nota_rodape`, `marca_dagua`) com feedback tátil e sonoro.
+- **Integração de Quests e Recompensas Pedagógicas (`QuestManager`):**
+  - Métodos utilitários de acesso público (`get_quest_definition`, `get_quest_objectives`, `get_all_quest_ids`).
+  - Carregamento de dados a partir de `data/quests/` (`QP_PROLOGO_01.json`, `QP_PROLOGO_02.json`).
+  - Resolução de enigmas via `PuzzleEngine` aciona automaticamente o avanço e conclusão de objetivos de missões investigativas.
+- **Sistema de Progressão de Erudição (`ProgressionManager`):**
+  - Limiares de XP progressivos até nível 15 e 15 títulos honoríficos de Erudito.
+  - Acompanhamento de maestria nas quatro áreas essenciais: Matemática, Lógica, Linguagem e Ciências.
+- **Menu de Configurações Completo (`SettingsView.tscn` / `settings_view.gd`):**
+  - Ajustes de volume independentes para 5 barramentos (Master, Music, Ambience, SFX, UI).
+  - Escala dinâmica de tipografia (Normal, Grande, Máximo) e opções de acessibilidade (modo daltonismo e redução de movimento).
+  - Gerenciamento seguro de dados locais com confirmação dialogada contra perda acidental de saves.
+- **Customização Estética do Viajante (`CustomizationView.tscn` / `customization_view.gd`):**
+  - Escolha de tom de pele, cortes e cores de cabelo, e vestimentas diegéticas (Traje de Viajante, Erudito Aprendiz, Investigador).
+  - Persistência das escolhas cosméticas no perfil do jogador em `SaveSystem`.
+- **Navegação Global e Conectividade entre Telas:**
+  - Botão de acesso ao Diário no `MainMenu.tscn`.
+  - Botão de consulta rápida ao Diário integrado no cabeçalho do `PuzzleView.tscn`.
+  - Retorno dinâmico e contextual de cena (`‹ Voltar`) respeitando a origem da chamada (Menu Principal ou Enigma em andamento).
+
+---
+
 ## [Fase 2 — Protótipo Educativo & Vertical Slice] - 2026-10-15
 
 ### Adicionado

@@ -300,6 +300,24 @@ func get_current_stage_description(quest_id: String) -> String:
 	var stage_index := get_current_stage(quest_id)
 	return get_stage_data(quest_id, stage_index).get("description", "")
 
+
+## Retorna a definição completa em Dictionary da quest
+func get_quest_definition(quest_id: String) -> Dictionary:
+	return _definitions.get(quest_id, {})
+
+
+## Retorna a lista de objetivos brutos da quest
+func get_quest_objectives(quest_id: String) -> Array:
+	return _definitions.get(quest_id, {}).get("objectives", [])
+
+
+## Retorna todos os IDs de quests catalogadas
+func get_all_quest_ids() -> Array[String]:
+	var result: Array[String] = []
+	for q_id in _definitions:
+		result.append(q_id)
+	return result
+
 # ---------------------------------------------------------------------------
 # Internos
 # ---------------------------------------------------------------------------
