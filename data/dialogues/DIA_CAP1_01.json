@@ -1,0 +1,56 @@
+{
+  "id": "DIA_CAP1_01",
+  "title": "A Balança do Mercado de Val-Serena",
+  "nodes": {
+    "start": {
+      "speaker": "Mestre Boticário",
+      "speaker_title": "Comerciante Guildal",
+      "portrait_key": "char_lyra_portrait_thinking",
+      "text": "Forasteiro, se veio comprar sais refinados, terá de esperar. Um carregamento de bronze mineral acaba de chegar e suspeito que os fornecedores de Solemnia alteraram a liga para pagar menos tributo.",
+      "next": "node_02"
+    },
+    "node_02": {
+      "speaker": "Protagonista",
+      "speaker_title": "Investigador",
+      "portrait_key": "char_hero_portrait_neutral",
+      "text": "Como o senhor verifica se a carga é autêntica?",
+      "next": "node_03"
+    },
+    "node_03": {
+      "speaker": "Mestre Boticário",
+      "speaker_title": "Comerciante Guildal",
+      "portrait_key": "char_lyra_portrait_thinking",
+      "text": "Usando esta balança de dois pratos. Três lingotes mais um contrapeso de 4 kg equilibram exatamente um lingote com um contrapeso de 16 kg. Mas a contabilidade exige o valor unitário exato de cada lingote.",
+      "choices": [
+        {
+          "text": "Deixe-me modelar essa equação na balança e isolar o peso unitário.",
+          "trigger_puzzle": "PUZ_MATH_005",
+          "next": "node_end"
+        },
+        {
+          "text": "Talvez devêssemos conferir a densidade na água antes.",
+          "next": "node_density"
+        }
+      ]
+    },
+    "node_density": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "O princípio de Arquimedes seria útil, mas se a balança já está em equilíbrio mecânico, a álgebra simples resolverá mais rápido.",
+      "choices": [
+        {
+          "text": "Tem razão. Vamos calcular o peso unitário dos lingotes.",
+          "trigger_puzzle": "PUZ_MATH_005",
+          "next": "node_end"
+        }
+      ]
+    },
+    "node_end": {
+      "speaker": "Mestre Boticário",
+      "speaker_title": "Comerciante Guildal",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "Muito perspicaz! O peso bate exatamente com os registros. O sindicato dos comerciantes agradece sua intervenção."
+    }
+  }
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_012",
+    "title":  "Probabilidade Clássica e Espaço Amostral",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Determinar o espaço amostral e calcular a probabilidade de eventos equiprováveis expressos como fração e porcentagem.",
+    "concept_summary":  "Para passar por um autômato de guarda em uma ponte de Ark-Mnemona sem soar o alarme, é necessário apostar em um mecanismo de dois dados tetraédricos (4 faces numeradas de 1 a 4). O autômato só abre a cancela se a soma das duas faces superiores for exatamente igual a 5. Determinar o espaço amostral e calcular a probabilidade de eventos equiprováveis expressos como fração e porcentagem.",
+    "formal_explanation":  "1. Determina-se o número total de eventos possíveis (espaço amostral $\\Omega$):\r\n     $$|\\Omega| = 4 \\times 4 = 16 \\text{ pares ordenados}$$\r\n  2. Listam-se os pares favoráveis cuja soma é 5:\r\n     - $(1, 4) \\implies 1 + 4 = 5$\r\n     - $(2, 3) \\implies 2 + 3 = 5$\r\n     - $(3, 2) \\implies 3 + 2 = 5$\r\n     - $(4, 1) \\implies 4 + 1 = 5$\r\n     - Total de casos favoráveis: 4.\r\n  3. Calcula-se a probabilidade teórica:\r\n     $$P = \\frac{\\text{Casos Favoráveis}}{\\text{Casos Possíveis}} = \\frac{4}{16} = \\frac{1}{4}$$\r\n  4. Converte-se para porcentagem:\r\n     $$\\frac{1}{4} \\times 100\\% = 25\\%$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Determina-se o número total de eventos possíveis (espaço amostral $\\Omega$):\r\n     $$|\\Omega| = 4 \\times 4 = 16 \\text{ pares ordenados}$$\r\n  2. Listam-se os pares favoráveis cuja soma é 5:\r\n     - $(1, 4) \\implies 1 + 4 = 5$\r\n     - $(2, 3) \\implies 2 + 3 = 5$\r\n     - $(3, 2) \\implies 3 + 2 = 5$\r\n     - $(4, 1) \\implies 4 + 1 = 5$\r\n     - Total de casos favoráveis: 4.\r\n  3. Calcula-se a probabilidade teórica:\r\n     $$P = \\frac{\\text{Casos Favoráveis}}{\\text{Casos Possíveis}} = \\frac{4}{16} = \\frac{1}{4}$$\r\n  4. Converte-se para porcentagem:\r\n     $$\\frac{1}{4} \\times 100\\% = 25\\%$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_012"
+                                      ],
+    "related_real_world_application":  "Calcular as chances de vitória em jogos de tabuleiro ou avaliar riscos estatísticos em previsão meteorológica."
+}

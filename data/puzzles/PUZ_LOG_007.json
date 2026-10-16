@@ -1,0 +1,59 @@
+﻿{
+    "id":  "PUZ_LOG_007",
+    "title":  "O Silogismo das Causas Salinas",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Identificar a falácia formal de afirmação do consequente e validar argumentos lógicos dedutivos.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  true,
+    "narrative_context":  "No debate com o Inquisidor Malakor, o inquisidor apresenta o seguinte argumento para justificar a censura: \"Sempre que um vilarejo perde a fé nas leis da Ordem, a terra se mineraliza em sal. A terra do Vale de Korath mineralizou-se em sal. Logo, os habitantes do Vale de Korath perderam a fé nas leis da Ordem.\" O protagonista precisa demonstrar qual erro de lógica invalida a conclusão do inquisidor.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar a falácia formal de afirmação do consequente e validar argumentos lógicos dedutivos.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Afirmação do Consequente.",
+    "step_by_step_explanation":  "1. A estrutura condicional afirma que $P$ é condição suficiente para $Q$ ($P \\implies Q$).\r\n  2. No entanto, $Q$ pode ser provocado por múltiplas outras causas independentes ($R \\implies Q$, $S \\implies Q$, como seca prolongada, salinização do solo ou abandono dos canais de irrigação).\r\n  3. Constatar que a consequência $Q$ ocorreu não prova logicamente que a causa específica $P$ foi a responsável.\r\n  4. Essa falha de inferência chama-se formalmente de **Falácia da Afirmação do Consequente** (confundir condição suficiente com condição necessária).",
+    "accepted_answers":  [
+                             "Afirmação do Consequente",
+                             "Afirmação do consequente`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Modus Ponens Válido",
+                              "feedback":  "Modus Ponens seria: \u0027Ocorreu P, logo ocorre Q\u0027. O inquisidor fez o inverso: observou Q e concluiu P, o que é um raciocínio inválido."
+                          },
+                          {
+                              "pattern":  "Negação do Antecedente",
+                              "feedback":  "Negação do antecedente ocorreria se ele dissesse: \u0027Não perdeu a fé, logo a terra não virará sal\u0027. Aqui ele afirmou o consequente (a terra virou sal)."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no exemplo clássico: \u0027Se chover, o chão fica molhado. O chão está molhado. Logo, choveu.\u0027 Essa conclusão é garantida, ou alguém pode ter lavado o chão com uma mangueira?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "O chão estar molhado (consequência) não garante que a chuva (antecedente) foi a única causa possível."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "Concluir a causa a partir do efeito em uma condicional simples chama-se falácia da afirmação do consequente."
+                  }
+              ],
+    "transfer_example":  "Diagnósticos médicos: ter febre não prova necessariamente gripe, pois diversas outras infecções também provocam febre.",
+    "rewards":  {
+                    "erudition_xp":  150,
+                    "lumis":  75,
+                    "codex_entry_id":  "COD_LOG_007"
+                },
+    "validation_criteria":  "Teoria da prova em lógica proposicional clássica: $p \\implies q, q \\not\\vdash p$.",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Afirmação do Consequente",
+                    "Modus Ponens Válido",
+                    "Negação do Antecedente"
+                ]
+}

@@ -1,0 +1,53 @@
+﻿{
+    "id":  "PUZ_MATH_008",
+    "title":  "O Padrão Numérico dos Megálitos de Khor",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Identificar a lei de formação recursiva de uma sequência e prever termos subsequentes.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  false,
+    "narrative_context":  "Em uma câmara subterrânea sob as catacumbas, uma placa de bronze exibe quatro números gravados em círculos concêntricos: $2, 5, 11, 23, \\dots$ O quinto círculo está vazio e deve ser preenchido para destravar a passagem.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Identificar a lei de formação recursiva de uma sequência e prever termos subsequentes.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "47.",
+    "step_by_step_explanation":  "- **Método 1 (Diferenças sucessivas):**\r\n    - $5 - 2 = 3$\r\n    - $11 - 5 = 6$\r\n    - $23 - 11 = 12$\r\n    - As diferenças formam uma progressão geométrica de razão 2: $3, 6, 12, \\dots$\r\n    - A próxima diferença deve ser $12 \\times 2 = 24$.\r\n    - Portanto, o próximo número é $23 + 24 = 47$.\r\n  - **Método 2 (Função de recorrência):**\r\n    - Cada termo é o dobro do anterior mais um: $a_{n} = 2a_{n-1} + 1$.\r\n    - $2 \\times 2 + 1 = 5$\r\n    - $5 \\times 2 + 1 = 11$\r\n    - $11 \\times 2 + 1 = 23$\r\n    - $23 \\times 2 + 1 = 46 + 1 = 47$.",
+    "accepted_answers":  [
+                             "47`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "35",
+                              "feedback":  "Repare que a diferença entre os números dobra a cada passo (+3, +6, +12). Qual é o dobro de 12?"
+                          },
+                          {
+                              "pattern":  "46",
+                              "feedback":  "Verifique a regra nos termos anteriores: $5 \\times 2 = 10$, mas o termo é 11 ($10 + 1$)."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Calcule a diferença entre cada número e seu antecessor: quanto aumentou de 2 para 5? De 5 para 11? De 11 para 23?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "As diferenças são 3, 6 e 12. O que você nota sobre o crescimento desses aumentos?"
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "O próximo acréscimo deve ser 24 (o dobro de 12). Some $23 + 24$ para obter 47."
+                  }
+              ],
+    "transfer_example":  "Analisar o crescimento populacional de culturas bacterianas ou a duplicação exponencial de arquivos de dados.",
+    "rewards":  {
+                    "erudition_xp":  150,
+                    "lumis":  75,
+                    "codex_entry_id":  "COD_MATH_008"
+                },
+    "validation_criteria":  "Fórmula fechada $a_n = 3 \\times 2^{n-1} - 1$. Para $n=5$, $a_5 = 3 \\times 16 - 1 = 47$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3yq8n1v4k9mp"]
+﻿[gd_scene load_steps=3 format=3 uid="uid://d3yq8n1v4k9mp"]
 
 [ext_resource type="Script" path="res://scenes/customization/customization_view.gd" id="1_custom"]
+[ext_resource type="Texture2D" path="res://assets/images/environments/bg_axioms_temple.png" id="2_bg"]
 
 [node name="CustomizationView" type="Control"]
 layout_mode = 3
@@ -11,14 +12,26 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_custom")
 
-[node name="ColorRectBackground" type="ColorRect" parent="."]
+[node name="TextureBackground" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.08, 0.09, 0.13, 1)
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRectOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.08, 0.12, 0.88)
+
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -117,3 +130,4 @@ custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Voltar sem Salvar"
+

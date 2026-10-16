@@ -1,17 +1,19 @@
-{
-  "id": "COD_SCI_001",
-  "title": "Princípio das Alavancas e Vantagem Mecânica",
-  "educational_area": "SCIENCES",
-  "subcategory": "SCI-FIS",
-  "target_skill": "Compreender o equilíbrio estático de momentos de torque em corpos rígidos.",
-  "concept_summary": "Uma alavanca é uma máquina simples composta por uma barra rígida que gira em torno de um ponto fixo (fulcro). O torque (momento de uma força) é o produto da força aplicada pela distância até o ponto de giro. Para equilibrar uma carga pesada com pouca força, basta aumentar o braço de alavanca.",
-  "formal_explanation": "Condição de equilíbrio rotacional: sum(tau) = 0 => F_potente * d_potente = F_resistente * d_resistente.",
-  "solved_examples": [
-    {
-      "problem": "Uma pedra de 600 N está a 0,5 m do apoio de uma gangorra. A que distância do apoio uma pessoa de 300 N deve sentar para equilibrá-la?",
-      "solution_steps": "1. 300 * d = 600 * 0,5\n2. 300 * d = 300\n3. d = 300 / 300 = 1 metro do ponto de apoio."
-    }
-  ],
-  "voluntary_revision_puzzle_ids": ["PUZ_SCI_001"],
-  "related_real_world_application": "Funcionamento de tesouras, carrinhos de mão, pinças, guindastes e alicates de pressão."
+﻿{
+    "id":  "COD_SCI_001",
+    "title":  "Princípio das Alavancas e Vantagem Mecânica",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Compreender a condição de equilíbrio de corpos rígidos em alavancas interfixas ($F_1 \\times d_1 = F_2 \\times d_2$).",
+    "concept_summary":  "Para erguer uma pesada laje de pedra que bloqueia a escotilha do abrigo subterrâneo, o protagonista usa uma barra de ferro apoiada sobre uma rocha firme (alavanca interfixa). A laje exerce uma força resistente equivalente a 300 Newtons e está a 1 metro de distância do ponto de apoio. O protagonista pode aplicar sua força no outro extremo da barra, situado a 3 metros do ponto de apoio. Compreender a condição de equilíbrio de corpos rígidos em alavancas interfixas ($F_1 \\times d_1 = F_2 \\times d_2$).",
+    "formal_explanation":  "1. Aplica-se a Lei das Alavancas formulada por Arquimedes (equilíbrio de torques em relação ao ponto de apoio):\r\n     $$\\tau_p = \\tau_r \\implies F_p \\times d_p = F_r \\times d_r$$\r\n  2. Substituem-se os dados numéricos:\r\n     $$F_p \\times 3 = 300 \\times 1$$\r\n     $$3F_p = 300$$\r\n  3. Isola-se a força potente necessária:\r\n     $$F_p = \\frac{300}{3} = 100 \\text{ Newtons}$$\r\n  4. Graças à vantagem mecânica de fator 3 ($d_p / d_r = 3/1 = 3$), a força humana necessária é reduzida a um terço do peso da pedra.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Aplica-se a Lei das Alavancas formulada por Arquimedes (equilíbrio de torques em relação ao ponto de apoio):\r\n     $$\\tau_p = \\tau_r \\implies F_p \\times d_p = F_r \\times d_r$$\r\n  2. Substituem-se os dados numéricos:\r\n     $$F_p \\times 3 = 300 \\times 1$$\r\n     $$3F_p = 300$$\r\n  3. Isola-se a força potente necessária:\r\n     $$F_p = \\frac{300}{3} = 100 \\text{ Newtons}$$\r\n  4. Graças à vantagem mecânica de fator 3 ($d_p / d_r = 3/1 = 3$), a força humana necessária é reduzida a um terço do peso da pedra."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_001"
+                                      ],
+    "related_real_world_application":  "Uso de pés-de-cabra para abrir caixotes, tesouras para cortar tecidos grossos e o funcionamento de balanços em parques infantis."
 }

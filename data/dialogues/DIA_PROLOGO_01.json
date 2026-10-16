@@ -1,0 +1,65 @@
+{
+  "id": "DIA_PROLOGO_01",
+  "title": "Despertar sob o Céu de Vidro",
+  "nodes": {
+    "start": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_thinking",
+      "text": "Fique quieto. Sua respiração ainda está irregular. O ar nesta cratera tem uma densidade de sais minerais que viajantes não costumam tolerar.",
+      "next": "node_02"
+    },
+    "node_02": {
+      "speaker": "Protagonista",
+      "speaker_title": "Jovem Pesquisador",
+      "portrait_key": "char_hero_portrait_neutral",
+      "text": "Onde... onde eu estou? A última coisa que me lembro era do laboratório da universidade...",
+      "next": "node_03"
+    },
+    "node_03": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "Universidade? Não conheço nenhuma instituição com esse nome nas províncias vizinhas. Você está na Cratera do Vidro Azul, em Velathys. E se não tomarmos uma tisana concentrada agora, seus pulmões vão sofrer.",
+      "choices": [
+        {
+          "text": "Eu posso ajudar no preparo da tisana. Como funciona a receita?",
+          "set_flag": "FLAG_HERO_PROACTIVE",
+          "next": "node_recipe"
+        },
+        {
+          "text": "Velathys? Isso é impossível... preciso entender o que aconteceu.",
+          "set_flag": "FLAG_HERO_INQUISITIVE",
+          "next": "node_doubt"
+        }
+      ]
+    },
+    "node_doubt": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_thinking",
+      "text": "Haverá tempo para perguntas quando você estiver respirando sem dor. Por hora, me ajude a dosar os ingredientes. A física e a química não esperam por nossa confusão.",
+      "next": "node_recipe"
+    },
+    "node_recipe": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "A receita base faz exatamente 1 dose com 4 folhas de anis e 6 gotas de óleo de linho. Mas nós dois precisamos beber e quero levar uma reserva. Precisamos de exatamente 3 doses. Vamos calcular as proporções.",
+      "choices": [
+        {
+          "text": "Examinar os frascos e calcular as proporções (Enigma)",
+          "trigger_puzzle": "PUZ_MATH_001",
+          "next": "node_end"
+        }
+      ]
+    },
+    "node_end": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "Excelente. Vamos estabilizar sua condição e seguir viagem até Valdrim.",
+      "trigger_quest": "QP_PROLOGO_01"
+    }
+  }
+}

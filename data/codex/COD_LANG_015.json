@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_015",
+    "title":  "Filologia, Crítica Textual e Reconstituição de Palimpsestos",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Analisar textos corrompidos por palimpsestos e recompor o significado original através de coerência contextual e crítica interna.",
+    "concept_summary":  "No códice original do Núcleo Áfono, uma frase de síntese foi parcialmente raspada e sobrescrita por monges do Selo há 800 anos. O protagonista, utilizando sua *Sensibilidade Prismática*, consegue ver os dois estratos de tinta e precisa selecionar a reconstrução que respeita a gramática e o pensamento pré-cataclismo. Analisar textos corrompidos por palimpsestos e recompor o significado original através de coerência contextual e crítica interna.",
+    "formal_explanation":  "1. A frase organiza-se em torno de uma estrutura sintática antitética clássica: \"não é $X$, mas sim $Y$\".\r\n  2. O primeiro termo ($X$) é \"uma muralha para o esquecimento\" (uma barreira que bloqueia, isola e cega).\r\n  3. O segundo termo ($Y$) destina-se a produzir \"mútua iluminação\" (troca, intercâmbio, clareza e diálogo entre os dois mundos).\r\n  4. Para estabelecer o contraste perfeito com \"muralha\" (que separa) e viabilizar a \"iluminação mútua\" (que conecta), o substantivo metafórico ideal de passagem e ligação física e conceitual é **ponte**.\r\n  5. Os outros termos (*lâmina*, *prisão*, *cinza*) são destrutivos ou restritivos, contradizendo o sentido de iluminação e diálogo.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A frase organiza-se em torno de uma estrutura sintática antitética clássica: \"não é $X$, mas sim $Y$\".\r\n  2. O primeiro termo ($X$) é \"uma muralha para o esquecimento\" (uma barreira que bloqueia, isola e cega).\r\n  3. O segundo termo ($Y$) destina-se a produzir \"mútua iluminação\" (troca, intercâmbio, clareza e diálogo entre os dois mundos).\r\n  4. Para estabelecer o contraste perfeito com \"muralha\" (que separa) e viabilizar a \"iluminação mútua\" (que conecta), o substantivo metafórico ideal de passagem e ligação física e conceitual é **ponte**.\r\n  5. Os outros termos (*lâmina*, *prisão*, *cinza*) são destrutivos ou restritivos, contradizendo o sentido de iluminação e diálogo."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_015"
+                                      ],
+    "related_real_world_application":  "Crítica textual bíblica, filologia clássica e edição fidedigna de manuscritos históricos danificados."
+}

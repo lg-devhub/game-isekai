@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_010",
+    "title":  "Trigonometria e Ângulos Notáveis",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Utilizar propriedades de triângulos retângulos e razões trigonométricas fundamentais ($\\text{seno}$, $\\text{cosseno}$ e $\\text{tangente}$).",
+    "concept_summary":  "Para alinhar o feixe de luz solar do heliógrafo principal de Ark-Mnemona com a torre do Bastião Cinzento, o protagonista precisa regular o suporte angular de um grande espelho plano. A torre de recepção está a 60 metros de distância horizontal da base e seu topo fica 60 metros acima do nível do espelho. Utilizar propriedades de triângulos retângulos e razões trigonométricas fundamentais ($\\text{seno}$, $\\text{cosseno}$ e $\\text{tangente}$).",
+    "formal_explanation":  "1. No triângulo formado pelo heliógrafo e o receptor:\r\n     - O cateto adjacente (distância horizontal) é de $60$ metros.\r\n     - O cateto oposto (elevação vertical) é de $60$ metros.\r\n  2. Calcula-se a tangente do ângulo de inclinação $\\theta$:\r\n     $$\\tan(\\theta) = \\frac{\\text{Cateto Oposto}}{\\text{Cateto Adjacente}} = \\frac{60}{60} = 1$$\r\n  3. O ângulo notável cuja tangente é igual a 1 no primeiro quadrante é:\r\n     $$\\theta = 45^\\circ$$\r\n  4. Alternativamente, como os catetos são iguais, o triângulo é retângulo e isósceles. Logo, os dois ângulos agudos são congruentes: $(180^\\circ - 90^\\circ) / 2 = 45^\\circ$.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. No triângulo formado pelo heliógrafo e o receptor:\r\n     - O cateto adjacente (distância horizontal) é de $60$ metros.\r\n     - O cateto oposto (elevação vertical) é de $60$ metros.\r\n  2. Calcula-se a tangente do ângulo de inclinação $\\theta$:\r\n     $$\\tan(\\theta) = \\frac{\\text{Cateto Oposto}}{\\text{Cateto Adjacente}} = \\frac{60}{60} = 1$$\r\n  3. O ângulo notável cuja tangente é igual a 1 no primeiro quadrante é:\r\n     $$\\theta = 45^\\circ$$\r\n  4. Alternativamente, como os catetos são iguais, o triângulo é retângulo e isósceles. Logo, os dois ângulos agudos são congruentes: $(180^\\circ - 90^\\circ) / 2 = 45^\\circ$."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_010"
+                                      ],
+    "related_real_world_application":  "Determinar a rampa de acessibilidade ideal sabendo o desnível vertical e o comprimento horizontal disponível."
+}

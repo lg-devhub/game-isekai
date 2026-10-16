@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_SCI_011",
+    "title":  "A Cinética de Precipitação do Sal",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Interpretar curvas de solubilidade e calcular a massa de soluto que precipita com o resfriamento de uma solução aquosa.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  false,
+    "narrative_context":  "Nas salinas de Korath, os artesãos purificam prismas de sal dissolvendo o mineral em água fervente e deixando a solução esfriar. O coeficiente de solubilidade do sal é de 80 gramas para cada 100 gramas de água a $80^\\circ\\text{C}$, e cai para 30 gramas para cada 100 gramas de água a $20^\\circ\\text{C}$.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Interpretar curvas de solubilidade e calcular a massa de soluto que precipita com o resfriamento de uma solução aquosa.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "50.",
+    "step_by_step_explanation":  "1. A $80^\\circ\\text{C}$, 100 gramas de água conseguem dissolver completamente até $80$ gramas de sal. A solução foi preparada saturada, logo contém exatamente 80 g de sal dissolvido.\r\n  2. Ao esfriar para $20^\\circ\\text{C}$, a capacidade de dissolução da mesma quantidade de água (100 g) cai para apenas $30$ gramas de sal.\r\n  3. A água só consegue manter dissolvidas 30 gramas. Todo o excesso que ultrapassar esse limite é expulso da solução e precipita na forma de cristais sólidos no fundo:\r\n     $$\\text{Massa precipitada} = m_{\\text{dissolvida inicial}} - m_{\\text{solúvel final}}$$\r\n     $$\\text{Massa precipitada} = 80 \\text{ g} - 30 \\text{ g} = 50 \\text{ gramas}$$",
+    "accepted_answers":  [
+                             "50",
+                             "50 g",
+                             "50 gramas`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "30",
+                              "feedback":  "30 gramas é o que a água ainda consegue manter dissolvido a 20°C. A pergunta quer saber quanto precipitou no fundo."
+                          },
+                          {
+                              "pattern":  "110",
+                              "feedback":  "A água esfriou e perdeu capacidade de retenção. Subtraia a nova capacidade da quantidade original."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Água quente dissolve mais sal do que água fria. Quando a água esfria, o excesso de sal que não cabe mais vai para o fundo."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "No começo havia 80 gramas dissolvidos. No final, só cabem 30 gramas dissolvidos."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "Calcule a diferença: $80 - 30 = 50$ gramas de sal cristalizado."
+                  }
+              ],
+    "transfer_example":  "Fabricação de doces cristalizados (cristalização da calda de açúcar) e purificação de princípios ativos farmacêuticos por recristalização.",
+    "rewards":  {
+                    "erudition_xp":  210,
+                    "lumis":  105,
+                    "codex_entry_id":  "COD_SCI_011"
+                },
+    "validation_criteria":  "Teoria das soluções e saturação termodinâmica sob equilíbrio de fases líquido-sólido.",
+    "action_button_text":  "Confirmar Análise 🔬"
+}

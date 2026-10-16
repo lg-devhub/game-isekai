@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_MATH_006",
+    "title":  "A Geometria das Lajes de Solemnia",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Calcular a área de triângulos retângulos e hipotenusas com relações métricas fundamentais.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Um pedreiro precisa recortar uma laje de mármore no formato de um triângulo retângulo para o piso da praça de Val-Serena. Os dois lados perpendiculares (catetos) medem 6 metros e 8 metros. Ele precisa calcular o comprimento da diagonal (hipotenusa) para encaixar a moldura de metal.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Calcular a área de triângulos retângulos e hipotenusas com relações métricas fundamentais.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "10.",
+    "step_by_step_explanation":  "1. Aplica-se o Teorema de Pitágoras: $c^2 = a^2 + b^2$.\r\n  2. Substituem-se os valores dos catetos:\r\n     $$c^2 = 6^2 + 8^2 = 36 + 64 = 100$$\r\n  3. Extrai-se a raiz quadrada:\r\n     $$c = \\sqrt{100} = 10 \\text{ metros}$$",
+    "accepted_answers":  [
+                             "10",
+                             "10 m",
+                             "10 metros`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "14",
+                              "feedback":  "Em um triângulo retângulo, a hipotenusa não é a soma direta dos catetos, mas a raiz da soma de seus quadrados."
+                          },
+                          {
+                              "pattern":  "100",
+                              "feedback":  "100 é o quadrado da hipotenusa ($c^2$). Extraia a raiz quadrada para encontrar o comprimento real."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Lembre-se do famoso teorema que relaciona os lados de qualquer triângulo retângulo: o quadrado da hipotenusa é igual à soma dos quadrados dos catetos."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Calcule $6 \\times 6$ e $8 \\times 8$. Some esses dois resultados."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "A soma dos quadrados é $36 + 64 = 100$. Que número positivo multiplicado por ele mesmo dá 100?"
+                  }
+              ],
+    "transfer_example":  "Medir a distância diagonal percorrida em um quarteirão retangular cortando caminho por uma praça.",
+    "rewards":  {
+                    "erudition_xp":  110,
+                    "lumis":  55,
+                    "codex_entry_id":  "COD_MATH_006"
+                },
+    "validation_criteria":  "Teorema de Pitágoras no plano euclidiano ($6^2 + 8^2 = 10^2$).",
+    "action_button_text":  "Calcular Dedução 📐"
+}

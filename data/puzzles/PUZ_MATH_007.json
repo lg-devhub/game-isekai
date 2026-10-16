@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_MATH_007",
+    "title":  "O Cálculo de Concentração do Antídoto",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Calcular a porcentagem final resultante da mistura de duas soluções com concentrações diferentes.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  true,
+    "narrative_context":  "Lyra precisa produzir uma solução de lavagem mineral com concentração de sal exatamente igual a 20%. Ela dispõe no laboratório de 2 litros de uma solução a 10% de sal e 3 litros de uma solução a 30% de sal. O protagonista deve determinar a concentração percentual resultante ao juntar os dois frascos em um único recipiente.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Calcular a porcentagem final resultante da mistura de duas soluções com concentrações diferentes.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "22.",
+    "step_by_step_explanation":  "1. Calcula-se a quantidade absoluta de soluto (sal) no Frasco 1:\r\n     $$\\text{Sal}_1 = 2 \\times 0{,}10 = 0{,}2 \\text{ litros}$$\r\n  2. Calcula-se a quantidade absoluta de soluto no Frasco 2:\r\n     $$\\text{Sal}_2 = 3 \\times 0{,}30 = 0{,}9 \\text{ litros}$$\r\n  3. Soma-se o sal total e o volume total:\r\n     $$\\text{Sal total} = 0{,}2 + 0{,}9 = 1{,}1 \\text{ litros}$$\r\n     $$\\text{Volume total} = 2 + 3 = 5 \\text{ litros}$$\r\n  4. Calcula-se a concentração percentual final:\r\n     $$C = \\frac{1{,}1}{5} = 0{,}22 = 22\\%$$",
+    "accepted_answers":  [
+                             "22",
+                             "22%",
+                             "22 por cento`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "20",
+                              "feedback":  "Os volumes são diferentes (2 L e 3 L). Como há mais líquido da solução a 30%, a concentração final deve ficar mais próxima de 30% do que de 10% (média ponderada)."
+                          },
+                          {
+                              "pattern":  "1.1",
+                              "feedback":  "1,1 é a quantidade total de sal puro em litros. Divida pelo volume total da mistura (5 L) e multiplique por 100 para achar a porcentagem."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Calcule primeiro quantos litros de sal puro existem em cada um dos dois frascos."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "O primeiro frasco tem 0,2 L de sal e o segundo tem 0,9 L. Some-os para achar o sal total (1,1 L)."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "Divida 1,1 litros de sal pelos 5 litros de volume total: $1{,}1 / 5 = 0{,}22$, ou seja, 22%."
+                  }
+              ],
+    "transfer_example":  "Calcular a nota final de uma disciplina onde provas práticas e teóricas possuem pesos diferentes.",
+    "rewards":  {
+                    "erudition_xp":  150,
+                    "lumis":  75,
+                    "codex_entry_id":  "COD_MATH_007"
+                },
+    "validation_criteria":  "Fórmula da média ponderada: $C_f = (V_1 C_1 + V_2 C_2) / (V_1 + V_2)$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

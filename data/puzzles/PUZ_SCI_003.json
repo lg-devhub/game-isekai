@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_SCI_003",
+    "title":  "A Germinação das Sementes Silvestres",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Identificar as condições ambientais indispensáveis para quebra de dormência e germinação de sementes.",
+    "difficulty":  1,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Lyra está preparando mudas de anis em estufas protegidas. Ela colocou sementes em quatro pratos experimentais sob condições distintas para descobrir qual ambiente garante a germinação:",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar as condições ambientais indispensáveis para quebra de dormência e germinação de sementes.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Prato 2.",
+    "step_by_step_explanation":  "1. A germinação tem início com a embebição de água, que hidrata os tecidos da semente e ativa enzimas digestivas que quebram o amido acumulado no endosperma ou cotilédones.\r\n  2. Sem água (Prato 1 e Prato 4), as sementes permanecem em dormência metabólica e não germinam.\r\n  3. A temperatura de congelamento (Prato 3 e Prato 4) inibe a atividade enzimática celular, impedindo a germinação.\r\n  4. Ao contrário de uma crença comum, a grande maioria das sementes germina sob a terra (no escuro), não necessitando de luz solar direta até que as primeiras folhas verdes (fotossintetizantes) rompam a superfície do solo.\r\n  5. Portanto, o ambiente com solo úmido, boa aeração e temperatura moderada (**Prato 2**) é o único que proporciona as condições biológicas adequadas para a germinação.",
+    "accepted_answers":  [
+                             "Prato 2",
+                             "2`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Prato 1",
+                              "feedback":  "Sem água líquida para ativar as enzimas, a semente seca não consegue iniciar a germinação, mesmo com luz plena."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Onde as sementes normalmente são plantadas na natureza? Embaixo da terra, onde é escuro!"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  10,
+                      "text":  "Para acordar da dormência, a semente precisa absorver água e estar em uma temperatura agradável."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  20,
+                      "text":  "O Prato 2 tem umidade e temperatura amena. É nele que as sementes vão brotar."
+                  }
+              ],
+    "transfer_example":  "Métodos agronômicos de plantio de hortaliças e conservação de grãos em silos agrícolas secos.",
+    "rewards":  {
+                    "erudition_xp":  60,
+                    "lumis":  30,
+                    "codex_entry_id":  "COD_SCI_003"
+                },
+    "validation_criteria":  "Teoria fisiológica vegetal de embebição e ativação da giberelina na quebra de dormência de sementes.",
+    "action_button_text":  "Confirmar Análise 🔬",
+    "options":  [
+                    "Prato 2",
+                    "Prato 1",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

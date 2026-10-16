@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_MATH_012",
+    "title":  "A Probabilidade dos Dados de Quartzo",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Determinar o espaço amostral e calcular a probabilidade de eventos equiprováveis expressos como fração e porcentagem.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  false,
+    "narrative_context":  "Para passar por um autômato de guarda em uma ponte de Ark-Mnemona sem soar o alarme, é necessário apostar em um mecanismo de dois dados tetraédricos (4 faces numeradas de 1 a 4). O autômato só abre a cancela se a soma das duas faces superiores for exatamente igual a 5.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Determinar o espaço amostral e calcular a probabilidade de eventos equiprováveis expressos como fração e porcentagem.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "25.",
+    "step_by_step_explanation":  "1. Determina-se o número total de eventos possíveis (espaço amostral $\\Omega$):\r\n     $$|\\Omega| = 4 \\times 4 = 16 \\text{ pares ordenados}$$\r\n  2. Listam-se os pares favoráveis cuja soma é 5:\r\n     - $(1, 4) \\implies 1 + 4 = 5$\r\n     - $(2, 3) \\implies 2 + 3 = 5$\r\n     - $(3, 2) \\implies 3 + 2 = 5$\r\n     - $(4, 1) \\implies 4 + 1 = 5$\r\n     - Total de casos favoráveis: 4.\r\n  3. Calcula-se a probabilidade teórica:\r\n     $$P = \\frac{\\text{Casos Favoráveis}}{\\text{Casos Possíveis}} = \\frac{4}{16} = \\frac{1}{4}$$\r\n  4. Converte-se para porcentagem:\r\n     $$\\frac{1}{4} \\times 100\\% = 25\\%$$",
+    "accepted_answers":  [
+                             "25",
+                             "25%",
+                             "25 por cento`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "12.5",
+                              "feedback":  "Os dados são independentes: tirar 1 no primeiro dado e 4 no segundo é um resultado diferente de tirar 4 no primeiro e 1 no segundo."
+                          },
+                          {
+                              "pattern":  "4",
+                              "feedback":  "4 é o número de combinações que somam 5. Divida 4 pelo total de 16 combinações e multiplique por 100 para obter a taxa percentual."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Quantos pares de números diferentes podem sair no total ao jogar dois dados de 4 faces?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "O total de resultados possíveis é 16 ($4 \\times 4$). Escreva todas as combinações que somam 5: (1,4), (2,3), (3,2) e (4,1)."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "São 4 casos favoráveis em 16 possíveis: $4/16 = 1/4$. Em porcentagem, $1/4$ equivale a 25%."
+                  }
+              ],
+    "transfer_example":  "Calcular as chances de vitória em jogos de tabuleiro ou avaliar riscos estatísticos em previsão meteorológica.",
+    "rewards":  {
+                    "erudition_xp":  210,
+                    "lumis":  105,
+                    "codex_entry_id":  "COD_MATH_012"
+                },
+    "validation_criteria":  "Definição de probabilidade de Laplace para espaços equiprováveis: $P(A) = |A| / |\\Omega|$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

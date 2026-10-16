@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_003",
+    "title":  "Perímetro e Unidades Lineares",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Calcular perímetros de figuras retangulares e prever custos de vedação.",
+    "concept_summary":  "Lyra quer cercar um canteiro retangular de ervas medicinais com tábuas de proteção contra ventos fortes. O canteiro mede 8 metros de comprimento por 5 metros de largura. Cada metro de cerca exige 2 pranchas de madeira. Calcular perímetros de figuras retangulares e prever custos de vedação.",
+    "formal_explanation":  "1. O perímetro de um retângulo é dado por $P = 2 \\times (\\text{comprimento} + \\text{largura})$.\r\n  2. $P = 2 \\times (8 + 5) = 2 \\times 13 = 26$ metros lineares.\r\n  3. Como cada metro precisa de 2 pranchas, multiplica-se o perímetro pela taxa unitária:\r\n     $$\\text{Total de pranchas} = 26 \\times 2 = 52$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. O perímetro de um retângulo é dado por $P = 2 \\times (\\text{comprimento} + \\text{largura})$.\r\n  2. $P = 2 \\times (8 + 5) = 2 \\times 13 = 26$ metros lineares.\r\n  3. Como cada metro precisa de 2 pranchas, multiplica-se o perímetro pela taxa unitária:\r\n     $$\\text{Total de pranchas} = 26 \\times 2 = 52$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_003"
+                                      ],
+    "related_real_world_application":  "Comprar rodapés para um quarto retangular sabendo o comprimento e a largura das paredes."
+}

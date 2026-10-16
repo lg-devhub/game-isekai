@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_SCI_006",
+    "title":  "O Ciclo da Matéria e os Decompositores",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Reconhecer o papel ecológico indispensável dos organismos decompositores na reciclagem de nutrientes e manutenção da fertilidade do solo.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Lyra observa que em uma área do bosque onde a Ordem do Selo pulverizou sais minerais tóxicos para matar fungos e insetos, as folhas caídas das árvores acumulam-se há meses sem apodrecer, e as novas mudas ao redor estão fracas e com folhas amareladas por falta de nutrientes.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Reconhecer o papel ecológico indispensável dos organismos decompositores na reciclagem de nutrientes e manutenção da fertilidade do solo.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "A) Porque sem decompositores a matéria orgânica morta não é transformada em nutrientes minerais absorvíveis pelas raízes.",
+    "step_by_step_explanation":  "1. Em um ecossistema equilibrado, a energia flui de forma unidirecional, mas a matéria física (átomos de carbono, nitrogênio, fósforo e potássio) precisa ser reciclada continuamente.\r\n  2. Os produtores (árvores e plantas) sintetizam compostos orgânicos.\r\n  3. Quando folhas, galhos e organismos morrem, os decompositores (fungos e bactérias saprófitas) digerem essas moléculas complexas e liberam sais minerais inorgânicos de volta no solo.\r\n  4. Sem os decompositores, os nutrientes essenciais ficam aprisionados na matéria morta que não apodrece, esgotando o solo e impedindo que as raízes das novas plantas se alimentem (**Opção A**).",
+    "accepted_answers":  [
+                             "A) Porque sem decompositores a matéria orgânica morta não é transformada em nutrientes minerais absorvíveis pelas raízes.",
+                             "Opção A",
+                             "A`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Opção B",
+                              "feedback":  "Fungos são organismos heterótrofos: eles não realizam fotossíntese nem produzem luz."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "O que acontece com folhas que caem no chão da floresta quando ninguém mexe nelas? Elas apodrecem e viram adubo."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Quem transforma folhas secas em adubo fértil são os fungos e bactérias decompositores."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "Sem decompositores, a floresta fica sem nutrientes reciclados no solo (Opção A)."
+                  }
+              ],
+    "transfer_example":  "Compostagem doméstica de restos de alimentos para produção de adubo orgânico em hortas urbanas.",
+    "rewards":  {
+                    "erudition_xp":  110,
+                    "lumis":  55,
+                    "codex_entry_id":  "COD_SCI_006"
+                },
+    "validation_criteria":  "Leis ecológicas de conservação da biomassa e ciclagem de bioelementos de Odum.",
+    "action_button_text":  "Confirmar Análise 🔬",
+    "options":  [
+                    "A) Porque sem decompositores a matéria orgânica morta não é transformada em nutrientes minerais absorvíveis pelas raízes",
+                    "Opção B",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

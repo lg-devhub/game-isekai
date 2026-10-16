@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_014",
+    "title":  "Crescimento Exponencial e Juros Compostos",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Modelar crescimento exponencial discreto com taxa percentual constante e prever valores futuros ($M = C(1+i)^t$).",
+    "concept_summary":  "Lyra e o protagonista estão estudando em laboratório uma amostra de cristal de sal que se replica por ressonância química. A colônia inicial tem massa de 100 gramas e dobra de tamanho a cada 3 horas quando mantida na umidade padrão do estuário. Eles precisam calcular a massa da amostra após 12 horas. Modelar crescimento exponencial discreto com taxa percentual constante e prever valores futuros ($M = C(1+i)^t$).",
+    "formal_explanation":  "1. Determina-se quantas vezes o período de duplicação ocorre em 12 horas:\r\n     $$n = \\frac{12 \\text{ horas}}{3 \\text{ horas}} = 4 \\text{ ciclos de duplicação}$$\r\n  2. Modela-se o crescimento exponencial com base 2:\r\n     $$M(t) = M_0 \\times 2^n$$\r\n  3. Substituem-se os valores:\r\n     $$M(12) = 100 \\times 2^4 = 100 \\times 16 = 1600 \\text{ gramas}$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Determina-se quantas vezes o período de duplicação ocorre em 12 horas:\r\n     $$n = \\frac{12 \\text{ horas}}{3 \\text{ horas}} = 4 \\text{ ciclos de duplicação}$$\r\n  2. Modela-se o crescimento exponencial com base 2:\r\n     $$M(t) = M_0 \\times 2^n$$\r\n  3. Substituem-se os valores:\r\n     $$M(12) = 100 \\times 2^4 = 100 \\times 16 = 1600 \\text{ gramas}$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_014"
+                                      ],
+    "related_real_world_application":  "Entender o conceito de juros compostos em investimentos financeiros ou a disseminação de epidemias virais descontroladas."
+}

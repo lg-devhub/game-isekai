@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6v2n4g8j7q1"]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://scenes/puzzle/puzzle_view.gd" id="1_pview"]
+[ext_resource type="Texture2D" path="res://assets/images/environments/bg_puzzle_desk.png" id="2_bg"]
 
 [node name="PuzzleView" type="Control"]
 layout_mode = 3
@@ -11,14 +12,25 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pview")
 
-[node name="ColorRectBackground" type="ColorRect" parent="."]
+[node name="TextureBackground" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.09, 0.11, 0.16, 1)
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRectOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.08, 0.12, 0.88)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -27,74 +39,122 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 60
-theme_override_constants/margin_right = 40
-theme_override_constants/margin_bottom = 60
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 36
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 14
 
 [node name="HBoxSelector" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 12
 
 [node name="LabelSelect" type="Label" parent="MarginContainer/VBoxContainer/HBoxSelector"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
-text = "Desafio:"
+theme_override_font_sizes/font_size = 20
+text = "Investigação:"
 
 [node name="OptionButtonPuzzles" type="OptionButton" parent="MarginContainer/VBoxContainer/HBoxSelector"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 20
 
 [node name="PanelHeader" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 
 [node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelHeader"]
 layout_mode = 2
 theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
 
 [node name="HBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PanelHeader/Margin"]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 14
 
 [node name="BtnBack" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
-custom_minimum_size = Vector2(120, 56)
+custom_minimum_size = Vector2(100, 52)
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
-text = "‹ Menu"
+theme_override_font_sizes/font_size = 20
+text = "◀ Menu"
+
+[node name="BtnMap" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
+custom_minimum_size = Vector2(100, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "🗺️ Mapa"
 
 [node name="LabelArea" type="Label" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_colors/font_color = Color(0.4, 0.7, 1, 1)
-theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+theme_override_font_sizes/font_size = 22
 text = "ÁREA: MATEMÁTICA"
 vertical_alignment = 1
 
 [node name="LabelLumis" type="Label" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
-theme_override_font_sizes/font_size = 24
-text = "💎 50 Lúmis"
+theme_override_colors/font_color = Color(0.4, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 22
+text = "💎 50"
 vertical_alignment = 1
 
 [node name="BtnJournal" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
-custom_minimum_size = Vector2(130, 56)
+custom_minimum_size = Vector2(90, 52)
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
-text = "📜 Diário"
+theme_override_font_sizes/font_size = 20
+text = "Diário"
 
 [node name="BtnCodice" type="Button" parent="MarginContainer/VBoxContainer/PanelHeader/Margin/HBox"]
-custom_minimum_size = Vector2(130, 56)
+custom_minimum_size = Vector2(90, 52)
 layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Códice"
+
+[node name="PanelCompanion" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelCompanion"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 10
+
+[node name="HBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PanelCompanion/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TextureCompanion" type="TextureRect" parent="MarginContainer/VBoxContainer/PanelCompanion/Margin/HBox"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxText" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelCompanion/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="LabelCompanionName" type="Label" parent="MarginContainer/VBoxContainer/PanelCompanion/Margin/HBox/VBoxText"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
 theme_override_font_sizes/font_size = 22
-text = "📖 Códice"
+text = "Lyra (Pesquisadora de Campo)"
+
+[node name="LabelCompanionSpeech" type="Label" parent="MarginContainer/VBoxContainer/PanelCompanion/Margin/HBox/VBoxText"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9, 0.9, 0.95, 1)
+theme_override_font_sizes/font_size = 19
+text = "Examine a situação com rigor metodológico. A resposta está na análise dos dados."
+autowrap_mode = 3
 
 [node name="PanelContent" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -102,31 +162,30 @@ size_flags_vertical = 3
 
 [node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelContent"]
 layout_mode = 2
-theme_override_constants/margin_left = 28
-theme_override_constants/margin_top = 28
-theme_override_constants/margin_right = 28
-theme_override_constants/margin_bottom = 28
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 14
 
 [node name="VBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 10
 
 [node name="LabelTitle" type="Label" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 36
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+theme_override_font_sizes/font_size = 26
 text = "Título do Enigma"
 
 [node name="LabelContext" type="Label" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.7, 0.75, 0.85, 1)
-theme_override_font_sizes/font_size = 20
-text = "Contexto narrativo..."
+theme_override_colors/font_color = Color(0.7, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Habilidade-alvo..."
 autowrap_mode = 3
 
-[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
-layout_mode = 2
-
 [node name="ScrollPrompt" type="ScrollContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
+custom_minimum_size = Vector2(0, 110)
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -134,81 +193,122 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 26
-text = "Enunciado do quebra-cabeça investigativo..."
+theme_override_font_sizes/font_size = 21
+text = "Enunciado da situação investigativa..."
 autowrap_mode = 3
+
+[node name="PanelVisualData" type="PanelContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox"]
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox/PanelVisualData"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxVisual" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox/PanelVisualData/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LabelVisualTitle" type="Label" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox/PanelVisualData/Margin/VBoxVisual"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.82, 0.45, 1)
+theme_override_font_sizes/font_size = 20
+text = "Dados em Destaque"
+
+[node name="ContainerVisualContent" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelContent/Margin/VBox/PanelVisualData/Margin/VBoxVisual"]
+layout_mode = 2
+theme_override_constants/separation = 6
 
 [node name="HBoxHints" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 12
+theme_override_constants/separation = 10
 
 [node name="BtnHint1" type="Button" parent="MarginContainer/VBoxContainer/HBoxHints"]
-custom_minimum_size = Vector2(0, 64)
+custom_minimum_size = Vector2(0, 52)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 20
-text = "Dica 1 (Grátis)"
+theme_override_font_sizes/font_size = 18
+text = "💡 Dica 1 (Grátis)"
 
 [node name="BtnHint2" type="Button" parent="MarginContainer/VBoxContainer/HBoxHints"]
-custom_minimum_size = Vector2(0, 64)
+custom_minimum_size = Vector2(0, 52)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 20
-text = "Dica 2 (10 Lúmis)"
+theme_override_font_sizes/font_size = 18
+text = "💡 Dica 2 (10 Lúmis)"
 
 [node name="BtnHint3" type="Button" parent="MarginContainer/VBoxContainer/HBoxHints"]
-custom_minimum_size = Vector2(0, 64)
+custom_minimum_size = Vector2(0, 52)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 20
-text = "Dica 3 (20 Lúmis)"
+theme_override_font_sizes/font_size = 18
+text = "💡 Dica 3 (20 Lúmis)"
 
 [node name="PanelFeedback" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 visible = false
+custom_minimum_size = Vector2(0, 90)
 layout_mode = 2
 
 [node name="Margin" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelFeedback"]
 layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 10
 
 [node name="VBox" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelFeedback/Margin"]
 layout_mode = 2
 
 [node name="LabelFeedbackText" type="Label" parent="MarginContainer/VBoxContainer/PanelFeedback/Margin/VBox"]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.75, 0.4, 1)
-theme_override_font_sizes/font_size = 22
-text = "Feedback Diagnóstico construtivo..."
+theme_override_colors/font_color = Color(1, 0.8, 0.45, 1)
+theme_override_font_sizes/font_size = 19
+text = "Orientação investigativa..."
 autowrap_mode = 3
 
 [node name="VBoxInput" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 12
+theme_override_constants/separation = 10
+
+[node name="VBoxMultiField" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxInput"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 8
 
 [node name="HBoxTextInput" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxInput"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 12
+
+[node name="LabelSingleField" type="Label" parent="MarginContainer/VBoxContainer/VBoxInput/HBoxTextInput"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.95, 1)
+theme_override_font_sizes/font_size = 20
+text = "Resposta:"
 
 [node name="LineEditAnswer" type="LineEdit" parent="MarginContainer/VBoxContainer/VBoxInput/HBoxTextInput"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 64)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 22
 placeholder_text = "Digite sua dedução aqui..."
 
-[node name="BtnSubmit" type="Button" parent="MarginContainer/VBoxContainer/VBoxInput/HBoxTextInput"]
-custom_minimum_size = Vector2(240, 80)
+[node name="LabelUnit" type="Label" parent="MarginContainer/VBoxContainer/VBoxInput/HBoxTextInput"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 26
-text = "Verificar Dedução"
+theme_override_colors/font_color = Color(0.7, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 20
 
 [node name="VBoxMultiChoice" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxInput"]
 visible = false
 layout_mode = 2
-theme_override_constants/separation = 12
+theme_override_constants/separation = 8
+
+[node name="BtnSubmitAction" type="Button" parent="MarginContainer/VBoxContainer/VBoxInput"]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Verificar Dedução"
 
 [node name="OverlaySuccess" type="PanelContainer" parent="."]
 visible = false
@@ -218,53 +318,74 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -450.0
-offset_top = -300.0
-offset_right = 450.0
-offset_bottom = 300.0
+offset_left = -460.0
+offset_top = -340.0
+offset_right = 460.0
+offset_bottom = 340.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Margin" type="MarginContainer" parent="OverlaySuccess"]
 layout_mode = 2
-theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 40
-theme_override_constants/margin_bottom = 40
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
 
 [node name="VBox" type="VBoxContainer" parent="OverlaySuccess/Margin"]
 layout_mode = 2
-theme_override_constants/separation = 28
+theme_override_constants/separation = 20
 alignment = 1
 
 [node name="LabelSuccessTitle" type="Label" parent="OverlaySuccess/Margin/VBox"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.4, 0.9, 0.5, 1)
-theme_override_font_sizes/font_size = 48
-text = "DEDUÇÃO CORRETA!"
+theme_override_colors/font_color = Color(0.4, 0.95, 0.55, 1)
+theme_override_font_sizes/font_size = 38
+text = "DEDUÇÃO EXATA!"
 horizontal_alignment = 1
+
+[node name="ScrollExplanation" type="ScrollContainer" parent="OverlaySuccess/Margin/VBox"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="LabelExplanation" type="Label" parent="OverlaySuccess/Margin/VBox/ScrollExplanation"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.85, 0.9, 0.95, 1)
+theme_override_font_sizes/font_size = 20
+text = "Explicação passo a passo da dedução..."
+autowrap_mode = 3
 
 [node name="LabelRewards" type="Label" parent="OverlaySuccess/Margin/VBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 26
-text = "Recompensas obtidas..."
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+theme_override_font_sizes/font_size = 22
+text = "Recompensas..."
 horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="HBoxSuccessBtns" type="HBoxContainer" parent="OverlaySuccess/Margin/VBox"]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_override_constants/separation = 16
 
 [node name="BtnViewCodice" type="Button" parent="OverlaySuccess/Margin/VBox/HBoxSuccessBtns"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 24
-text = "Consultar Códice"
+theme_override_font_sizes/font_size = 22
+text = "Consultar Códice 📖"
+
+[node name="BtnSuccessMap" type="Button" parent="OverlaySuccess/Margin/VBox/HBoxSuccessBtns"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 22
+text = "Mapa de Expedições 🗺️"
 
 [node name="BtnNextPuzzle" type="Button" parent="OverlaySuccess/Margin/VBox/HBoxSuccessBtns"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 24
-text = "Próximo Desafio ›"
+theme_override_font_sizes/font_size = 22
+text = "Próximo Desafio ❯"

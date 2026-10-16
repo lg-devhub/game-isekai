@@ -1,62 +1,85 @@
 {
-  "id": "PUZ_MATH_001",
-  "title": "A Proporção da Tisana Botânica",
-  "educational_area": "MATHEMATICS",
-  "subcategory": "MATH-PRO",
-  "target_skill": "Calcular proporções diretas simples para dimensionar quantidades de reagentes.",
-  "prior_knowledge": ["Operações fundamentais de multiplicação e divisão"],
-  "difficulty": 1,
-  "chapter": 0,
-  "is_mandatory": true,
-  "narrative_context": "Lyra precisa preparar uma infusão para estabilizar a respiração do protagonista na atmosfera da cratera. A receita base produz 1 dose com 4 folhas de anis e 6 gotas de óleo de linho, mas são necessárias 3 doses completas.",
-  "prompt": "Para cada dose da tisana, misturam-se 4 folhas de anis e 6 gotas de óleo de linho. Quantas folhas de anis e quantas gotas de óleo de linho são necessárias para produzir exatamente 3 doses?",
-  "data_and_constraints": {
-    "ratio": "4:6",
-    "target_doses": 3
-  },
-  "input_type": "TEXT_INPUT",
-  "solution": "12, 18",
-  "step_by_step_explanation": "1. Identifica-se a quantidade unitária por dose: 4 folhas e 6 gotas.\n2. Multiplica-se cada quantidade pelo número de doses desejadas (3):\n   Folhas = 4 * 3 = 12\n   Gotas = 6 * 3 = 18\n3. A proporção original 4/6 = 2/3 mantém-se equivalente a 12/18 = 2/3.",
-  "accepted_answers": [
-    "12, 18",
-    "12; 18",
-    "12 e 18",
-    "12 folhas e 18 gotas",
-    "12,18"
-  ],
-  "common_errors": [
-    {
-      "pattern": "7, 9",
-      "feedback": "Lembre-se de que triplicar uma receita exige multiplicar cada ingrediente por 3, e não somar 3 unidades."
+    "id": "PUZ_MATH_001",
+    "title": "A Proporção da Tisana Botânica",
+    "educational_area": "MATHEMATICS",
+    "subcategory": "MATH-GEN",
+    "target_skill": "Calcular proporções diretas simples para dimensionar quantidades de reagentes.",
+    "difficulty": 1,
+    "chapter": 0,
+    "is_mandatory": true,
+    "narrative_context": "Ao despertar na Cratera do Vidro Azul com a respiração afetada pelo ar salino denso, você encontra Lyra. Para estabilizar sua condição pulmonar e prosseguir na investigação, é urgente preparar uma infusão terapêutica concentrada.",
+    "prompt": "Prepare os ingredientes para 3 doses da infusão. Quantas folhas de anis e quantas gotas de óleo de linho Lyra precisa utilizar?",
+    "input_type": "MULTI_FIELD",
+    "fields": [
+        {
+            "id": "leaves",
+            "label": "Folhas de anis:",
+            "placeholder": "Ex: 12",
+            "unit": "folhas",
+            "expected": 12
+        },
+        {
+            "id": "drops",
+            "label": "Gotas de óleo de linho:",
+            "placeholder": "Ex: 18",
+            "unit": "gotas",
+            "expected": 18
+        }
+    ],
+    "action_button_text": "Preparar Infusão 🌿",
+    "visual_data": {
+        "type": "table",
+        "title": "Receita Base da Tisana Botânica",
+        "headers": ["Ingrediente", "Para 1 dose", "Para 3 doses"],
+        "rows": [
+            ["Folhas de anis", "4 folhas", "?"],
+            ["Gotas de óleo de linho", "6 gotas", "?"]
+        ]
     },
-    {
-      "pattern": "12, 6",
-      "feedback": "Para manter a concentração correta do remédio, ambos os reagentes devem ser escalados na mesma proporção."
-    }
-  ],
-  "hints": [
-    {
-      "level": 1,
-      "cost_lumis": 0,
-      "text": "Pense em fazer uma dose, depois outra igual, e uma terceira igual. O que acontece com o total de cada item?"
+    "solution": "12 folhas e 18 gotas.",
+    "step_by_step_explanation": "1. Identifica-se a quantidade unitária por dose: 4 folhas de anis e 6 gotas de óleo de linho.\n2. Para preparar 3 doses completas, multiplica-se cada ingrediente por 3:\n   • Folhas de anis: 4 × 3 = 12 folhas.\n   • Gotas de óleo de linho: 6 × 3 = 18 gotas.\n3. A proporção matemática original de 4 para 6 (4/6 = 2/3) mantém-se rigorosamente preservada em 12 para 18 (12/18 = 2/3), garantindo a eficácia terapêutica da infusão.",
+    "accepted_answers": [
+        "12, 18",
+        "12 folhas e 18 gotas",
+        "12 e 18",
+        "12; 18"
+    ],
+    "common_errors": [
+        {
+            "pattern": "(7, 9)",
+            "feedback": "Atenção à proporção: para triplicar a receita (3 doses), cada ingrediente deve ser multiplicado por 3, e não somado a 3."
+        },
+        {
+            "pattern": "(12, 6)",
+            "feedback": "Você calculou corretamente as 12 folhas, mas manteve o óleo em 1 dose (6). Para 3 doses, multiplique também 6 por 3."
+        },
+        {
+            "pattern": "(4, 18)",
+            "feedback": "Você calculou corretamente as 18 gotas de óleo, mas manteve as folhas em 1 dose (4). Multiplique também 4 por 3."
+        }
+    ],
+    "hints": [
+        {
+            "level": 1,
+            "cost_lumis": 0,
+            "text": "Você precisa preparar três vezes a receita original. O que acontece com cada quantidade quando o número de doses triplica?"
+        },
+        {
+            "level": 2,
+            "cost_lumis": 10,
+            "text": "Multiplique a quantidade de folhas por 3. Faça o mesmo com a quantidade de gotas de óleo."
+        },
+        {
+            "level": 3,
+            "cost_lumis": 20,
+            "text": "Para as folhas: 4 × 3 = 12. Para as gotas de óleo: 6 × 3 = 18."
+        }
+    ],
+    "transfer_example": "Ajustar os ingredientes de uma receita culinária para mais convidados mantendo a proporção de sabor e consistência.",
+    "rewards": {
+        "erudition_xp": 50,
+        "lumis": 25,
+        "codex_entry_id": "COD_MATH_001"
     },
-    {
-      "level": 2,
-      "cost_lumis": 10,
-      "text": "Se 1 dose usa 4 folhas, 3 doses usarão 4 x 3. Aplique o mesmo raciocínio às gotas."
-    },
-    {
-      "level": 3,
-      "cost_lumis": 20,
-      "text": "Calcule 4 x 3 para obter as folhas (12) e 6 x 3 para as gotas (18)."
-    }
-  ],
-  "transfer_example": "Ajustar os ingredientes de uma receita culinária de bolo para 4 pessoas quando se deseja servir 12 convidados.",
-  "rewards": {
-    "erudition_xp": 50,
-    "lumis": 25,
-    "codex_entry_id": "COD_MATH_001"
-  },
-  "prerequisites": [],
-  "validation_criteria": "Homotetia direta com fator de escala k=3."
+    "validation_criteria": "Proporcionalidade direta com fator de escala k = 3."
 }

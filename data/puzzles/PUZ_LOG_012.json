@@ -1,0 +1,60 @@
+﻿{
+    "id":  "PUZ_LOG_012",
+    "title":  "A Detecção de Falácias Retóricas",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Identificar falácias argumentativas de ataque à pessoa (*Ad Hominem*), Espantalho e Falsa Dicotomia em discursos públicos.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  false,
+    "narrative_context":  "Diante da assembleia dos cidadãos de Val-Serena, um porta-voz mercantil tenta desacreditar as pesquisas botânicas de Lyra com o seguinte discurso: \"Não devemos dar ouvidos aos alertas da jovem Lyra sobre os aquedutos. Afinal, ela é apenas uma garota do campo, neta de um rebelde que foi expulso da cidade. Portanto, seus relatórios sobre a água estão errados.\"",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar falácias argumentativas de ataque à pessoa (*Ad Hominem*), Espantalho e Falsa Dicotomia em discursos públicos.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Argumento Ad Hominem.",
+    "step_by_step_explanation":  "1. A validade científica de um relatório sobre a contaminação da água depende de medições químicas, dados empíricos e análises laboratoriais.\r\n  2. O orador não contesta nenhuma medição química ou dado técnico apresentado no relatório.\r\n  3. Em vez disso, o orador ataca as características pessoais de Lyra (sua idade, origem rural e parentesco familiar).\r\n  4. Desqualificar uma tese atacando a pessoa que a profere, e não o argumento em si, constitui a clássica falácia **Ad Hominem** (Ataque à Pessoa).",
+    "accepted_answers":  [
+                             "Argumento Ad Hominem",
+                             "Ad Hominem",
+                             "ad hominem`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Espantalho",
+                              "feedback":  "Falácia do espantalho ocorre quando o oponente distorce o argumento do outro para facilitar a refutação. Aqui, o orador atacou diretamente a pessoa de Lyra."
+                          },
+                          {
+                              "pattern":  "Falsa Dicotomia",
+                              "feedback":  "Falsa dicotomia seria dizer: \u0027Ou você apoia a corporação, ou você quer ver a cidade destruída\u0027. O ataque foi dirigido ao indivíduo."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Observe se o orador fala sobre as propriedades da água ou sobre quem escreveu o texto."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "O orador critica a idade de Lyra e o passado de sua família em vez de testar os dados científicos."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "O ataque direto à pessoa em vez da análise de suas ideias é a definição de \u0027Ad Hominem\u0027."
+                  }
+              ],
+    "transfer_example":  "Reconhecer táticas de desinformação em redes sociais e debates eleitorais contemporâneos.",
+    "rewards":  {
+                    "erudition_xp":  220,
+                    "lumis":  110,
+                    "codex_entry_id":  "COD_LOG_012"
+                },
+    "validation_criteria":  "Teoria da argumentação pragmadialética (Violação da Regra da Liberdade de Argumentação).",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Argumento Ad Hominem",
+                    "Espantalho",
+                    "Falsa Dicotomia"
+                ]
+}

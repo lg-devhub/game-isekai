@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_SCI_012",
+    "title":  "O Circuito Elétrico de Solemnia",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Calcular a resistência equivalente de resistores em série e em paralelo e determinar a corrente elétrica total ($U = R \\cdot i$).",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  false,
+    "narrative_context":  "Para ativar um condutor de cobre nas fundações de Ark-Mnemona, uma bateria arcaica de discos de zinco e cobre fornece uma tensão contínua de 24 Volts. O circuito possui dois resistores idênticos de 6 Ohms ligados em série, que estão conectados em sequência com um terceiro resistor de 12 Ohms também em série.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Calcular a resistência equivalente de resistores em série e em paralelo e determinar a corrente elétrica total ($U = R \\cdot i$).",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "1.",
+    "step_by_step_explanation":  "1. Em uma associação de resistores em série, a resistência equivalente total ($R_{\\text{eq}}$) é a soma simples de todas as resistências individuais:\r\n     $$R_{\\text{eq}} = R_1 + R_2 + R_3$$\r\n     $$R_{\\text{eq}} = 6\\,\\Omega + 6\\,\\Omega + 12\\,\\Omega = 24\\,\\Omega$$\r\n  2. Aplica-se a Primeira Lei de Ohm para encontrar a corrente elétrica ($i$):\r\n     $$U = R_{\\text{eq}} \\times i \\implies i = \\frac{U}{R_{\\text{eq}}}$$\r\n  3. Substituem-se os valores:\r\n     $$i = \\frac{24 \\text{ Volts}}{24 \\text{ Ohms}} = 1 \\text{ Ampere}$$",
+    "accepted_answers":  [
+                             "1",
+                             "1 A",
+                             "1 ampere",
+                             "1 Ampere`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "24",
+                              "feedback":  "24 Ohms é a resistência equivalente. Divida a tensão de 24 Volts por essa resistência para obter a corrente elétrica."
+                          },
+                          {
+                              "pattern":  "2",
+                              "feedback":  "Lembre-se de somar os três resistores: $6 + 6 + 12 = 24\\,\\Omega$."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Como todos os resistores estão em série (um atrás do outro no mesmo fio), some os valores das três resistências."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "A soma das resistências é $6 + 6 + 12 = 24$ Ohms."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "Pela Lei de Ohm ($i = U / R$), divida 24 Volts por 24 Ohms. O resultado é 1 Ampere."
+                  }
+              ],
+    "transfer_example":  "Instalações elétricas residenciais e dimensionamento de circuitos em placas de computador e robótica escolar.",
+    "rewards":  {
+                    "erudition_xp":  220,
+                    "lumis":  110,
+                    "codex_entry_id":  "COD_SCI_012"
+                },
+    "validation_criteria":  "Leis de Kirchhoff e relação linear de condutividade ôhmica.",
+    "action_button_text":  "Confirmar Análise 🔬"
+}

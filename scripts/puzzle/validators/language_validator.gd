@@ -15,19 +15,26 @@ static func validate(user_input: Variant, puzzle_data: Dictionary) -> Dictionary
 		if user_norm == _normalize(str(acc)):
 			return {"is_correct": true, "diagnostic": ""}
 	
-	# Verifica se opção inicia com a letra da alternativa (ex: "A", "Opção A")
-	if expected_norm.begins_with("a)") and (user_norm == "a" or user_norm == "opcao a"):
-		return {"is_correct": true, "diagnostic": ""}
-	if expected_norm.begins_with("b)") and (user_norm == "b" or user_norm == "opcao b"):
-		return {"is_correct": true, "diagnostic": ""}
-	if expected_norm.begins_with("c)") and (user_norm == "c" or user_norm == "opcao c"):
-		return {"is_correct": true, "diagnostic": ""}
-	if expected_norm.begins_with("d)") and (user_norm == "d" or user_norm == "opcao d"):
+	# Verifica se resposta numérica é esperada (como no manifesto PUZ_LANG_001)
+	var user_num = _extract_number(str(user_input))
+	var target_num = _extract_number(str(expected_solution))
+	if user_num != null and target_num != null and user_num == target_num:
 		return {"is_correct": true, "diagnostic": ""}
 	
+	# Verifica se opção inicia com a letra da alternativa (ex: "A", "Opção A")
+	if expected_norm.begins_with("a") and (user_norm == "a" or user_norm == "opcaoa"):
+		return {"is_correct": true, "diagnostic": ""}
+	if expected_norm.begins_with("b") and (user_norm == "b" or user_norm == "opcaob"):
+		return {"is_correct": true, "diagnostic": ""}
+	if expected_norm.begins_with("c") and (user_norm == "c" or user_norm == "opcaoc"):
+		return {"is_correct": true, "diagnostic": ""}
+	if expected_norm.begins_with("d") and (user_norm == "d" or user_norm == "opcaod"):
+		return {"is_correct": true, "diagnostic": ""}
+	
+	# Diagnóstico de erros comuns
 	var diagnostic_msg = _find_common_error(user_norm, puzzle_data.get("common_errors", []))
 	if diagnostic_msg == "":
-		diagnostic_msg = "A resposta textual ou interpretativa difere da inferencia esperada. Releia o documento atentando para o contexto das palavras."
+		diagnostic_msg = "Sua interpretação difere das evidências textuais apresentadas no documento. Releia o trecho com atenção especial aos termos explícitos e ao contexto."
 	
 	return {"is_correct": false, "diagnostic": diagnostic_msg}
 
@@ -39,8 +46,16 @@ static func _normalize(s: String) -> String:
 	clean = clean.replace("ó", "o").replace("õ", "o").replace("ô", "o")
 	clean = clean.replace("ú", "u")
 	clean = clean.replace("ç", "c")
-	clean = clean.replace(".", "").replace(",", "").replace("-", "").replace(" ", "")
+	clean = clean.replace(".", "").replace(",", "").replace("-", "").replace(" ", "").replace("`", "")
 	return clean
+
+static func _extract_number(s: String) -> Variant:
+	var regex = RegEx.new()
+	regex.compile("[0-9]+")
+	var m = regex.search(s)
+	if m:
+		return m.get_string().to_int()
+	return null
 
 static func _find_common_error(input_str: String, common_errors: Array) -> String:
 	for err in common_errors:

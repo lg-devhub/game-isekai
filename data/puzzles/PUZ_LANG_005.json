@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_LANG_005",
+    "title":  "A Ironia no Depoimento do Guarda",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Identificar o uso intencional de ironia, eufemismo e hipérbole a partir do tom discursivo e contexto.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  true,
+    "narrative_context":  "Durante o interrogatório sobre o desaparecimento do livro fiscal, o guarda relata com amargura: \"Ah, sim, foi uma noite espetacularmente tranquila! Apenas desabou uma tempestade de areia que derrubou os postes de luz, um bando de contrabandistas arrombou o portão oeste e o alarme soou quatro vezes consecutivas. Uma verdadeira noite de paz e sossego para qualquer sentinela.\"",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar o uso intencional de ironia, eufemismo e hipérbole a partir do tom discursivo e contexto.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Ironia.",
+    "step_by_step_explanation":  "1. O guarda acabou de listar uma série de eventos caóticos e perigosos (tempestade de areia, postes caídos, invasão de contrabandistas e quatro alarmes).\r\n  2. Logo em seguida, ele classifica a mesma noite como \"paz e sossego\".\r\n  3. Dizer exatamente o oposto daquilo que a realidade concreta demonstra, com o intuito de destacar o absurdo, a irritação ou o estresse do momento, é a definição exata de **Ironia**.",
+    "accepted_answers":  [
+                             "Ironia",
+                             "ironia`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Antítese",
+                              "feedback":  "Embora haja contraste entre a confusão e a paz, a frase em si tem como objetivo afirmar o contrário da verdade de forma sarcástica, o que caracteriza a ironia."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "O guarda realmente achou a noite calma, ou ele está sendo sarcástico?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Quando afirmamos o oposto do que aconteceu para fazer uma crítica bem-humorada ou ácida, usamos a ironia."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "O recurso retórico é a ironia."
+                  }
+              ],
+    "transfer_example":  "Leitura crítica de charges de jornal, crônicas humorísticas e sátiras políticas.",
+    "rewards":  {
+                    "erudition_xp":  100,
+                    "lumis":  50,
+                    "codex_entry_id":  "COD_LANG_005"
+                },
+    "validation_criteria":  "Definição pragmática de implicatura conversacional violando a máxima da qualidade de Grice.",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "Ironia",
+                    "Antítese",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

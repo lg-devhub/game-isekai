@@ -1,0 +1,70 @@
+{
+    "id": "PUZ_LOG_002",
+    "title": "A Chave dos Três Guardiões",
+    "educational_area": "LOGIC",
+    "subcategory": "LOG-GEN",
+    "target_skill": "Avaliar o valor de verdade de proposições condicionais (p -> q).",
+    "difficulty": 1,
+    "chapter": 1,
+    "is_mandatory": false,
+    "narrative_context": "Uma porta automática ancestral possui uma placa de instruções gravada pelos guardiões: «Se a alavanca Dourada for puxada, a alavanca Prateada também deve ser puxada. Se a alavanca Prateada for puxada, a alavanca de Ferro deve permanecer para cima.» Você observa que a alavanca Dourada foi puxada para baixo.",
+    "prompt": "Com a alavanca Dourada puxada para baixo, qual é a posição obrigatória da alavanca de Ferro?",
+    "input_type": "MULTIPLE_CHOICE",
+    "options": [
+        "Para cima",
+        "Puxada para baixo",
+        "Posição neutra"
+    ],
+    "action_button_text": "Posicionar Alavanca 🗝️",
+    "visual_data": {
+        "type": "clues",
+        "title": "Regras Gravadas na Placa Ancestral",
+        "items": [
+            "Regra 1: Alavanca Dourada puxada -> Alavanca Prateada puxada.",
+            "Regra 2: Alavanca Prateada puxada -> Alavanca de Ferro PARA CIMA.",
+            "Fato Atual: A alavanca Dourada acaba de ser puxada."
+        ]
+    },
+    "solution": "Para cima.",
+    "step_by_step_explanation": "1. Fato inicial: A alavanca Dourada está puxada (V).\n2. Pela Regra 1 (Dourada -> Prateada), como a Dourada foi puxada, a Prateada obrigatoriamente deve ser puxada (Modus Ponens).\n3. Pela Regra 2 (Prateada -> Ferro para cima), como a Prateada está puxada, a alavanca de Ferro deve obrigatoriamente permanecer Para cima.\n4. Portanto, a única posição logicamente válida para destravar a porta é Para cima.",
+    "accepted_answers": [
+        "Para cima",
+        "para cima",
+        "Cima",
+        "cima"
+    ],
+    "common_errors": [
+        {
+            "pattern": "Puxada para baixo",
+            "feedback": "Atenção ao encadeamento condicional: se a Dourada foi puxada, a Prateada também foi; e a Regra 2 exige explicitamente que a de Ferro fique para cima."
+        },
+        {
+            "pattern": "Posição neutra",
+            "feedback": "As duas regras condicionais determinam diretamente a posição de Ferro. Não há ambiguidade."
+        }
+    ],
+    "hints": [
+        {
+            "level": 1,
+            "cost_lumis": 0,
+            "text": "Siga a cadeia de causa e efeito: a primeira alavanca define a segunda, e a segunda define a terceira."
+        },
+        {
+            "level": 2,
+            "cost_lumis": 10,
+            "text": "Como a Dourada foi puxada, a Prateada obrigatoriamente foi acionada."
+        },
+        {
+            "level": 3,
+            "cost_lumis": 20,
+            "text": "A Regra 2 determina que se a Prateada for puxada, a de Ferro deve ficar para cima."
+        }
+    ],
+    "transfer_example": "Programação de sistemas de segurança sequenciais e circuitos de intertravamento industrial.",
+    "rewards": {
+        "erudition_xp": 60,
+        "lumis": 30,
+        "codex_entry_id": "COD_LOG_002"
+    },
+    "validation_criteria": "Aplicação do Modus Ponens em cadeia de duas implicações lógicas diretas."
+}

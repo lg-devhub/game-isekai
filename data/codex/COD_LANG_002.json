@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_002",
+    "title":  "Metáforas e Descrições Sensoriais na Literatura",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Interpretar metáforas, personificações e pistas sensoriais em versos poéticos.",
+    "concept_summary":  "No verso de uma das páginas do diário do avô de Lyra, há uma quadra poética que indica qual planta silvestre neutraliza a irritação nos olhos causada pelo pó de quartzo. Interpretar metáforas, personificações e pistas sensoriais em versos poéticos.",
+    "formal_explanation":  "1. Analisa-se cada metáfora e pista morfológica dos versos:\r\n     - *Coroa amarela:* flor com capítulos florais amarelos brilhantes.\r\n     - *Choro leite branco:* caule fistuloso que exsuda látex leitoso esbranquiçado ao ser partido.\r\n     - *Ao vento de outono minhas plumas doei:* sementes providas de plumas (aquênios com papus) que se dispersam no ar quando sopradas.\r\n     - *Chá calmante:* propriedades anti-inflamatórias descritas na botânica médica popular.\r\n  2. Todas as quatro características correspondem perfeitamente à morfologia vegetal do **Dente-de-leão** (*Taraxacum officinale*).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Analisa-se cada metáfora e pista morfológica dos versos:\r\n     - *Coroa amarela:* flor com capítulos florais amarelos brilhantes.\r\n     - *Choro leite branco:* caule fistuloso que exsuda látex leitoso esbranquiçado ao ser partido.\r\n     - *Ao vento de outono minhas plumas doei:* sementes providas de plumas (aquênios com papus) que se dispersam no ar quando sopradas.\r\n     - *Chá calmante:* propriedades anti-inflamatórias descritas na botânica médica popular.\r\n  2. Todas as quatro características correspondem perfeitamente à morfologia vegetal do **Dente-de-leão** (*Taraxacum officinale*)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_002"
+                                      ],
+    "related_real_world_application":  "Análise de recursos estilísticos e figuras de linguagem em textos literários e poesia lírica."
+}

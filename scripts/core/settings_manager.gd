@@ -73,3 +73,46 @@ func set_bus_volume(bus_name: String, linear_vol: float) -> void:
 		var db_val = linear_to_db(clamp(linear_vol, 0.0001, 1.0))
 		AudioServer.set_bus_volume_db(bus_idx, db_val)
 		AudioServer.set_bus_mute(bus_idx, linear_vol <= 0.001)
+
+func get_volume(bus_name: String) -> float:
+	match bus_name.to_lower():
+		"master": return master_volume
+		"music": return music_volume
+		"sfx": return sfx_volume
+		"ambience": return ambience_volume
+		"ui": return ui_volume
+		_: return 0.8
+
+func set_volume(bus_name: String, value: float) -> void:
+	match bus_name.to_lower():
+		"master": master_volume = value
+		"music": music_volume = value
+		"sfx": sfx_volume = value
+		"ambience": ambience_volume = value
+		"ui": ui_volume = value
+	set_bus_volume(bus_name, value)
+	save_settings()
+
+func get_font_scale() -> float:
+	return font_size_scale
+
+func set_font_scale(value: float) -> void:
+	font_size_scale = value
+	save_settings()
+
+func get_colorblind_mode() -> bool:
+	return high_contrast
+
+func set_colorblind_mode(value: bool) -> void:
+	high_contrast = value
+	save_settings()
+
+var reduce_motion: bool = false
+
+func get_reduce_motion() -> bool:
+	return reduce_motion
+
+func set_reduce_motion(value: bool) -> void:
+	reduce_motion = value
+	save_settings()
+

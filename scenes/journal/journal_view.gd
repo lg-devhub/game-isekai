@@ -322,5 +322,7 @@ func _on_btn_back_pressed() -> void:
 	AudioManager.play_ui("SFX_UI_TAP")
 	if GameManager.previous_state == GameManager.GameState.PUZZLE:
 		SceneManager.change_scene("res://scenes/puzzle/PuzzleView.tscn")
+	elif GameManager.previous_state == GameManager.GameState.EXPLORATION:
+		SceneManager.change_scene("res://scenes/quest_map/QuestMapView.tscn")
 	else:
 		SceneManager.change_scene("res://scenes/menus/MainMenu.tscn")

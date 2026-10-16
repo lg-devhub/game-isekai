@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_005",
+    "title":  "Análise Exaustiva de Hipóteses e Redução ao Absurdo",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Testar hipóteses de veracidade mutuamente exclusivas e eliminar inconsistências lógicas internas.",
+    "concept_summary":  "Em uma capela lateral de Val-Serena, há três baús fechados (Dourado, Prateado e de Chumbo). Exatamente um deles contém o selo original da cidade. Cada baú tem uma inscrição gravada na tampa, mas apenas uma das três inscrições é verdadeira: Testar hipóteses de veracidade mutuamente exclusivas e eliminar inconsistências lógicas internas.",
+    "formal_explanation":  "- Vamos testar as três hipóteses de localização do selo:\r\n  - **Hipótese 1: O selo está no Baú Dourado.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Verdadeira.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Verdadeira (já que está no Dourado).\r\n    - Isso geraria pelo menos 2 frases verdadeiras, o que viola a regra de que *apenas uma* é verdadeira. Portanto, Hipótese 1 é falsa.\r\n  - **Hipótese 2: O selo está no Baú de Chumbo.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Falsa.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Verdadeira (está no Chumbo).\r\n    - Inscrição do Chumbo (\"Não está no Dourado\"): Verdadeira (está no Chumbo).\r\n    - Novamente temos 2 frases verdadeiras. Hipótese 2 é falsa.\r\n  - **Hipótese 3: O selo está no Baú Prateado.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Falsa.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Falsa (pois está nele!).\r\n    - Inscrição do Chumbo (\"Não está no Dourado\"): Verdadeira (já que está no Prateado).\r\n    - Aqui temos exatamente 1 frase verdadeira (a do Chumbo) e 2 falsas (Dourado e Prateado).\r\n  - Conclusão inequívoca: o selo está no **Baú Prateado**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "- Vamos testar as três hipóteses de localização do selo:\r\n  - **Hipótese 1: O selo está no Baú Dourado.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Verdadeira.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Verdadeira (já que está no Dourado).\r\n    - Isso geraria pelo menos 2 frases verdadeiras, o que viola a regra de que *apenas uma* é verdadeira. Portanto, Hipótese 1 é falsa.\r\n  - **Hipótese 2: O selo está no Baú de Chumbo.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Falsa.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Verdadeira (está no Chumbo).\r\n    - Inscrição do Chumbo (\"Não está no Dourado\"): Verdadeira (está no Chumbo).\r\n    - Novamente temos 2 frases verdadeiras. Hipótese 2 é falsa.\r\n  - **Hipótese 3: O selo está no Baú Prateado.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Falsa.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Falsa (pois está nele!).\r\n    - Inscrição do Chumbo (\"Não está no Dourado\"): Verdadeira (já que está no Prateado).\r\n    - Aqui temos exatamente 1 frase verdadeira (a do Chumbo) e 2 falsas (Dourado e Prateado).\r\n  - Conclusão inequívoca: o selo está no **Baú Prateado**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_005"
+                                      ],
+    "related_real_world_application":  "Testes de consistência lógica em provas forenses e validação de requisitos de software (garantia de unicidade)."
+}

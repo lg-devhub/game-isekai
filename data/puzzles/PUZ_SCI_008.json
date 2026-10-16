@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_SCI_008",
+    "title":  "A Refração da Luz nos Prismas de Quartzo",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Aplicar a Lei da Refração ($n_1 \\cdot \\text{sen}(\\theta_1) = n_2 \\cdot \\text{sen}(\\theta_2)$) e compreender o desvio da trajetória da luz em meios mais densos.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  true,
+    "narrative_context":  "Para ativar o sensor óptico do autômato Talos-4, um feixe de luz monocromático precisa atingir o núcleo de quartzo. O raio viaja pelo ar ($n_1 = 1{,}0$) e incide na face plana do bloco de cristal ($n_2 = 1{,}5$) com um ângulo de incidência de $30^\\circ$ em relação à linha normal à superfície.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Aplicar a Lei da Refração ($n_1 \\cdot \\text{sen}(\\theta_1) = n_2 \\cdot \\text{sen}(\\theta_2)$) e compreender o desvio da trajetória da luz em meios mais densos.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "A) O raio se aproxima da linha normal, resultando em um ângulo de refração menor que 30°.",
+    "step_by_step_explanation":  "1. Aplica-se a Lei de Snell-Descartes:\r\n     $$n_1 \\cdot \\text{sen}(\\theta_1) = n_2 \\cdot \\text{sen}(\\theta_2)$$\r\n  2. Substituem-se os índices de refração:\r\n     $$1{,}0 \\cdot \\text{sen}(30^\\circ) = 1{,}5 \\cdot \\text{sen}(\\theta_2)$$\r\n     $$1{,}0 \\cdot 0{,}5 = 1{,}5 \\cdot \\text{sen}(\\theta_2)$$\r\n     $$\\text{sen}(\\theta_2) = \\frac{0{,}5}{1{,}5} = \\frac{1}{3} \\approx 0{,}333$$\r\n  3. Como $\\text{sen}(30^\\circ) = 0{,}50$ e o novo seno é $0{,}333$, o ângulo refratado $\\theta_2 \\approx 19{,}5^\\circ$.\r\n  4. Princípio geral fundamental da física óptica: ao passar de um meio menos refringente (ar) para um meio mais refringente (cristal/água/vidro), a velocidade da luz diminui e o raio refratado **aproxima-se da reta normal**, tornando o ângulo refratado menor que o incidente (**Opção A**).",
+    "accepted_answers":  [
+                             "A) O raio se aproxima da linha normal, resultando em um ângulo de refração menor que 30°.",
+                             "Opção A",
+                             "A`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Opção B",
+                              "feedback":  "O raio só se afasta da normal quando passa de um meio mais denso para um menos denso (por exemplo, saindo da água para o ar). Ao entrar no cristal, ele se aproxima da normal."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no que acontece quando um carro passa do asfalto liso para a areia pesada: as rodas freiam e o carro muda de direção para o lado mais lento."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "Ao entrar em um meio mais denso, a luz é desacelerada e é \u0027puxada\u0027 para mais perto da linha normal (a linha reta perpendicular à superfície)."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "O ângulo de saída no cristal será menor do que os 30° iniciais. A alternativa correta é a A."
+                  }
+              ],
+    "transfer_example":  "Ilusão de ótica que faz uma colher parecer quebrada quando colocada em um copo com água, e cálculo de lentes de óculos de grau.",
+    "rewards":  {
+                    "erudition_xp":  160,
+                    "lumis":  80,
+                    "codex_entry_id":  "COD_SCI_008"
+                },
+    "validation_criteria":  "Teorema do princípio do tempo mínimo de Fermat na propagação ondulatória.",
+    "action_button_text":  "Confirmar Análise 🔬",
+    "options":  [
+                    "A) O raio se aproxima da linha normal, resultando em um ângulo de refração menor que 30°",
+                    "Opção B",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

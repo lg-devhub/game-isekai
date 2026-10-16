@@ -1,0 +1,54 @@
+﻿{
+    "id":  "PUZ_LOG_006",
+    "title":  "A Classificação das Ligas Minerais",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Interpretar relações de pertinência, interseção e inclusão entre conjuntos finitos.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Lyra está organizando o mostruário de 30 amostras minerais. O conjunto $A$ contém os minerais resistentes ao calor (20 amostras). O conjunto $B$ contém os minerais condutores de eletricidade (15 amostras). Sabe-se que 8 amostras possuem ambas as propriedades ao mesmo tempo ($A \\cap B$). Quantas amostras não possuem nenhuma dessas duas qualidades?",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Interpretar relações de pertinência, interseção e inclusão entre conjuntos finitos.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "3.",
+    "step_by_step_explanation":  "1. Aplica-se o Princípio da Inclusão-Exclusão para encontrar a união dos conjuntos ($A \\cup B$):\r\n     $$|A \\cup B| = |A| + |B| - |A \\cap B|$$\r\n     $$|A \\cup B| = 20 + 15 - 8 = 27 \\text{ minerais}$$\r\n  2. 27 minerais possuem ao menos uma das duas características.\r\n  3. Para achar quantos não possuem nenhuma das duas, subtrai-se esse valor do universo total:\r\n     $$\\text{Nenhum} = |U| - |A \\cup B| = 30 - 27 = 3 \\text{ minerais}$$",
+    "accepted_answers":  [
+                             "3",
+                             "3 minerais`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "0 ou negativo",
+                              "feedback":  "Os 8 minerais que possuem as duas características foram contados duas vezes (no grupo A e no grupo B). Subtraia a interseção antes de somar."
+                          },
+                          {
+                              "pattern":  "11",
+                              "feedback":  "Lembre-se da fórmula de conjuntos: União = A + B - Interseção. Calcule a união primeiro."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Se 8 minerais estão nos dois grupos, eles não podem ser contados duas vezes."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Os minerais que só resistem ao calor são $20 - 8 = 12$. Os que só conduzem são $15 - 8 = 7$. Some: $12 + 7 + 8$."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "A soma das amostras especiais é $12 + 7 + 8 = 27$. Como o total de amostras é 30, sobram $30 - 27 = 3$."
+                  }
+              ],
+    "transfer_example":  "Interpretação de pesquisas de opinião pública (ex.: percentual de pessoas que leem notícias pela internet, jornal impresso ou ambos).",
+    "rewards":  {
+                    "erudition_xp":  110,
+                    "lumis":  55,
+                    "codex_entry_id":  "COD_LOG_006"
+                },
+    "validation_criteria":  "Teorema da cardinalidade da união de conjuntos finitos de De Morgan: $|\\overline{A \\cup B}| = |U| - (|A| + |B| - |A \\cap B|)$.",
+    "action_button_text":  "Validar Dedução 🧩"
+}

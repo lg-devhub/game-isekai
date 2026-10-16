@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_MATH_014",
+    "title":  "A Função Exponencial do Sal Mineral",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Modelar crescimento exponencial discreto com taxa percentual constante e prever valores futuros ($M = C(1+i)^t$).",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  false,
+    "narrative_context":  "Lyra e o protagonista estão estudando em laboratório uma amostra de cristal de sal que se replica por ressonância química. A colônia inicial tem massa de 100 gramas e dobra de tamanho a cada 3 horas quando mantida na umidade padrão do estuário. Eles precisam calcular a massa da amostra após 12 horas.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Modelar crescimento exponencial discreto com taxa percentual constante e prever valores futuros ($M = C(1+i)^t$).",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "1600.",
+    "step_by_step_explanation":  "1. Determina-se quantas vezes o período de duplicação ocorre em 12 horas:\r\n     $$n = \\frac{12 \\text{ horas}}{3 \\text{ horas}} = 4 \\text{ ciclos de duplicação}$$\r\n  2. Modela-se o crescimento exponencial com base 2:\r\n     $$M(t) = M_0 \\times 2^n$$\r\n  3. Substituem-se os valores:\r\n     $$M(12) = 100 \\times 2^4 = 100 \\times 16 = 1600 \\text{ gramas}$$",
+    "accepted_answers":  [
+                             "1600",
+                             "1600 g",
+                             "1600 gramas",
+                             "1.600`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "800",
+                              "feedback":  "Em 12 horas ocorrem $12 / 3 = 4$ ciclos de duplicação, e não 3. Calcule $2^4$."
+                          },
+                          {
+                              "pattern":  "400",
+                              "feedback":  "Crescimento exponencial não é uma multiplicação linear simples. A cada ciclo o valor dobra sobre o total anterior ($100 \\to 200 \\to 400 \\to 800 \\to 1600$)."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Descubra quantos ciclos de 3 horas cabem em 12 horas."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "Cabem 4 ciclos completos. A massa vai dobrar 4 vezes consecutivas."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "Faça as multiplicações sucessivas: $100 \\times 2 = 200 \\to 400 \\to 800 \\to 1600$ gramas."
+                  }
+              ],
+    "transfer_example":  "Entender o conceito de juros compostos em investimentos financeiros ou a disseminação de epidemias virais descontroladas.",
+    "rewards":  {
+                    "erudition_xp":  300,
+                    "lumis":  150,
+                    "codex_entry_id":  "COD_MATH_014"
+                },
+    "validation_criteria":  "Solução analítica da equação a diferenças finitas: $y_n = y_0 \\cdot 2^n$ para $n = 4$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

@@ -61,6 +61,28 @@ func submit_answer(user_input: Variant) -> bool:
 	if current_puzzle_data.is_empty():
 		return false
 	
+	# Validação prévia de campos não preenchidos
+	if user_input == null:
+		AudioManager.play_sfx("SFX_PUZZLE_ERROR")
+		emit_signal("puzzle_attempt_failed", "Por favor, preencha as informações solicitadas antes de verificar.")
+		return false
+	
+	if user_input is String and user_input.strip_edges().is_empty():
+		AudioManager.play_sfx("SFX_PUZZLE_ERROR")
+		emit_signal("puzzle_attempt_failed", "Por favor, insira sua dedução antes de prosseguir.")
+		return false
+	
+	if user_input is Dictionary:
+		var has_empty = false
+		for k in user_input.keys():
+			if str(user_input[k]).strip_edges().is_empty():
+				has_empty = true
+				break
+		if has_empty:
+			AudioManager.play_sfx("SFX_PUZZLE_ERROR")
+			emit_signal("puzzle_attempt_failed", "Por favor, preencha todos os campos do formulário antes de confirmar.")
+			return false
+	
 	current_attempts += 1
 	var area = current_puzzle_data.get("educational_area", "MATHEMATICS").to_upper()
 	var result: Dictionary = {"is_correct": false, "diagnostic": ""}
@@ -86,24 +108,68 @@ func submit_answer(user_input: Variant) -> bool:
 		emit_signal("puzzle_attempt_failed", result.get("diagnostic", "Tente novamente."))
 		return false
 
-func request_hint(target_level: int) -> String:
+func get_hint_cost(target_level: int) -> int:
 	if current_puzzle_data.is_empty():
-		return ""
+		return 0
+	var hints: Array = current_puzzle_data.get("hints", [])
+	if target_level <= 0 or target_level > hints.size():
+		return 0
+	if target_level <= current_hints_unlocked:
+		return 0
+	return hints[target_level - 1].get("cost_lumis", 0)
+
+func is_hint_unlocked(target_level: int) -> bool:
+	return target_level <= current_hints_unlocked
+
+func request_hint(target_level: int) -> Dictionary:
+	if current_puzzle_data.is_empty():
+		return {"success": false, "text": "", "level": target_level, "cost": 0, "error": "Nenhum enigma carregado."}
 	
 	var hints: Array = current_puzzle_data.get("hints", [])
 	if target_level <= 0 or target_level > hints.size():
-		return ""
+		return {"success": false, "text": "", "level": target_level, "cost": 0, "error": "Dica indisponível para este desafio."}
+	
+	# Exige desbloqueio em ordem progressiva (1 -> 2 -> 3)
+	if target_level > current_hints_unlocked + 1:
+		return {
+			"success": false,
+			"text": "",
+			"level": target_level,
+			"cost": 0,
+			"error": "Desbloqueie a Dica %d antes de consultar a Dica %d." % [current_hints_unlocked + 1, target_level]
+		}
 	
 	var hint_data: Dictionary = hints[target_level - 1]
-	var cost: int = hint_data.get("cost_lumis", 0)
 	var text: String = hint_data.get("text", "")
 	
-	if target_level > current_hints_unlocked:
-		current_hints_unlocked = target_level
+	# Se a dica já estiver desbloqueada, exibe gratuitamente sem descontar Lúmis
+	if target_level <= current_hints_unlocked:
+		AudioManager.play_sfx("SFX_PAGE_TURN")
+		emit_signal("hint_revealed", target_level, text, 0)
+		return {"success": true, "text": text, "level": target_level, "cost": 0, "error": ""}
 	
+	var cost: int = hint_data.get("cost_lumis", 0)
+	var current_lumis: int = SaveSystem.current_save_data.get("economy", {}).get("lumis", 0)
+	
+	if current_lumis < cost:
+		return {
+			"success": false,
+			"text": "",
+			"level": target_level,
+			"cost": cost,
+			"error": "Lúmis insuficientes para a Dica %d (Custo: %d Lúmis | Saldo: %d Lúmis)." % [target_level, cost, current_lumis]
+		}
+	
+	# Deduz custo de Lúmis
+	if cost > 0:
+		SaveSystem.current_save_data["economy"]["lumis"] -= cost
+		SaveSystem.current_save_data["economy"]["total_lumis_spent"] = SaveSystem.current_save_data["economy"].get("total_lumis_spent", 0) + cost
+		SaveSystem.save_game()
+	
+	current_hints_unlocked = target_level
 	AudioManager.play_sfx("SFX_PAGE_TURN")
 	emit_signal("hint_revealed", target_level, text, cost)
-	return text
+	return {"success": true, "text": text, "level": target_level, "cost": cost, "error": ""}
 
 func _handle_solution_success() -> void:
 	var puzzle_id = current_puzzle_data.get("id", "")

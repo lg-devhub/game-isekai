@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_MATH_010",
+    "title":  "O Ângulo de Incidência dos Prismas de Ark-Mnemona",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Utilizar propriedades de triângulos retângulos e razões trigonométricas fundamentais ($\\text{seno}$, $\\text{cosseno}$ e $\\text{tangente}$).",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  true,
+    "narrative_context":  "Para alinhar o feixe de luz solar do heliógrafo principal de Ark-Mnemona com a torre do Bastião Cinzento, o protagonista precisa regular o suporte angular de um grande espelho plano. A torre de recepção está a 60 metros de distância horizontal da base e seu topo fica 60 metros acima do nível do espelho.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Utilizar propriedades de triângulos retângulos e razões trigonométricas fundamentais ($\\text{seno}$, $\\text{cosseno}$ e $\\text{tangente}$).",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "45.",
+    "step_by_step_explanation":  "1. No triângulo formado pelo heliógrafo e o receptor:\r\n     - O cateto adjacente (distância horizontal) é de $60$ metros.\r\n     - O cateto oposto (elevação vertical) é de $60$ metros.\r\n  2. Calcula-se a tangente do ângulo de inclinação $\\theta$:\r\n     $$\\tan(\\theta) = \\frac{\\text{Cateto Oposto}}{\\text{Cateto Adjacente}} = \\frac{60}{60} = 1$$\r\n  3. O ângulo notável cuja tangente é igual a 1 no primeiro quadrante é:\r\n     $$\\theta = 45^\\circ$$\r\n  4. Alternativamente, como os catetos são iguais, o triângulo é retângulo e isósceles. Logo, os dois ângulos agudos são congruentes: $(180^\\circ - 90^\\circ) / 2 = 45^\\circ$.",
+    "accepted_answers":  [
+                             "45",
+                             "45 graus",
+                             "45°`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "30 ou 60",
+                              "feedback":  "Lembre-se: quando a base e a altura de um triângulo retângulo são exatamente iguais, os dois ângulos agudos dividem igualmente os $90^\\circ$ restantes."
+                          },
+                          {
+                              "pattern":  "90",
+                              "feedback":  "A pergunta pede o ângulo de elevação em relação à linha horizontal do solo, e não o ângulo entre os catetos."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Observe que a distância horizontal e a altura vertical são idênticas (60 m e 60 m). Que tipo de triângulo tem dois lados iguais?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "Um triângulo retângulo com dois lados iguais tem seus dois ângulos agudos perfeitamente iguais."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "Se a soma dos três ângulos é $180^\\circ$ e um deles é $90^\\circ$, divida os outros $90^\\circ$ por dois para obter $45^\\circ$."
+                  }
+              ],
+    "transfer_example":  "Determinar a rampa de acessibilidade ideal sabendo o desnível vertical e o comprimento horizontal disponível.",
+    "rewards":  {
+                    "erudition_xp":  200,
+                    "lumis":  100,
+                    "codex_entry_id":  "COD_MATH_010"
+                },
+    "validation_criteria":  "Teorema do triângulo isósceles e função arco-tangente $\\arctan(1) = \\pi/4 \\text{ rad} = 45^\\circ$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

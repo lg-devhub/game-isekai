@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_LANG_009",
+    "title":  "A Etimologia dos Metais de Solemnia",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Reconhecer radicais clássicos na formação de vocábulos eruditos e deduzir significados desconhecidos.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  false,
+    "narrative_context":  "Em um tratado alquímico de Solemnia, o protagonista encontra o termo técnico *Termocromático* para descrever uma liga de bronze especial. O texto antigo diz: \"Esta placa é de natureza termocromática, sendo de grande utilidade para alertar os fundidores sobre riscos de incêndio.\" O que essa propriedade significa na prática?",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Reconhecer radicais clássicos na formação de vocábulos eruditos e deduzir significados desconhecidos.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Muda de cor conforme a variação da temperatura.",
+    "step_by_step_explanation":  "1. Decompõe-se o vocábulo em seus morfemas formativos:\r\n     - *Termo-* provém do grego *thérmē* (calor, temperatura).\r\n     - *-croma / -cromático* provém do grego *chrôma* (cor, matiz).\r\n     - *-tico* é sufixo adjetivador que indica relação ou pertencimento.\r\n  2. A junção semântica literal dos elementos resulta em \"relativo à cor provocada pelo calor\".\r\n  3. Portanto, um objeto termocromático é aquele que **muda de cor conforme a variação da temperatura**.",
+    "accepted_answers":  [
+                             "Muda de cor conforme a variação da temperatura",
+                             "Muda de cor`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Produz faíscas",
+                              "feedback":  "\u0027Croma\u0027 significa cor (como em policromia ou cromossomo), e não luz ou faísca."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no que significa \u0027termômetro\u0027 e o que significa a palavra \u0027monocromático\u0027 (de uma só cor)."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "\u0027Termo\u0027 é calor. \u0027Cromo\u0027 é cor. Junte esses dois conceitos em uma única ação."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "Trata-se de uma matéria que altera suas cores de acordo com a temperatura."
+                  }
+              ],
+    "transfer_example":  "Compreensão do vocabulário científico e médico em artigos de biologia, química e física.",
+    "rewards":  {
+                    "erudition_xp":  160,
+                    "lumis":  80,
+                    "codex_entry_id":  "COD_LANG_009"
+                },
+    "validation_criteria":  "Regras de morfologia derivacional e composição neoclássica do léxico científico.",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "Muda de cor conforme a variação da temperatura",
+                    "Produz faíscas",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

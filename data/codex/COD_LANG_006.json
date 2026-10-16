@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_006",
+    "title":  "Coesão Textual e Operadores Argumentativos",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Selecionar conjunções adequadas para articular relações de causa, oposição, concessão e conclusão em textos argumentativos.",
+    "concept_summary":  "Um guia fluvial do Rio Argênteo deixou instruções sobre os perigos da corredeira: \"As águas da garganta parecem tranquilas na superfície; [...], correntezas profundas puxam os barcos em direção às pedras submersas com força devastadora.\" O protagonista precisa preencher a lacuna com o conectivo que preserva a coerência do alerta. Selecionar conjunções adequadas para articular relações de causa, oposição, concessão e conclusão em textos argumentativos.",
+    "formal_explanation":  "1. A primeira oração apresenta uma percepção visual favorável: \"As águas parecem tranquilas\".\r\n  2. A segunda oração introduz um fato perigoso e inesperado: \"correntezas profundas puxam os barcos para as pedras\".\r\n  3. Entre essas duas orações há uma relação semântica de contraste, oposição ou quebra de expectativa.\r\n  4. Analisam-se as opções:\r\n     - *portanto* e *logo* são conjunções conclusivas (não há conclusão lógica).\r\n     - *porquanto* é uma conjunção causal/explicativa (equivalente a \u0027visto que\u0027).\r\n     - *contudo* é uma conjunção coordenativa adversativa (equivalente a \u0027porém\u0027, \u0027no entanto\u0027, \u0027todavia\u0027).\r\n  5. Portanto, o conectivo adversativo correto é **contudo**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A primeira oração apresenta uma percepção visual favorável: \"As águas parecem tranquilas\".\r\n  2. A segunda oração introduz um fato perigoso e inesperado: \"correntezas profundas puxam os barcos para as pedras\".\r\n  3. Entre essas duas orações há uma relação semântica de contraste, oposição ou quebra de expectativa.\r\n  4. Analisam-se as opções:\r\n     - *portanto* e *logo* são conjunções conclusivas (não há conclusão lógica).\r\n     - *porquanto* é uma conjunção causal/explicativa (equivalente a \u0027visto que\u0027).\r\n     - *contudo* é uma conjunção coordenativa adversativa (equivalente a \u0027porém\u0027, \u0027no entanto\u0027, \u0027todavia\u0027).\r\n  5. Portanto, o conectivo adversativo correto é **contudo**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_006"
+                                      ],
+    "related_real_world_application":  "Redação dissertativo-argumentativa do ENEM e clareza na redação de relatórios científicos."
+}

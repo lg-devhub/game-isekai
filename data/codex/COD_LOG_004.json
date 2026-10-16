@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_004",
+    "title":  "Contradição Lógica e Confronto de Evidências",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Identificar contradições entre relatos de testemunhas e deduzir quem está falando a verdade.",
+    "concept_summary":  "Na investigação de Val-Serena sobre o fechamento indevido da comporta de irrigação, o Inspetor Corvus interroga os dois vigias do turno da noite, Varis e Jonan. Sabe-se que exatamente um deles está mentindo para se proteger. Identificar contradições entre relatos de testemunhas e deduzir quem está falando a verdade.",
+    "formal_explanation":  "1. A perícia confirmou o fato empírico: Jonan não fechou a comporta.\r\n  2. Avalia-se o depoimento de Jonan: \"Eu não fechei a comporta\". Esse relato coincide com o fato empírico, logo Jonan está falando a **verdade**.\r\n  3. Avalia-se o depoimento de Varis: \"Jonan fechou a comporta\". Como Jonan não fechou, a afirmação de Varis é falsa. Portanto, Varis é quem **mentiu**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A perícia confirmou o fato empírico: Jonan não fechou a comporta.\r\n  2. Avalia-se o depoimento de Jonan: \"Eu não fechei a comporta\". Esse relato coincide com o fato empírico, logo Jonan está falando a **verdade**.\r\n  3. Avalia-se o depoimento de Varis: \"Jonan fechou a comporta\". Como Jonan não fechou, a afirmação de Varis é falsa. Portanto, Varis é quem **mentiu**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_004"
+                                      ],
+    "related_real_world_application":  "Análise de contradições em depoimentos judiciais e verificação de integridade de logs de computadores em segurança da informação."
+}

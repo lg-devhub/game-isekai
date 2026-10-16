@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_003",
+    "title":  "Datação Relativa e Raciocínio Estratigráfico",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Reconstruir uma linha temporal cronológica coerente a partir de pistas físicas sobrepostas.",
+    "concept_summary":  "No solo arenoso da orla da cratera, o protagonista e Lyra encontram três marcas de pegadas e rastros sobrepostos: as pegadas de uma bota pesada de patrulheiro, as marcas das rodas da carroça de Lyra e os passos de um cervo selvagem. É preciso saber quem passou por último para garantir que a área está segura. Reconstruir uma linha temporal cronológica coerente a partir de pistas físicas sobrepostas.",
+    "formal_explanation":  "1. Princípio fundamental da sobreposição: se um rastro $A$ altera ou deforma o rastro $B$, $A$ ocorreu após $B$ no tempo ($B \u003c A$).\r\n  2. Como as rodas cortaram as pegadas do cervo: $\\text{Cervo} \u003c \\text{Carroça}$.\r\n  3. Como a bota pisou sobre as marcas das rodas da carroça: $\\text{Carroça} \u003c \\text{Patrulheiro}$.\r\n  4. Ordenação cronológica transitiva completa: $\\text{Cervo} \u003c \\text{Carroça} \u003c \\text{Patrulheiro}$.\r\n  5. Portanto, o evento mais recente (o último a passar) foi o **patrulheiro**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Princípio fundamental da sobreposição: se um rastro $A$ altera ou deforma o rastro $B$, $A$ ocorreu após $B$ no tempo ($B \u003c A$).\r\n  2. Como as rodas cortaram as pegadas do cervo: $\\text{Cervo} \u003c \\text{Carroça}$.\r\n  3. Como a bota pisou sobre as marcas das rodas da carroça: $\\text{Carroça} \u003c \\text{Patrulheiro}$.\r\n  4. Ordenação cronológica transitiva completa: $\\text{Cervo} \u003c \\text{Carroça} \u003c \\text{Patrulheiro}$.\r\n  5. Portanto, o evento mais recente (o último a passar) foi o **patrulheiro**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_003"
+                                      ],
+    "related_real_world_application":  "Métodos arqueológicos e geológicos de datação relativa de camadas de rochas e fósseis."
+}

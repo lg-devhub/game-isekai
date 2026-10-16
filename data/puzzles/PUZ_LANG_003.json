@@ -1,0 +1,60 @@
+﻿{
+    "id":  "PUZ_LANG_003",
+    "title":  "A Concordância do Registro Cívico",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Identificar e corrigir infrações às normas de concordância verbal em textos administrativos formais.",
+    "difficulty":  1,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "O escrivão júnior de Val-Serena cometeu erros de digitação ao transcrever uma ata oficial sobre os aquedutos. O protagonista precisa apontar a frase gramaticalmente correta para que o documento tenha validade jurídica perante o juiz.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar e corrigir infrações às normas de concordância verbal em textos administrativos formais.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "A) A maioria dos cidadãos compareceram à praça ontem. (ou concordância com coletivo partitivo: \"A maioria... compareceu/compareceram\").",
+    "step_by_step_explanation":  "1. Analisa-se a Opção B: O verbo *fazer*, quando indica tempo decorrido, é impessoal (não tem sujeito) e deve permanecer estritamente no singular (*Faz dez anos*). Incorreta.\r\n  2. Analisa-se a Opção C: O verbo *haver*, no sentido de existir ou ocorrer, é impessoal e deve ficar na 3ª pessoa do singular (*Houve muitos protestos*). Incorreta.\r\n  3. Analisa-se a Opção D: O sujeito é \"A restauração dos reservatórios\". O núcleo do sujeito é \"restauração\" (singular). O verbo deve concordar com o núcleo: *exige*. Incorreta.\r\n  4. Analisa-se a Opção A: Com expressões partitivas (\"a maioria de\", \"a maior parte de\") seguidas de substantivo no plural (\"dos cidadãos\"), a norma culta aceita a concordância facultativa: tanto no singular (concordando com *maioria*) quanto no plural (concordância atrativa com *cidadãos*). Portanto, a frase A está plenamente correta perante a norma-padrão.",
+    "accepted_answers":  [
+                             "A maioria dos cidadãos compareceram à praça ontem.",
+                             "Opção A",
+                             "A`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Opção B",
+                              "feedback":  "Cuidado: o verbo \u0027fazer\u0027 indicando tempo decorrido não tem plural. O correto é sempre \u0027Faz dez anos\u0027."
+                          },
+                          {
+                              "pattern":  "Opção C",
+                              "feedback":  "O verbo \u0027haver\u0027 no sentido de \u0027existir\u0027 nunca vai para o plural. O correto é \u0027Houve protestos\u0027."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Lembre-se de dois verbos que não têm plural quando indicam tempo ou existência: FAZER e HAVER."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  10,
+                      "text":  "Se \u0027fazem anos\u0027 e \u0027houveram\u0027 estão errados, descarte as alternativas B e C."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  20,
+                      "text":  "Na frase D, o núcleo é \u0027A restauração\u0027, que está no singular. Logo, a única alternativa gramaticalmente aceita é a A."
+                  }
+              ],
+    "transfer_example":  "Redação de redações escolares, cartas de apresentação e redação de documentos oficiais.",
+    "rewards":  {
+                    "erudition_xp":  60,
+                    "lumis":  30,
+                    "codex_entry_id":  "COD_LANG_003"
+                },
+    "validation_criteria":  "Regras de sintaxe de concordância da gramática normativa contemporânea da língua portuguesa.",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "A) A maioria dos cidadãos compareceram à praça ontem. (ou concordância com coletivo partitivo: \"A maioria... compareceu/compareceram\")",
+                    "Opção B",
+                    "Opção C"
+                ]
+}

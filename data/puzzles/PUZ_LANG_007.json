@@ -1,0 +1,57 @@
+﻿{
+    "id":  "PUZ_LANG_007",
+    "title":  "O Hino Epigráfico dos Mestres Construtores",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Determinar o sentido exato de palavras polissêmicas a partir do contexto histórico e gramatical.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  true,
+    "narrative_context":  "Na entrada da Cripta dos Inscritos, uma placa de alabastro traz a seguinte inscrição: \"Nenhum homem erguerá sua mão contra a *planta* desta cidade, pois na *planta* de seus alicerces repousa a perenidade de nossos nomes.\" Talos-4 pergunta ao protagonista qual é o sentido da palavra \u0027planta\u0027 na segunda ocorrência.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Determinar o sentido exato de palavras polissêmicas a partir do contexto histórico e gramatical.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Desenho técnico/projeto arquitetônico.",
+    "step_by_step_explanation":  "1. A palavra \u0027planta\u0027 é polissêmica na língua portuguesa, admitindo acepções botânicas (vegetal), anatômicas (planta do pé) e arquitetônicas (desenho topográfico ou corte horizontal de uma construção).\r\n  2. O contexto imediato associa o termo a \"alicerces\" e \"construção de cidade\".\r\n  3. \"Planta de alicerces\" refere-se inequivocamente ao projeto arquitetônico, à representação gráfica ou ao traçado geométrico das fundações dos edifícios.\r\n  4. Conclui-se que o sentido correto é **Desenho técnico/projeto arquitetônico**.",
+    "accepted_answers":  [
+                             "Desenho técnico/projeto arquitetônico",
+                             "Desenho técnico",
+                             "projeto arquitetônico",
+                             "projeto`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Vegetal cultivado",
+                              "feedback":  "Em arquitetura e engenharia civil, a \u0027planta\u0027 de um edifício não se refere a vegetais, mas ao desenho técnico de sua estrutura."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Observe que a frase fala sobre \u0027alicerces\u0027 e construção de edifícios de uma cidade."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "Quando um engenheiro vai construir uma casa, o que significa a \u0027planta\u0027 da casa?"
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "Trata-se do projeto ou desenho técnico de engenharia."
+                  }
+              ],
+    "transfer_example":  "Vocabulário técnico em manuais de instrução e termos com múltiplos sentidos em contratos legais.",
+    "rewards":  {
+                    "erudition_xp":  150,
+                    "lumis":  75,
+                    "codex_entry_id":  "COD_LANG_007"
+                },
+    "validation_criteria":  "Teoria semântica de campos lexicais e desambiguação contextual de Pustejovsky.",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "Desenho técnico/projeto arquitetônico",
+                    "Vegetal cultivado",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

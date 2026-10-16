@@ -141,13 +141,23 @@ func _format_option_name(id: String) -> String:
 	return id
 
 
-func _update_preview(option_id: String) -> void:
-	var texture := AssetManager.get_texture("protagonist_preview_" + option_id)
+func _update_preview(_option_id: String) -> void:
+	var texture := AssetManager.get_texture("CHAR_HERO_PORTRAIT_NEUTRAL")
 	if texture:
 		preview_rect.texture = texture
-	else:
-		# Placeholder: limpa textura e deixa o rect colorido por cor de fundo
-		preview_rect.texture = null
+		var skin_idx: int = _category_index[CustomizationCategory.SKIN]
+		var skin_tints := [
+			Color(1.04, 1.01, 0.98),
+			Color(1.0, 0.96, 0.92),
+			Color(0.95, 0.89, 0.82),
+			Color(0.85, 0.76, 0.68),
+			Color(0.72, 0.62, 0.52),
+			Color(0.58, 0.48, 0.40)
+		]
+		if skin_idx >= 0 and skin_idx < skin_tints.size():
+			preview_rect.modulate = skin_tints[skin_idx]
+		else:
+			preview_rect.modulate = Color.WHITE
 
 
 func _update_outfit_lock_state(outfit_id: String) -> void:

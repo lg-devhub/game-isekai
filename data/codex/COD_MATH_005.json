@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_005",
+    "title":  "Equações Lineares e Princípio da Balança",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Traduzir relações de equilíbrio em uma balança de dois pratos para equações algébricas e isolar a incógnita.",
+    "concept_summary":  "Para verificar se um lote de minério não foi adulterado, o boticário usa uma balança de pratos. No prato esquerdo há 3 lingotes de bronze idênticos e um peso de 4 kg. No prato direito há 1 lingote idêntico aos anteriores e um peso de 16 kg. A balança está em equilíbrio perfeito. Traduzir relações de equilíbrio em uma balança de dois pratos para equações algébricas e isolar a incógnita.",
+    "formal_explanation":  "1. Modela-se a igualdade algébrica a partir do equilíbrio da balança:\r\n     $$3x + 4 = x + 16$$\r\n  2. Subtrai-se $x$ de ambos os lados da equação:\r\n     $$2x + 4 = 16$$\r\n  3. Subtrai-se 4 de ambos os lados:\r\n     $$2x = 12$$\r\n  4. Divide-se por 2:\r\n     $$x = \\frac{12}{2} = 6 \\text{ kg}$$\r\n  5. Verificação: $3(6) + 4 = 18 + 4 = 22$; $6 + 16 = 22$. Equilíbrio confirmado.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Modela-se a igualdade algébrica a partir do equilíbrio da balança:\r\n     $$3x + 4 = x + 16$$\r\n  2. Subtrai-se $x$ de ambos os lados da equação:\r\n     $$2x + 4 = 16$$\r\n  3. Subtrai-se 4 de ambos os lados:\r\n     $$2x = 12$$\r\n  4. Divide-se por 2:\r\n     $$x = \\frac{12}{2} = 6 \\text{ kg}$$\r\n  5. Verificação: $3(6) + 4 = 18 + 4 = 22$; $6 + 16 = 22$. Equilíbrio confirmado."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_005"
+                                      ],
+    "related_real_world_application":  "Descobrir o preço unitário de produtos idênticos em promoções do tipo \"leve 3 e ganhe desconto em relação a 1 item avulso\"."
+}

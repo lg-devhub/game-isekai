@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_008",
+    "title":  "Coesão Sequencial e Progressão Temática no Parágrafo",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Ordenar períodos fragmentados para restabelecer a continuidade temática e a lógica de um parágrafo dissertativo.",
+    "concept_summary":  "Mestre Vaelen encontra um fragmento de pergaminho solto em que as quatro frases de um tratado sobre a preservação de arquivos foram embaralhadas. O protagonista precisa reorganizar as frases de 1 a 4 para formar um parágrafo coerente. Ordenar períodos fragmentados para restabelecer a continuidade temática e a lógica de um parágrafo dissertativo.",
+    "formal_explanation":  "1. A Frase B introduz o tópico frasal principal sem depender de pronomes demonstrativos antecedentes: \"As grandes bibliotecas solemnianas eram construídas no fundo de cavernas calcárias.\" (Início obrigatório: **B**).\r\n  2. A Frase D retoma a ideia das \"cavernas calcárias\" por meio do demonstrativo coesivo anafórico: \"Esse ambiente rochoso subterrâneo garantia uma temperatura amena e índice estável de vapor d\u0027água.\" (Segunda posição: **D**).\r\n  3. A Frase A retoma o \"vapor d\u0027água\" mencionado no final da frase D: \"Essa umidade controlada impede que os pergaminhos de couro ressequem...\" (Terceira posição: **A**).\r\n  4. A Frase C conclui o raciocínio sintetizando o benefício de todo o processo descrito: \"Com essa medida de proteção, o conhecimento das gerações passadas pôde atravessar séculos...\" (Encerramento: **C**).\r\n  5. Sequência lógica perfeita: **B - D - A - C**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A Frase B introduz o tópico frasal principal sem depender de pronomes demonstrativos antecedentes: \"As grandes bibliotecas solemnianas eram construídas no fundo de cavernas calcárias.\" (Início obrigatório: **B**).\r\n  2. A Frase D retoma a ideia das \"cavernas calcárias\" por meio do demonstrativo coesivo anafórico: \"Esse ambiente rochoso subterrâneo garantia uma temperatura amena e índice estável de vapor d\u0027água.\" (Segunda posição: **D**).\r\n  3. A Frase A retoma o \"vapor d\u0027água\" mencionado no final da frase D: \"Essa umidade controlada impede que os pergaminhos de couro ressequem...\" (Terceira posição: **A**).\r\n  4. A Frase C conclui o raciocínio sintetizando o benefício de todo o processo descrito: \"Com essa medida de proteção, o conhecimento das gerações passadas pôde atravessar séculos...\" (Encerramento: **C**).\r\n  5. Sequência lógica perfeita: **B - D - A - C**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_008"
+                                      ],
+    "related_real_world_application":  "Estruturação de parágrafos em redações acadêmicas e organização de tópicos em relatórios empresariais."
+}

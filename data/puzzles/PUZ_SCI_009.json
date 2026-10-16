@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_SCI_009",
+    "title":  "A Seleção Natural nos Bosques de Ciprestes",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Identificar o mecanismo de seleção natural de Darwin em contraste com hipóteses lamarckistas de uso e desuso.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  false,
+    "narrative_context":  "Lyra e o protagonista observam que, após anos de tempestades carregadas com poeira mineral de quartzo nos desfiladeiros, a população de mariposas da região mudou drasticamente: a variedade de cor branca brilhante tornou-se muito rara, enquanto a variedade cinzenta com asas cerosas agora representa 95% dos indivíduos.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar o mecanismo de seleção natural de Darwin em contraste com hipóteses lamarckistas de uso e desuso.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "B) As mariposas de asas cerosas cinzentas já existiam na população; por estarem melhor camufladas nos troncos cobertos de cinza e repelirem o pó, sobreviveram mais e deixaram mais descendentes.",
+    "step_by_step_explanation":  "1. O mecanismo biológico correto formulado por Charles Darwin e Alfred Wallace baseia-se em três pilares:\r\n     - *Variabilidade genética prévia:* Indivíduos da mesma espécie possuem variações naturais pré-existentes.\r\n     - *Pressão seletiva ambiental:* A alteração no ambiente (árvores escurecidas pela fuligem ou pó mineral) tornou as mariposas claras mais visíveis aos predadores e mais vulneráveis ao pó.\r\n     - *Reprodução diferencial:* As mariposas cinzentas sobreviveram por mais tempo e geraram maior número de filhotes férteis, transmitindo seus genes adiante.\r\n  2. A Opção A descreve uma concepção lamarckista ingênua (\"decidiram mudar\"), incompatível com a genética real.\r\n  3. Portanto, a resposta correta e cientificamente rigorosa é a **Opção B** (caso clássico análogo ao melanismo industrial da mariposa *Biston betularia*).",
+    "accepted_answers":  [
+                             "B) As mariposas de asas cerosas cinzentas já existiam na população; por estarem melhor camufladas nos troncos cobertos de cinza e repelirem o pó, sobreviveram mais e deixaram mais descendentes.",
+                             "Opção B",
+                             "B`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Opção A",
+                              "feedback":  "Cuidado: animais não \u0027decidem\u0027 mudar seu DNA. A evolução ocorre na população ao longo das gerações através da sobrevivência dos indivíduos que já nasceram com características vantajosas."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no caso clássico da biologia: as mariposas que já nasciam cinzas ficavam escondidas dos pássaros nos troncos cinzentos."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "As mariposas brancas eram vistas com facilidade e devoradas. As cinzas sobreviviam e tinham filhotes."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "A Opção B expressa a seleção natural darwiniana com rigor científico."
+                  }
+              ],
+    "transfer_example":  "O surgimento de bactérias super-resistentes ao uso indiscriminado de antibióticos na medicina moderna.",
+    "rewards":  {
+                    "erudition_xp":  160,
+                    "lumis":  80,
+                    "codex_entry_id":  "COD_SCI_009"
+                },
+    "validation_criteria":  "Teoria Sintética da Evolução (Neodarwinismo) e equilíbrio de Hardy-Weinberg sob pressão seletiva.",
+    "action_button_text":  "Confirmar Análise 🔬",
+    "options":  [
+                    "B) As mariposas de asas cerosas cinzentas já existiam na população; por estarem melhor camufladas nos troncos cobertos de cinza e repelirem o pó, sobreviveram mais e deixaram mais descendentes",
+                    "Opção A",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

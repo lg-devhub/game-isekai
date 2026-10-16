@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_014",
+    "title":  "Inferência Causal de Judea Pearl e Raciocínio Contrafatual",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Rastrear cadeias causais contrafatuais do tipo \"Se X não tivesse ocorrido, Y teria acontecido?\".",
+    "concept_summary":  "Talos-4 e o protagonista examinam o arquivo histórico da Grande Fratura. O registro lista a cadeia causal do evento: Rastrear cadeias causais contrafatuais do tipo \"Se X não tivesse ocorrido, Y teria acontecido?\".",
+    "formal_explanation":  "1. No modelo causal formal (Teoria Causal de Judea Pearl):\r\n     - A intervenção cirúrgica no nó $B$ ($\\text{do}(\\neg B)$) desfaz a aresta $A \\to B$ ou anula $B$, impedindo a propagação para $C$ ($C$ não ocorre).\r\n     - No entanto, o ramo causal independente que parte de $A$ permanece intacto:\r\n       $$A \\implies D \\implies E$$\r\n     - Como $A$ já ocorreu, a sobrecarga térmica ($D$) ainda se manifesta, gerando a vitrificação da cratera ($E$).\r\n  2. Portanto, mesmo evitando $B$ e $C$, o efeito $E$ (a vitrificação da cratera) ainda ocorreria inevitavelmente.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. No modelo causal formal (Teoria Causal de Judea Pearl):\r\n     - A intervenção cirúrgica no nó $B$ ($\\text{do}(\\neg B)$) desfaz a aresta $A \\to B$ ou anula $B$, impedindo a propagação para $C$ ($C$ não ocorre).\r\n     - No entanto, o ramo causal independente que parte de $A$ permanece intacto:\r\n       $$A \\implies D \\implies E$$\r\n     - Como $A$ já ocorreu, a sobrecarga térmica ($D$) ainda se manifesta, gerando a vitrificação da cratera ($E$).\r\n  2. Portanto, mesmo evitando $B$ e $C$, o efeito $E$ (a vitrificação da cratera) ainda ocorreria inevitavelmente."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_014"
+                                      ],
+    "related_real_world_application":  "Análise forense de acidentes aéreos e avaliação de impacto em políticas públicas de saúde preventiva."
+}

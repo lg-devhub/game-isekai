@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_011",
+    "title":  "Princípio Fundamental da Contagem e Combinatória",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Aplicar o princípio multiplicativo para calcular arranjos e combinações de elementos distintos.",
+    "concept_summary":  "Para desarquivar um tratado histórico em Ark-Mnemona, o mecanismo exige um código gravado em três cilindros giratórios. O primeiro cilindro contém 4 símbolos geométricos diferentes; o segundo contém 5 runas alfabéticas distintas; e o terceiro contém 3 algarismos numéricos (1, 2, 3). Aplicar o princípio multiplicativo para calcular arranjos e combinações de elementos distintos.",
+    "formal_explanation":  "1. De acordo com o Princípio Fundamental da Contagem (PFC), se um evento é composto por etapas sucessivas e independentes, o número total de possibilidades é o produto das possibilidades de cada etapa.\r\n  2. Multiplicam-se as opções de cada cilindro:\r\n     $$\\text{Total} = n_1 \\times n_2 \\times n_3 = 4 \\times 5 \\times 3$$\r\n  3. $4 \\times 5 = 20$\r\n  4. $20 \\times 3 = 60$ combinações possíveis.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. De acordo com o Princípio Fundamental da Contagem (PFC), se um evento é composto por etapas sucessivas e independentes, o número total de possibilidades é o produto das possibilidades de cada etapa.\r\n  2. Multiplicam-se as opções de cada cilindro:\r\n     $$\\text{Total} = n_1 \\times n_2 \\times n_3 = 4 \\times 5 \\times 3$$\r\n  3. $4 \\times 5 = 20$\r\n  4. $20 \\times 3 = 60$ combinações possíveis."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_011"
+                                      ],
+    "related_real_world_application":  "Calcular o número de senhas possíveis para um cartão bancário de 4 dígitos ou de combinações de roupas (camisas, calças e calçados)."
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_013",
+    "title":  "Lógica Modal e Mundos Possíveis de Kripke",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Avaliar mundos possíveis, operadores de necessidade ($\\Box$) e possibilidade ($\\Diamond$).",
+    "concept_summary":  "No Santuário dos Axiomas, três inscrições definem os mundos possíveis da realidade cósmica: Avaliar mundos possíveis, operadores de necessidade ($\\Box$) e possibilidade ($\\Diamond$).",
+    "formal_explanation":  "1. A Afirmação 3 define corretamente o operador modal de necessidade: algo necessário ($\\Box P$) é verdadeiro em todo mundo concebível e acessível.\r\n  2. A refração da luz é uma consequência estrita do princípio de Fermat e da conservação de momento da onda eletromagnética ao transitar entre meios com índices de refração distintos ($v_1 \\neq v_2$).\r\n  3. Portanto, em qualquer mundo físico onde existam meios com velocidades de propagação distintas, a refração é um fenômeno **necessário**.\r\n  4. Afirmar que \"é possível que a luz não sofra refração ao mudar de meio com velocidades distintas\" contraria o princípio causal da física ondulatória, tornando a Afirmação 2 logicamente contraditória.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A Afirmação 3 define corretamente o operador modal de necessidade: algo necessário ($\\Box P$) é verdadeiro em todo mundo concebível e acessível.\r\n  2. A refração da luz é uma consequência estrita do princípio de Fermat e da conservação de momento da onda eletromagnética ao transitar entre meios com índices de refração distintos ($v_1 \\neq v_2$).\r\n  3. Portanto, em qualquer mundo físico onde existam meios com velocidades de propagação distintas, a refração é um fenômeno **necessário**.\r\n  4. Afirmar que \"é possível que a luz não sofra refração ao mudar de meio com velocidades distintas\" contraria o princípio causal da física ondulatória, tornando a Afirmação 2 logicamente contraditória."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_013"
+                                      ],
+    "related_real_world_application":  "Modelagem de sistemas de segurança à prova de falhas em engenharia aeroespacial com simulação de cenários críticos."
+}

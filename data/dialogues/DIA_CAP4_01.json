@@ -1,0 +1,39 @@
+{
+  "id": "DIA_CAP4_01",
+  "title": "O Observatório do Véu e os Três Axiomas",
+  "nodes": {
+    "start": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_thinking",
+      "text": "Chegamos ao ponto de convergência do Véu. As leituras de densidade e radiação luminosa batem exatamente com as leis de conservação de energia do seu mundo antigo.",
+      "next": "node_02"
+    },
+    "node_02": {
+      "speaker": "Protagonista",
+      "speaker_title": "Investigador",
+      "portrait_key": "char_hero_portrait_neutral",
+      "text": "Isso significa que Velathys não é uma ilusão mágica... é uma realidade regida pelas mesmas leis fundamentais do universo, apenas sob condições de contorno diferentes.",
+      "next": "node_03"
+    },
+    "node_03": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "Sim! A magia que chamávamos de 'sagrada' é apenas a manipulação empírica da causalidade. Para estabilizar a fenda e impedir o colapso, precisamos reconciliar os três axiomas lógicos do painel central.",
+      "choices": [
+        {
+          "text": "Confrontar o enigma final dos axiomas do Véu (Enigma Clímax)",
+          "trigger_puzzle": "PUZ_LOG_015",
+          "next": "node_end"
+        }
+      ]
+    },
+    "node_end": {
+      "speaker": "Lyra",
+      "speaker_title": "Pesquisadora de Campo",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "O Véu se estabilizou! A ponte de conhecimento entre os mundos agora é permanente e compreendida pela razão humana."
+    }
+  }
+}

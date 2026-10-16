@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6j8n2m9k4vx1"]
+﻿[gd_scene load_steps=3 format=3 uid="uid://c6j8n2m9k4vx1"]
 
 [ext_resource type="Script" path="res://scenes/journal/journal_view.gd" id="1_jview"]
+[ext_resource type="Texture2D" path="res://assets/images/environments/bg_blue_glass_crater.png" id="2_bg"]
 
 [node name="JournalView" type="Control"]
 layout_mode = 3
@@ -11,14 +12,26 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jview")
 
-[node name="ColorRectBackground" type="ColorRect" parent="."]
+[node name="TextureBackground" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.08, 0.09, 0.13, 1)
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRectOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.08, 0.12, 0.88)
+
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -304,3 +317,4 @@ theme_override_colors/font_color = Color(0.95, 0.95, 0.8, 1)
 theme_override_font_sizes/font_size = 22
 text = "Selecione uma área do documento acima para realizar perícia detalhada."
 autowrap_mode = 3
+

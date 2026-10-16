@@ -1,0 +1,62 @@
+{
+    "id": "PUZ_LANG_002",
+    "title": "O Enigma das Plantas Medicinais",
+    "educational_area": "LANGUAGE",
+    "subcategory": "LANG-GEN",
+    "target_skill": "Interpretar metáforas, personificações e pistas sensoriais em versos poéticos.",
+    "difficulty": 1,
+    "chapter": 1,
+    "is_mandatory": false,
+    "narrative_context": "No verso de uma das páginas do diário botânico do avô de Lyra, há uma quadra lírica descrevendo uma erva silvestre que neutraliza a irritação nos olhos causada pelo pó de quartzo da cratera.",
+    "prompt": "Com base nas metáforas da quadra botânica, a qual planta medicinal o texto poético se refere?",
+    "input_type": "MULTIPLE_CHOICE",
+    "options": [
+        "Dente-de-leão",
+        "Rosa silvestre",
+        "Hortelã da serra",
+        "Flor de lótus"
+    ],
+    "action_button_text": "Identificar Planta 🌼",
+    "visual_data": {
+        "type": "poem",
+        "title": "Quadra Botânica do Diário",
+        "text": "«Ostento ao sol uma coroa de ouro,\nMas se me partem, choro leite branco.\nAo vento de outono minhas plumas doei,\nE em chá calmante os olhos aliviei.»"
+    },
+    "solution": "Dente-de-leão.",
+    "step_by_step_explanation": "1. Pista 1 ('coroa de ouro'): floresce com pétalas amarelas douradas brilhantes.\n2. Pista 2 ('choro leite branco'): a haste partida exsuda seiva leitosa branca característica.\n3. Pista 3 ('minhas plumas doei'): sementes com plumas plumosas que voam facilmente ao vento quando sopradas.\n4. Pista 4 ('chá calmante'): propriedades anti-inflamatórias clássicas descritas na fitoterapia botânica para o Dente-de-leão (Taraxacum officinale).",
+    "accepted_answers": [
+        "Dente-de-leão",
+        "Dente de leão",
+        "dente-de-leao"
+    ],
+    "common_errors": [
+        {
+            "pattern": "Rosa silvestre",
+            "feedback": "Repare na pista das 'plumas ao vento' e da seiva branca leitosa. Flores de roseira não possuem sementes plumosas dispersas pelo vento."
+        }
+    ],
+    "hints": [
+        {
+            "level": 1,
+            "cost_lumis": 0,
+            "text": "Pense em uma flor amarela comum que depois se transforma em uma esfera de algodão branco que as pessoas costumam assoprar."
+        },
+        {
+            "level": 2,
+            "cost_lumis": 10,
+            "text": "O 'leite branco' é o látex espesso que escorre da haste verde quando ela é cortada."
+        },
+        {
+            "level": 3,
+            "cost_lumis": 20,
+            "text": "Trata-se do clássico dente-de-leão."
+        }
+    ],
+    "transfer_example": "Identificação de recursos expressivos em textos literários e interpretação de pistas líricas.",
+    "rewards": {
+        "erudition_xp": 60,
+        "lumis": 30,
+        "codex_entry_id": "COD_LANG_002"
+    },
+    "validation_criteria": "Associação de figuras de linguagem a características morfológicas vegetais."
+}

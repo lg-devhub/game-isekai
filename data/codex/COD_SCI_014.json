@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_014",
+    "title":  "Astronomia Clássica: As Três Leis de Johannes Kepler",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Aplicar a Terceira Lei de Kepler ($T^2 / a^3 = k$) para relacionar o período orbital de planetas com suas distâncias médias ao sol.",
+    "concept_summary":  "No grande planetário mecânico de Ark-Mnemona, os eixos de latão reproduzem o sistema estelar original de Velathys. Um planeta interior (A) tem distância média de 1 Unidade Astronômica (UA) do sol central e completa sua órbita em exatamente 1 ano estelar ($T_A = 1$). Um planeta exterior (B) orbita a uma distância média de 4 Unidades Astronômicas ($a_B = 4$ UA). O protagonista precisa configurar a engrenagem que dita o tempo de translação do planeta B. Aplicar a Terceira Lei de Kepler ($T^2 / a^3 = k$) para relacionar o período orbital de planetas com suas distâncias médias ao sol.",
+    "formal_explanation":  "1. Aplica-se a Terceira Lei de Kepler (Lei dos Períodos):\r\n     $$\\frac{T_1^2}{a_1^3} = \\frac{T_2^2}{a_2^3}$$\r\n  2. Como para o primeiro planeta $T_A = 1$ ano e $a_A = 1$ UA, a constante do sistema solar é:\r\n     $$k = \\frac{1^2}{1^3} = 1$$\r\n  3. Para o planeta B, com $a_B = 4$ UA:\r\n     $$T_B^2 = a_B^3 = 4^3$$\r\n  4. Calcula-se o cubo de 4:\r\n     $$4^3 = 4 \\times 4 \\times 4 = 64$$\r\n  5. Extrai-se a raiz quadrada para encontrar o período $T_B$:\r\n     $$T_B = \\sqrt{64} = 8 \\text{ anos}$$\r\n  6. Portanto, o planeta B leva exatamente **8 anos** para completar uma volta ao redor do sol.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Aplica-se a Terceira Lei de Kepler (Lei dos Períodos):\r\n     $$\\frac{T_1^2}{a_1^3} = \\frac{T_2^2}{a_2^3}$$\r\n  2. Como para o primeiro planeta $T_A = 1$ ano e $a_A = 1$ UA, a constante do sistema solar é:\r\n     $$k = \\frac{1^2}{1^3} = 1$$\r\n  3. Para o planeta B, com $a_B = 4$ UA:\r\n     $$T_B^2 = a_B^3 = 4^3$$\r\n  4. Calcula-se o cubo de 4:\r\n     $$4^3 = 4 \\times 4 \\times 4 = 64$$\r\n  5. Extrai-se a raiz quadrada para encontrar o período $T_B$:\r\n     $$T_B = \\sqrt{64} = 8 \\text{ anos}$$\r\n  6. Portanto, o planeta B leva exatamente **8 anos** para completar uma volta ao redor do sol."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_014"
+                                      ],
+    "related_real_world_application":  "Trajetórias de satélites artificiais de GPS em órbita terrestre e cálculos de missões espaciais para Marte e Júpiter."
+}

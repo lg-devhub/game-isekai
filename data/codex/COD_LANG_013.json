@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_013",
+    "title":  "Técnicas de Paráfrase, Síntese e Fidelidade Textual",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Identificar paráfrases fidedignas que preservem a completude lógica de sentenças complexas sem acréscimo ou distorção de sentido.",
+    "concept_summary":  "Para gravar o decreto final de paz no monólito da fundação, o protagonista precisa escolher a paráfrase mais precisa e rigorosa da sentença clássica de Khorath: \"A estabilidade de uma comunidade não depende da ausência de desacordos intelectuais, mas da capacidade coletiva de deliberar sobre eles mediante provas empíricas e respeito mútuo.\" Identificar paráfrases fidedignas que preservem a completude lógica de sentenças complexas sem acréscimo ou distorção de sentido.",
+    "formal_explanation":  "1. A sentença original estabelece duas teses complementares:\r\n     - Tese negativa: estabilidade $\\neq$ ausência de divergências intelectuais.\r\n     - Tese positiva: estabilidade $=$ deliberação coletiva fundada em evidências empíricas $+$ respeito mútuo.\r\n  2. A Opção B contradiz a tese negativa ao exigir concordância plena forçada.\r\n  3. A Opção C contradiz a exigência de provas empíricas.\r\n  4. A Opção D afirma o oposto do texto original ao classificar desacordos como destrutivos.\r\n  5. A **Opção A** expressa com elegância, concisão e fidelidade absoluta os dois lados da proposição original: substitui \"ausência de desacordos\" por \"não na supressão do pensamento divergente\" e preserva \"debate respeitoso baseado em evidências\".",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A sentença original estabelece duas teses complementares:\r\n     - Tese negativa: estabilidade $\\neq$ ausência de divergências intelectuais.\r\n     - Tese positiva: estabilidade $=$ deliberação coletiva fundada em evidências empíricas $+$ respeito mútuo.\r\n  2. A Opção B contradiz a tese negativa ao exigir concordância plena forçada.\r\n  3. A Opção C contradiz a exigência de provas empíricas.\r\n  4. A Opção D afirma o oposto do texto original ao classificar desacordos como destrutivos.\r\n  5. A **Opção A** expressa com elegância, concisão e fidelidade absoluta os dois lados da proposição original: substitui \"ausência de desacordos\" por \"não na supressão do pensamento divergente\" e preserva \"debate respeitoso baseado em evidências\"."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_013"
+                                      ],
+    "related_real_world_application":  "Redação de sínteses executivas, resumos acadêmicos e concisão em trabalhos de conclusão de curso."
+}

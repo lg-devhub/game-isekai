@@ -1,62 +1,64 @@
 {
-  "id": "PUZ_LANG_001",
-  "title": "O Manifesto de Carga Adulterado",
-  "educational_area": "LANGUAGE",
-  "subcategory": "LANG-INT",
-  "target_skill": "Identificar informações explícitas e contrastá-las com dados numéricos em textos documentais.",
-  "prior_knowledge": ["Leitura atenta e compreensão literal de relatórios"],
-  "difficulty": 1,
-  "chapter": 1,
-  "is_mandatory": true,
-  "narrative_context": "No arquivo municipal de Val-Serena, o protagonista examina o manifesto de entrada de mercadorias no porto fluvial para verificar divergências nas cargas.",
-  "prompt": "O texto diz: 'Deram entrada trinta fardos de linho cru pela manhã. À tarde, dez fardos foram retirados para a tecelagem central e cinco fardos foram guardados no porão dos tecidos finos. Os quinze fardos restantes deveriam permanecer na doca norte.' De acordo com o texto original do manifesto, quantos fardos de linho deveriam estar na doca norte?",
-  "data_and_constraints": {
-    "total_intake": 30,
-    "taken_weaving": 10,
-    "taken_storage": 5
-  },
-  "input_type": "NUMERIC_INPUT",
-  "solution": "15",
-  "step_by_step_explanation": "1. Leitura atenta do trecho documental: Total = 30; Saída 1 = 10; Saída 2 = 5.\n2. Saldo nominal: 30 - (10 + 5) = 15 fardos.\n3. O texto afirma explicitamente: 'Os quinze fardos restantes deveriam permanecer na doca norte'.",
-  "accepted_answers": [
-    "15",
-    "15 fardos",
-    "quinze",
-    "quinze fardos"
-  ],
-  "common_errors": [
-    {
-      "pattern": "12",
-      "feedback": "A pergunta pede quantos fardos deveriam estar lá segundo o texto do manifesto, e não o que foi encontrado fisicamente na inspeção."
+    "id": "PUZ_LANG_001",
+    "title": "O Manifesto de Carga Adulterado",
+    "educational_area": "LANGUAGE",
+    "subcategory": "LANG-GEN",
+    "target_skill": "Identificar informações explícitas e contrastá-las com dados em textos documentais.",
+    "difficulty": 1,
+    "chapter": 1,
+    "is_mandatory": true,
+    "narrative_context": "No arquivo municipal de Val-Serena, você e Lyra investigam uma suspeita de contrabando no porto fluvial examinando o pergaminho do manifesto de entrada de mercadorias.",
+    "prompt": "De acordo com as determinações explícitas do manifesto oficial, quantos fardos de linho deveriam permanecer armazenados na doca norte?",
+    "input_type": "NUMERIC_INPUT",
+    "field_label": "Quantidade prevista de fardos:",
+    "placeholder": "Ex: 15",
+    "unit": "fardos de linho",
+    "action_button_text": "Conferir Manifesto 📜",
+    "visual_data": {
+        "type": "document",
+        "title": "Trecho do Manifesto Portuário Oficial",
+        "text": "«Deram entrada trinta fardos de linho cru pela manhã. À tarde, dez fardos foram retirados para a tecelagem central e cinco fardos foram guardados no porão dos tecidos finos. Os quinze fardos restantes deveriam permanecer na doca norte.»"
     },
-    {
-      "pattern": "20",
-      "feedback": "Releia com atenção: além dos 10 fardos da tecelagem, 5 fardos foram enviados para o porão dos tecidos finos."
-    }
-  ],
-  "hints": [
-    {
-      "level": 1,
-      "cost_lumis": 0,
-      "text": "Localize no texto a frase que fala especificamente sobre a 'doca norte'."
+    "solution": "15 fardos.",
+    "step_by_step_explanation": "1. Localiza-se a oração conclusiva do documento: «Os quinze fardos restantes deveriam permanecer na doca norte.»\n2. Realiza-se a verificação aritmética das informações textuais:\n   • Entrada inicial: 30 fardos.\n   • Saída tecelagem: 10 fardos.\n   • Saída porão: 5 fardos.\n   • Saldo documental: 30 - (10 + 5) = 15 fardos.\n3. Portanto, o documento determina explicitamente que deveriam estar 15 fardos na doca norte. (A constatação física de que havia apenas 12 no local é o que comprova o desvio de carga na investigação).",
+    "accepted_answers": [
+        "15",
+        "15 fardos",
+        "quinze",
+        "quinze fardos"
+    ],
+    "common_errors": [
+        {
+            "pattern": "12",
+            "feedback": "Atenção ao que a pergunta solicita: buscamos a quantidade determinada pelo texto oficial do manifesto, e não a quantidade faltante encontrada fisicamente na doca."
+        },
+        {
+            "pattern": "20",
+            "feedback": "Releia com atenção o trecho documental: além dos 10 fardos enviados à tecelagem, outros 5 fardos foram destinados ao porão de tecidos finos."
+        }
+    ],
+    "hints": [
+        {
+            "level": 1,
+            "cost_lumis": 0,
+            "text": "Localize no pergaminho a frase que cita expressamente o destino da 'doca norte'."
+        },
+        {
+            "level": 2,
+            "cost_lumis": 10,
+            "text": "A última oração do texto afirma textualmente: «Os quinze fardos restantes deveriam permanecer na doca norte.»"
+        },
+        {
+            "level": 3,
+            "cost_lumis": 20,
+            "text": "O número indicado no texto é 15."
+        }
+    ],
+    "transfer_example": "Conferência minuciosa de contratos de transporte e notas fiscais de recebimento de encomendas.",
+    "rewards": {
+        "erudition_xp": 50,
+        "lumis": 25,
+        "codex_entry_id": "COD_LANG_001"
     },
-    {
-      "level": 2,
-      "cost_lumis": 10,
-      "text": "A última frase diz textualmente: 'Os quinze fardos restantes deveriam permanecer na doca norte'."
-    },
-    {
-      "level": 3,
-      "cost_lumis": 20,
-      "text": "O número explícito no documento é 15."
-    }
-  ],
-  "transfer_example": "Conferência de notas fiscais de compras online contra o recibo de entrega.",
-  "rewards": {
-    "erudition_xp": 50,
-    "lumis": 25,
-    "codex_entry_id": "COD_LANG_001"
-  },
-  "prerequisites": [],
-  "validation_criteria": "Compreensão textual literal com rastreamento de orações declarativas."
+    "validation_criteria": "Compreensão de leitura factual e extração de dados explícitos em texto em prosa."
 }

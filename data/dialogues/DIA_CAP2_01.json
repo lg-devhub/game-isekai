@@ -1,0 +1,32 @@
+{
+  "id": "DIA_CAP2_01",
+  "title": "O Salão dos Prismas de Ark-Mnemona",
+  "nodes": {
+    "start": {
+      "speaker": "Guardião da Biblioteca",
+      "speaker_title": "Erudito Sênior",
+      "portrait_key": "char_lyra_portrait_thinking",
+      "text": "A luz que entra pela clarabóia não alcança o mosaico central desde o último solstício. Os prismas de quartzo foram deslocados.",
+      "next": "node_02"
+    },
+    "node_02": {
+      "speaker": "Protagonista",
+      "speaker_title": "Investigador",
+      "portrait_key": "char_hero_portrait_neutral",
+      "text": "Se calcularmos a refração e o ângulo crítico de incidência, poderemos redirecionar o feixe óptico.",
+      "choices": [
+        {
+          "text": "Ajustar o sistema de prismas calculando a reflexão interna (Enigma)",
+          "trigger_puzzle": "PUZ_SCI_008",
+          "next": "node_end"
+        }
+      ]
+    },
+    "node_end": {
+      "speaker": "Guardião da Biblioteca",
+      "speaker_title": "Erudito Sênior",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "O feixe iluminou a inscrição oculta! As portas do arquivo arcaico estão abertas para você."
+    }
+  }
+}

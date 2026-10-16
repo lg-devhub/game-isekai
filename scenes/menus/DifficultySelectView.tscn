@@ -1,0 +1,142 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scenes/menus/difficulty_select.gd" id="1_diff"]
+[ext_resource type="Texture2D" path="res://assets/images/environments/bg_title_screen.png" id="2_bg"]
+
+[node name="DifficultySelectView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_diff")
+
+[node name="TextureBackground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRectOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05, 0.07, 0.12, 0.85)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 56
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 56
+theme_override_constants/margin_bottom = 80
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 28
+alignment = 1
+
+[node name="LabelHeader" type="Label" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.82, 0.45, 1)
+theme_override_font_sizes/font_size = 46
+text = "RIGOR DA JORNADA"
+horizontal_alignment = 1
+
+[node name="LabelSub" type="Label" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.8, 0.9, 1)
+theme_override_font_sizes/font_size = 22
+text = "Selecione o nível de profundidade analítica dos enigmas"
+horizontal_alignment = 1
+
+[node name="VBoxLevels" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BtnDiff1" type="Button" parent="MarginContainer/VBox/VBoxLevels"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "✦ Nível 1: Iniciado dos Véus"
+
+[node name="BtnDiff2" type="Button" parent="MarginContainer/VBox/VBoxLevels"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "✦✦ Nível 2: Aprendiz de Velathys"
+
+[node name="BtnDiff3" type="Button" parent="MarginContainer/VBox/VBoxLevels"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "✦✦✦ Nível 3: Erudito Investigador (Padrão)"
+
+[node name="BtnDiff4" type="Button" parent="MarginContainer/VBox/VBoxLevels"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "✦✦✦✦ Nível 4: Mestre das Ciências"
+
+[node name="BtnDiff5" type="Button" parent="MarginContainer/VBox/VBoxLevels"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "✦✦✦✦✦ Nível 5: Sábio de Mnemona"
+
+[node name="PanelInfo" type="PanelContainer" parent="MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 240)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelInfo"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxDesc" type="VBoxContainer" parent="MarginContainer/VBox/PanelInfo/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LabelTitle" type="Label" parent="MarginContainer/VBox/PanelInfo/Margin/VBoxDesc"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.5, 1)
+theme_override_font_sizes/font_size = 26
+text = "Nível 3 — Erudito Investigador"
+
+[node name="LabelDesc" type="Label" parent="MarginContainer/VBox/PanelInfo/Margin/VBoxDesc"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 22
+text = "Descrição do nível..."
+autowrap_mode = 3
+
+[node name="HBoxActions" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BtnConfirm" type="Button" parent="MarginContainer/VBox/HBoxActions"]
+custom_minimum_size = Vector2(0, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Confirmar e Despertar em Velathys ▶"
+
+[node name="BtnBack" type="Button" parent="MarginContainer/VBox/HBoxActions"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Voltar ao Menu"

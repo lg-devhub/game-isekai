@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_011",
+    "title":  "Termodinâmica Química: Solubilidade e Cristalização",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Interpretar curvas de solubilidade e calcular a massa de soluto que precipita com o resfriamento de uma solução aquosa.",
+    "concept_summary":  "Nas salinas de Korath, os artesãos purificam prismas de sal dissolvendo o mineral em água fervente e deixando a solução esfriar. O coeficiente de solubilidade do sal é de 80 gramas para cada 100 gramas de água a $80^\\circ\\text{C}$, e cai para 30 gramas para cada 100 gramas de água a $20^\\circ\\text{C}$. Interpretar curvas de solubilidade e calcular a massa de soluto que precipita com o resfriamento de uma solução aquosa.",
+    "formal_explanation":  "1. A $80^\\circ\\text{C}$, 100 gramas de água conseguem dissolver completamente até $80$ gramas de sal. A solução foi preparada saturada, logo contém exatamente 80 g de sal dissolvido.\r\n  2. Ao esfriar para $20^\\circ\\text{C}$, a capacidade de dissolução da mesma quantidade de água (100 g) cai para apenas $30$ gramas de sal.\r\n  3. A água só consegue manter dissolvidas 30 gramas. Todo o excesso que ultrapassar esse limite é expulso da solução e precipita na forma de cristais sólidos no fundo:\r\n     $$\\text{Massa precipitada} = m_{\\text{dissolvida inicial}} - m_{\\text{solúvel final}}$$\r\n     $$\\text{Massa precipitada} = 80 \\text{ g} - 30 \\text{ g} = 50 \\text{ gramas}$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A $80^\\circ\\text{C}$, 100 gramas de água conseguem dissolver completamente até $80$ gramas de sal. A solução foi preparada saturada, logo contém exatamente 80 g de sal dissolvido.\r\n  2. Ao esfriar para $20^\\circ\\text{C}$, a capacidade de dissolução da mesma quantidade de água (100 g) cai para apenas $30$ gramas de sal.\r\n  3. A água só consegue manter dissolvidas 30 gramas. Todo o excesso que ultrapassar esse limite é expulso da solução e precipita na forma de cristais sólidos no fundo:\r\n     $$\\text{Massa precipitada} = m_{\\text{dissolvida inicial}} - m_{\\text{solúvel final}}$$\r\n     $$\\text{Massa precipitada} = 80 \\text{ g} - 30 \\text{ g} = 50 \\text{ gramas}$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_011"
+                                      ],
+    "related_real_world_application":  "Fabricação de doces cristalizados (cristalização da calda de açúcar) e purificação de princípios ativos farmacêuticos por recristalização."
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_009",
+    "title":  "Evolução por Seleção Natural: O Melanismo Industrial",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Identificar o mecanismo de seleção natural de Darwin em contraste com hipóteses lamarckistas de uso e desuso.",
+    "concept_summary":  "Lyra e o protagonista observam que, após anos de tempestades carregadas com poeira mineral de quartzo nos desfiladeiros, a população de mariposas da região mudou drasticamente: a variedade de cor branca brilhante tornou-se muito rara, enquanto a variedade cinzenta com asas cerosas agora representa 95% dos indivíduos. Identificar o mecanismo de seleção natural de Darwin em contraste com hipóteses lamarckistas de uso e desuso.",
+    "formal_explanation":  "1. O mecanismo biológico correto formulado por Charles Darwin e Alfred Wallace baseia-se em três pilares:\r\n     - *Variabilidade genética prévia:* Indivíduos da mesma espécie possuem variações naturais pré-existentes.\r\n     - *Pressão seletiva ambiental:* A alteração no ambiente (árvores escurecidas pela fuligem ou pó mineral) tornou as mariposas claras mais visíveis aos predadores e mais vulneráveis ao pó.\r\n     - *Reprodução diferencial:* As mariposas cinzentas sobreviveram por mais tempo e geraram maior número de filhotes férteis, transmitindo seus genes adiante.\r\n  2. A Opção A descreve uma concepção lamarckista ingênua (\"decidiram mudar\"), incompatível com a genética real.\r\n  3. Portanto, a resposta correta e cientificamente rigorosa é a **Opção B** (caso clássico análogo ao melanismo industrial da mariposa *Biston betularia*).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. O mecanismo biológico correto formulado por Charles Darwin e Alfred Wallace baseia-se em três pilares:\r\n     - *Variabilidade genética prévia:* Indivíduos da mesma espécie possuem variações naturais pré-existentes.\r\n     - *Pressão seletiva ambiental:* A alteração no ambiente (árvores escurecidas pela fuligem ou pó mineral) tornou as mariposas claras mais visíveis aos predadores e mais vulneráveis ao pó.\r\n     - *Reprodução diferencial:* As mariposas cinzentas sobreviveram por mais tempo e geraram maior número de filhotes férteis, transmitindo seus genes adiante.\r\n  2. A Opção A descreve uma concepção lamarckista ingênua (\"decidiram mudar\"), incompatível com a genética real.\r\n  3. Portanto, a resposta correta e cientificamente rigorosa é a **Opção B** (caso clássico análogo ao melanismo industrial da mariposa *Biston betularia*)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_009"
+                                      ],
+    "related_real_world_application":  "O surgimento de bactérias super-resistentes ao uso indiscriminado de antibióticos na medicina moderna."
+}

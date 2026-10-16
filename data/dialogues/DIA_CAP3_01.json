@@ -1,0 +1,32 @@
+{
+  "id": "DIA_CAP3_01",
+  "title": "A Vazão nos Aquedutos Subterrâneos",
+  "nodes": {
+    "start": {
+      "speaker": "Engenheira de Águas",
+      "speaker_title": "Mestra Construtora",
+      "portrait_key": "char_lyra_portrait_thinking",
+      "text": "O nível do reservatório central está caindo perigosamente. As duas comportas de entrada têm taxas de vazão distintas e precisamos prever o tempo exato para encher a câmara sem causar sobrepressão.",
+      "next": "node_02"
+    },
+    "node_02": {
+      "speaker": "Protagonista",
+      "speaker_title": "Investigador",
+      "portrait_key": "char_hero_portrait_neutral",
+      "text": "Comportas trabalhando em paralelo somam suas vazões volumétricas. Podemos calcular a média harmônica das taxas.",
+      "choices": [
+        {
+          "text": "Calcular o tempo de enchimento combinado dos aquedutos (Enigma)",
+          "trigger_puzzle": "PUZ_MATH_004",
+          "next": "node_end"
+        }
+      ]
+    },
+    "node_end": {
+      "speaker": "Engenheira de Águas",
+      "speaker_title": "Mestra Construtora",
+      "portrait_key": "char_lyra_portrait_neutral",
+      "text": "A sincronia foi perfeita. O fluxo estabilizou e a cidade evitou uma enchente nos bairros baixos."
+    }
+  }
+}

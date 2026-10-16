@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_003",
+    "title":  "Concordância Verbal: Verbos Impessoais e Coletivos Partitivos",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Identificar e corrigir infrações às normas de concordância verbal em textos administrativos formais.",
+    "concept_summary":  "O escrivão júnior de Val-Serena cometeu erros de digitação ao transcrever uma ata oficial sobre os aquedutos. O protagonista precisa apontar a frase gramaticalmente correta para que o documento tenha validade jurídica perante o juiz. Identificar e corrigir infrações às normas de concordância verbal em textos administrativos formais.",
+    "formal_explanation":  "1. Analisa-se a Opção B: O verbo *fazer*, quando indica tempo decorrido, é impessoal (não tem sujeito) e deve permanecer estritamente no singular (*Faz dez anos*). Incorreta.\r\n  2. Analisa-se a Opção C: O verbo *haver*, no sentido de existir ou ocorrer, é impessoal e deve ficar na 3ª pessoa do singular (*Houve muitos protestos*). Incorreta.\r\n  3. Analisa-se a Opção D: O sujeito é \"A restauração dos reservatórios\". O núcleo do sujeito é \"restauração\" (singular). O verbo deve concordar com o núcleo: *exige*. Incorreta.\r\n  4. Analisa-se a Opção A: Com expressões partitivas (\"a maioria de\", \"a maior parte de\") seguidas de substantivo no plural (\"dos cidadãos\"), a norma culta aceita a concordância facultativa: tanto no singular (concordando com *maioria*) quanto no plural (concordância atrativa com *cidadãos*). Portanto, a frase A está plenamente correta perante a norma-padrão.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Analisa-se a Opção B: O verbo *fazer*, quando indica tempo decorrido, é impessoal (não tem sujeito) e deve permanecer estritamente no singular (*Faz dez anos*). Incorreta.\r\n  2. Analisa-se a Opção C: O verbo *haver*, no sentido de existir ou ocorrer, é impessoal e deve ficar na 3ª pessoa do singular (*Houve muitos protestos*). Incorreta.\r\n  3. Analisa-se a Opção D: O sujeito é \"A restauração dos reservatórios\". O núcleo do sujeito é \"restauração\" (singular). O verbo deve concordar com o núcleo: *exige*. Incorreta.\r\n  4. Analisa-se a Opção A: Com expressões partitivas (\"a maioria de\", \"a maior parte de\") seguidas de substantivo no plural (\"dos cidadãos\"), a norma culta aceita a concordância facultativa: tanto no singular (concordando com *maioria*) quanto no plural (concordância atrativa com *cidadãos*). Portanto, a frase A está plenamente correta perante a norma-padrão."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_003"
+                                      ],
+    "related_real_world_application":  "Redação de redações escolares, cartas de apresentação e redação de documentos oficiais."
+}

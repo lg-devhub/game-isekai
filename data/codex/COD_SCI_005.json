@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_005",
+    "title":  "Química dos Ácidos e Bases: A Reação de Neutralização",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Compreender a reação de neutralização entre compostos ácidos e básicos e interpretar a escala de pH.",
+    "concept_summary":  "Lyra mede o pH do solo das vinhas de Val-Serena e constata um valor de pH 4,5 (muito ácido para o cultivo saudável das videiras, que exigem pH próximo a 6,5). Ela precisa aplicar um composto mineral corretivo natural para diminuir a acidez e elevar o pH do solo. Compreender a reação de neutralização entre compostos ácidos e básicos e interpretar a escala de pH.",
+    "formal_explanation":  "1. Na escala de pH:\r\n     - Valores abaixo de 7 indicam soluções ácidas.\r\n     - O solo está com pH 4,5 (ácido).\r\n  2. Para neutralizar um ácido e elevar o pH em direção ao valor neutro (7), deve-se adicionar uma substância de caráter **básico (alcalino)**.\r\n  3. Vinagre e sucos cítricos contêm ácidos orgânicos (ácido acético e ácido cítrico), o que aumentaria ainda mais a acidez do solo.\r\n  4. O calcário agrícola (composto por carbonato de cálcio, $\\text{CaCO}_3$) e a cal hidratada ($\\text{Ca(OH)}_2$) são bases fortes e sais de hidrólise básica que reagem com os íons $H^+$ do solo, neutralizando-os e formando água e íons cálcio benéficos para as raízes.\r\n  5. Portanto, o produto correto é o **Calcário moído / Cal apagada**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Na escala de pH:\r\n     - Valores abaixo de 7 indicam soluções ácidas.\r\n     - O solo está com pH 4,5 (ácido).\r\n  2. Para neutralizar um ácido e elevar o pH em direção ao valor neutro (7), deve-se adicionar uma substância de caráter **básico (alcalino)**.\r\n  3. Vinagre e sucos cítricos contêm ácidos orgânicos (ácido acético e ácido cítrico), o que aumentaria ainda mais a acidez do solo.\r\n  4. O calcário agrícola (composto por carbonato de cálcio, $\\text{CaCO}_3$) e a cal hidratada ($\\text{Ca(OH)}_2$) são bases fortes e sais de hidrólise básica que reagem com os íons $H^+$ do solo, neutralizando-os e formando água e íons cálcio benéficos para as raízes.\r\n  5. Portanto, o produto correto é o **Calcário moído / Cal apagada**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_005"
+                                      ],
+    "related_real_world_application":  "Prática agronômica da calagem no cerrado brasileiro e uso de antiácidos estomacais (hidróxido de magnésio) para azia."
+}

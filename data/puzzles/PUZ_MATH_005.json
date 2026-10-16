@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_MATH_005",
+    "title":  "A Balança dos Pesos Arcanos",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Traduzir relações de equilíbrio em uma balança de dois pratos para equações algébricas e isolar a incógnita.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Para verificar se um lote de minério não foi adulterado, o boticário usa uma balança de pratos. No prato esquerdo há 3 lingotes de bronze idênticos e um peso de 4 kg. No prato direito há 1 lingote idêntico aos anteriores e um peso de 16 kg. A balança está em equilíbrio perfeito.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Traduzir relações de equilíbrio em uma balança de dois pratos para equações algébricas e isolar a incógnita.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "6.",
+    "step_by_step_explanation":  "1. Modela-se a igualdade algébrica a partir do equilíbrio da balança:\r\n     $$3x + 4 = x + 16$$\r\n  2. Subtrai-se $x$ de ambos os lados da equação:\r\n     $$2x + 4 = 16$$\r\n  3. Subtrai-se 4 de ambos os lados:\r\n     $$2x = 12$$\r\n  4. Divide-se por 2:\r\n     $$x = \\frac{12}{2} = 6 \\text{ kg}$$\r\n  5. Verificação: $3(6) + 4 = 18 + 4 = 22$; $6 + 16 = 22$. Equilíbrio confirmado.",
+    "accepted_answers":  [
+                             "6",
+                             "6 kg",
+                             "6kg`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "10",
+                              "feedback":  "Após retirar 4 de 16, você tem $2x = 12$. Para achar o valor de um único lingote ($x$), divida 12 por 2."
+                          },
+                          {
+                              "pattern":  "12",
+                              "feedback":  "Dois lingotes pesam 12 kg. Quanto pesa apenas um deles?"
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no que acontece se você retirar 1 lingote de cada lado da balança ao mesmo tempo."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Ao retirar 1 lingote de cada prato, restam 2 lingotes + 4 kg no prato esquerdo e apenas 16 kg no prato direito."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "Se 2 lingotes + 4 kg pesam 16 kg, então os 2 lingotes sozinhos pesam $16 - 4 = 12$ kg. Divida 12 por 2."
+                  }
+              ],
+    "transfer_example":  "Descobrir o preço unitário de produtos idênticos em promoções do tipo \"leve 3 e ganhe desconto em relação a 1 item avulso\".",
+    "rewards":  {
+                    "erudition_xp":  100,
+                    "lumis":  50,
+                    "codex_entry_id":  "COD_MATH_005"
+                },
+    "validation_criteria":  "Teorema fundamental da álgebra elementar para grau 1: unicidade da solução real $x = (b-d)/(a-c)$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

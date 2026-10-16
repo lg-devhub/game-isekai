@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_LOG_015",
+    "title":  "A Sentença de Consistência Axiomática",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Resolver enigmas de auto-referência, meta-afirmações e consistência formal absoluta.",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  true,
+    "narrative_context":  "Para programar a matriz do Núcleo Áfono e garantir que o Véu de Axiomas permaneça eternamente estável sem paradoxos lógicos, o protagonista precisa escolher a única regra de ouro lógica que garante que um sistema não gere contradições destrutivas.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Resolver enigmas de auto-referência, meta-afirmações e consistência formal absoluta.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Correção (Soundness).",
+    "step_by_step_explanation":  "1. Em lógica matemática formal e teoria dos modelos:\r\n     - **Correção (Soundness):** Garante que se uma fórmula é demonstrável no sistema ($\\Gamma \\vdash \\phi$), então ela é semanticamente verdadeira em todos os modelos ($\\Gamma \\models \\phi$). Em suma: o sistema só prova verdades; nunca prova uma falsidade a partir de premissas verdadeiras.\r\n     - **Completude (Completeness):** Garante que toda verdade semântica pode ser provada ($\\Gamma \\models \\phi \\implies \\Gamma \\vdash \\phi$), mas não protege contra a geração de falsidades se o sistema for inconsistente.\r\n     - **Decidibilidade:** Refere-se à existência de um algoritmo de terminação finita para determinar a validade de fórmulas.\r\n  2. Portanto, a propriedade indispensável que blinda o sistema contra a dedução de falsidades é a **Correção (Soundness)**.",
+    "accepted_answers":  [
+                             "Correção (Soundness)",
+                             "Correção",
+                             "Soundness`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Completude",
+                              "feedback":  "Completude significa que todas as verdades podem ser demonstradas. A propriedade que impede a demonstração de erros e falsidades chama-se Correção (Soundness)."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense na diferença entre \u0027conseguir responder a todas as perguntas\u0027 versus \u0027nunca dar uma resposta errada\u0027."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "Queremos a propriedade que garante que qualquer teorema deduzido seja rigorosamente verdadeiro."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "Essa propriedade chama-se Correção (ou \u0027Soundness\u0027 na literatura formal)."
+                  }
+              ],
+    "transfer_example":  "Verificação formal de código-fonte de sistemas críticos (como software de controle de usinas nucleares ou pilotos automáticos de aviões).",
+    "rewards":  {
+                    "erudition_xp":  350,
+                    "lumis":  200,
+                    "codex_entry_id":  "COD_LOG_015"
+                },
+    "validation_criteria":  "Teorema da Correção para o Cálculo Proposicional e de Predicados: $\\vdash \\phi \\implies \\models \\phi$.",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Correção (Soundness)",
+                    "Completude",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_006",
+    "title":  "Teorema de Pitágoras e Ternas Pitagóricas",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Calcular a área de triângulos retângulos e hipotenusas com relações métricas fundamentais.",
+    "concept_summary":  "Um pedreiro precisa recortar uma laje de mármore no formato de um triângulo retângulo para o piso da praça de Val-Serena. Os dois lados perpendiculares (catetos) medem 6 metros e 8 metros. Ele precisa calcular o comprimento da diagonal (hipotenusa) para encaixar a moldura de metal. Calcular a área de triângulos retângulos e hipotenusas com relações métricas fundamentais.",
+    "formal_explanation":  "1. Aplica-se o Teorema de Pitágoras: $c^2 = a^2 + b^2$.\r\n  2. Substituem-se os valores dos catetos:\r\n     $$c^2 = 6^2 + 8^2 = 36 + 64 = 100$$\r\n  3. Extrai-se a raiz quadrada:\r\n     $$c = \\sqrt{100} = 10 \\text{ metros}$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Aplica-se o Teorema de Pitágoras: $c^2 = a^2 + b^2$.\r\n  2. Substituem-se os valores dos catetos:\r\n     $$c^2 = 6^2 + 8^2 = 36 + 64 = 100$$\r\n  3. Extrai-se a raiz quadrada:\r\n     $$c = \\sqrt{100} = 10 \\text{ metros}$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_006"
+                                      ],
+    "related_real_world_application":  "Medir a distância diagonal percorrida em um quarteirão retangular cortando caminho por uma praça."
+}

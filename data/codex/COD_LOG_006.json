@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_006",
+    "title":  "Teoria dos Conjuntos e Princípio da Inclusão-Exclusão",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Interpretar relações de pertinência, interseção e inclusão entre conjuntos finitos.",
+    "concept_summary":  "Lyra está organizando o mostruário de 30 amostras minerais. O conjunto $A$ contém os minerais resistentes ao calor (20 amostras). O conjunto $B$ contém os minerais condutores de eletricidade (15 amostras). Sabe-se que 8 amostras possuem ambas as propriedades ao mesmo tempo ($A \\cap B$). Quantas amostras não possuem nenhuma dessas duas qualidades? Interpretar relações de pertinência, interseção e inclusão entre conjuntos finitos.",
+    "formal_explanation":  "1. Aplica-se o Princípio da Inclusão-Exclusão para encontrar a união dos conjuntos ($A \\cup B$):\r\n     $$|A \\cup B| = |A| + |B| - |A \\cap B|$$\r\n     $$|A \\cup B| = 20 + 15 - 8 = 27 \\text{ minerais}$$\r\n  2. 27 minerais possuem ao menos uma das duas características.\r\n  3. Para achar quantos não possuem nenhuma das duas, subtrai-se esse valor do universo total:\r\n     $$\\text{Nenhum} = |U| - |A \\cup B| = 30 - 27 = 3 \\text{ minerais}$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Aplica-se o Princípio da Inclusão-Exclusão para encontrar a união dos conjuntos ($A \\cup B$):\r\n     $$|A \\cup B| = |A| + |B| - |A \\cap B|$$\r\n     $$|A \\cup B| = 20 + 15 - 8 = 27 \\text{ minerais}$$\r\n  2. 27 minerais possuem ao menos uma das duas características.\r\n  3. Para achar quantos não possuem nenhuma das duas, subtrai-se esse valor do universo total:\r\n     $$\\text{Nenhum} = |U| - |A \\cup B| = 30 - 27 = 3 \\text{ minerais}$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_006"
+                                      ],
+    "related_real_world_application":  "Interpretação de pesquisas de opinião pública (ex.: percentual de pessoas que leem notícias pela internet, jornal impresso ou ambos)."
+}

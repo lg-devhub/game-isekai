@@ -1,0 +1,59 @@
+﻿{
+    "id":  "PUZ_LOG_005",
+    "title":  "O Enigma dos Três Baús de Alabastro",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Testar hipóteses de veracidade mutuamente exclusivas e eliminar inconsistências lógicas internas.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Em uma capela lateral de Val-Serena, há três baús fechados (Dourado, Prateado e de Chumbo). Exatamente um deles contém o selo original da cidade. Cada baú tem uma inscrição gravada na tampa, mas apenas uma das três inscrições é verdadeira:",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Testar hipóteses de veracidade mutuamente exclusivas e eliminar inconsistências lógicas internas.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Baú Prateado.",
+    "step_by_step_explanation":  "- Vamos testar as três hipóteses de localização do selo:\r\n  - **Hipótese 1: O selo está no Baú Dourado.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Verdadeira.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Verdadeira (já que está no Dourado).\r\n    - Isso geraria pelo menos 2 frases verdadeiras, o que viola a regra de que *apenas uma* é verdadeira. Portanto, Hipótese 1 é falsa.\r\n  - **Hipótese 2: O selo está no Baú de Chumbo.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Falsa.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Verdadeira (está no Chumbo).\r\n    - Inscrição do Chumbo (\"Não está no Dourado\"): Verdadeira (está no Chumbo).\r\n    - Novamente temos 2 frases verdadeiras. Hipótese 2 é falsa.\r\n  - **Hipótese 3: O selo está no Baú Prateado.**\r\n    - Inscrição do Dourado (\"Está aqui\"): Falsa.\r\n    - Inscrição do Prateado (\"Não está aqui\"): Falsa (pois está nele!).\r\n    - Inscrição do Chumbo (\"Não está no Dourado\"): Verdadeira (já que está no Prateado).\r\n    - Aqui temos exatamente 1 frase verdadeira (a do Chumbo) e 2 falsas (Dourado e Prateado).\r\n  - Conclusão inequívoca: o selo está no **Baú Prateado**.",
+    "accepted_answers":  [
+                             "Baú Prateado",
+                             "Prateado`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Baú Dourado",
+                              "feedback":  "Se o selo estivesse no Dourado, a frase do baú Prateado também seria verdadeira (\u0027não está aqui\u0027), gerando duas verdades."
+                          },
+                          {
+                              "pattern":  "Baú de Chumbo",
+                              "feedback":  "Se estivesse no Chumbo, tanto a inscrição do Prateado quanto a do Chumbo seriam verdadeiras ao mesmo tempo."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Teste colocar o selo em cada um dos baús e conte quantas frases ficam verdadeiras em cada teste."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Se o selo estivesse no Dourado, as frases do Dourado e do Prateado seriam ambas verdadeiras. Isso é proibido pela regra."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "Se o selo estiver no Prateado, as duas primeiras frases são mentiras e apenas a terceira é verdadeira. É o único caso que cumpre as condições!"
+                  }
+              ],
+    "transfer_example":  "Testes de consistência lógica em provas forenses e validação de requisitos de software (garantia de unicidade).",
+    "rewards":  {
+                    "erudition_xp":  110,
+                    "lumis":  55,
+                    "codex_entry_id":  "COD_LOG_005"
+                },
+    "validation_criteria":  "Teorema da consistência sob valoração única: existe uma e somente uma hipótese com soma de valores verdade igual a 1.",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Baú Prateado",
+                    "Baú Dourado",
+                    "Baú de Chumbo"
+                ]
+}

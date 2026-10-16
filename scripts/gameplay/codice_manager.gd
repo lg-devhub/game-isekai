@@ -10,6 +10,12 @@ var unlocked_entry_ids: Array = []
 
 func _ready() -> void:
 	load_all_codex_data()
+	sync_from_save()
+
+func sync_from_save() -> void:
+	if SaveSystem.current_save_data.has("codice"):
+		var saved_unlocked = SaveSystem.current_save_data["codice"].get("unlocked_entries", [])
+		unlocked_entry_ids = saved_unlocked.duplicate()
 
 func load_all_codex_data() -> void:
 	var dir = DirAccess.open(CODEX_DIR)
@@ -58,3 +64,32 @@ func get_entries_by_area(area_name: String) -> Array[Dictionary]:
 
 func get_entry(entry_id: String) -> Dictionary:
 	return loaded_entries.get(entry_id, {})
+
+func mark_concept_mastered(entry_id: String) -> void:
+	if not SaveSystem.current_save_data.has("codice"):
+		return
+	var mastered: Array = SaveSystem.current_save_data["codice"].get("mastered_concepts", [])
+	if not mastered.has(entry_id):
+		mastered.append(entry_id)
+		SaveSystem.current_save_data["codice"]["mastered_concepts"] = mastered
+		SaveSystem.save_game()
+		emit_signal("concept_mastered", entry_id)
+		print("[CodiceManager] Conceito dominado com maestria: %s" % entry_id)
+
+func record_revision_score(entry_id: String, score: int) -> void:
+	if not SaveSystem.current_save_data.has("codice"):
+		return
+	var scores: Dictionary = SaveSystem.current_save_data["codice"].get("voluntary_revision_scores", {})
+	scores[entry_id] = score
+	SaveSystem.current_save_data["codice"]["voluntary_revision_scores"] = scores
+	SaveSystem.current_save_data["codice"]["spaced_reviews_completed"] = SaveSystem.current_save_data["codice"].get("spaced_reviews_completed", 0) + 1
+	SaveSystem.save_game()
+
+func get_spaced_review_candidates() -> Array[Dictionary]:
+	var candidates: Array[Dictionary] = []
+	for entry_id in unlocked_entry_ids:
+		var entry = get_entry(entry_id)
+		if not entry.is_empty():
+			candidates.append(entry)
+	return candidates
+

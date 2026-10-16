@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_014",
+    "title":  "Métodos Paleográficos e Decifração de Escritas Antigas",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Decifrar regras gramaticais de uma língua construída arcaica a partir de amostras bilíngues reduzidas (método da Pedra de Roseta).",
+    "concept_summary":  "No subsolo do templo, o protagonista encontra três tábuas votivas com inscrições arcaicas e suas traduções parciais em dialeto solemniano: Decifrar regras gramaticais de uma língua construída arcaica a partir de amostras bilíngues reduzidas (método da Pedra de Roseta).",
+    "formal_explanation":  "1. Compara-se a Tábua 1 e a Tábua 3:\r\n     - Ambas têm `-AETHEL-NOM` e ambas contêm \"constrói a cidade\".\r\n     - A única diferença no início é `KOR-` vs. `LUM-`.\r\n     - No texto solemniano, a diferença é \"A mente\" vs. \"A luz\".\r\n     - Conclui-se que: `KOR` = A mente, `LUM` = A luz.\r\n  2. Compara-se a Tábua 1 e a Tábua 2:\r\n     - Ambas começam com `KOR-AETHEL-` e contêm \"A mente [...] a cidade\".\r\n     - A diferença no final é `-NOM` vs. `-VAL`.\r\n     - No texto solemniano, a diferença é \"constrói\" vs. \"protege\".\r\n     - Conclui-se que: `-NOM` = constrói, `-VAL` = protege.\r\n  3. O radical intermediário `-AETHEL-` corresponde à raiz invariável \"a cidade\".\r\n  4. Para expressar \"A luz protege a cidade\", combinam-se os morfemas identificados:\r\n     - Sujeito: `LUM` (A luz).\r\n     - Objeto: `AETHEL` (a cidade).\r\n     - Verbo: `VAL` (protege).\r\n  5. A forma gramatical exata é **LUM-AETHEL-VAL**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Compara-se a Tábua 1 e a Tábua 3:\r\n     - Ambas têm `-AETHEL-NOM` e ambas contêm \"constrói a cidade\".\r\n     - A única diferença no início é `KOR-` vs. `LUM-`.\r\n     - No texto solemniano, a diferença é \"A mente\" vs. \"A luz\".\r\n     - Conclui-se que: `KOR` = A mente, `LUM` = A luz.\r\n  2. Compara-se a Tábua 1 e a Tábua 2:\r\n     - Ambas começam com `KOR-AETHEL-` e contêm \"A mente [...] a cidade\".\r\n     - A diferença no final é `-NOM` vs. `-VAL`.\r\n     - No texto solemniano, a diferença é \"constrói\" vs. \"protege\".\r\n     - Conclui-se que: `-NOM` = constrói, `-VAL` = protege.\r\n  3. O radical intermediário `-AETHEL-` corresponde à raiz invariável \"a cidade\".\r\n  4. Para expressar \"A luz protege a cidade\", combinam-se os morfemas identificados:\r\n     - Sujeito: `LUM` (A luz).\r\n     - Objeto: `AETHEL` (a cidade).\r\n     - Verbo: `VAL` (protege).\r\n  5. A forma gramatical exata é **LUM-AETHEL-VAL**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_014"
+                                      ],
+    "related_real_world_application":  "Decifração histórica de hieróglifos egípcios por Jean-François Champollion a partir da Pedra de Roseta."
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_002",
+    "title":  "Densidade, Massa Específica e Empuxo",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Calcular a densidade absoluta ($d = m/V$) e prever se um corpo flutua ou afunda em líquidos de densidade conhecida.",
+    "concept_summary":  "No porto de Val-Serena, um mercador suspeita que um lingote vendido como \"cristal de quartzo puro\" é falso. Uma amostra do cristal tem massa de 60 gramas. Ao ser mergulhada em uma proveta graduada contendo água, o volume da água sobe de 100 mL para 120 mL. Calcular a densidade absoluta ($d = m/V$) e prever se um corpo flutua ou afunda em líquidos de densidade conhecida.",
+    "formal_explanation":  "1. Calcula-se o volume do mineral pelo método de deslocamento de líquido:\r\n     $$V = V_{\\text{final}} - V_{\\text{inicial}} = 120 \\text{ mL} - 100 \\text{ mL} = 20 \\text{ mL} = 20 \\text{ cm}^3$$\r\n  2. Aplica-se a fórmula fundamental da densidade:\r\n     $$d = \\frac{m}{V} = \\frac{60 \\text{ g}}{20 \\text{ cm}^3} = 3 \\text{ g/cm}^3$$\r\n  3. (Dado contextual: como o quartzo puro tem densidade de aproximadamente $2{,}65 \\text{ g/cm}^3$, o valor 3 revela que a peça é uma liga com minerais mais densos).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Calcula-se o volume do mineral pelo método de deslocamento de líquido:\r\n     $$V = V_{\\text{final}} - V_{\\text{inicial}} = 120 \\text{ mL} - 100 \\text{ mL} = 20 \\text{ mL} = 20 \\text{ cm}^3$$\r\n  2. Aplica-se a fórmula fundamental da densidade:\r\n     $$d = \\frac{m}{V} = \\frac{60 \\text{ g}}{20 \\text{ cm}^3} = 3 \\text{ g/cm}^3$$\r\n  3. (Dado contextual: como o quartzo puro tem densidade de aproximadamente $2{,}65 \\text{ g/cm}^3$, o valor 3 revela que a peça é uma liga com minerais mais densos)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_002"
+                                      ],
+    "related_real_world_application":  "Testar se um anel de ouro é genuíno sem danificá-lo, ou entender por que blocos maciços de ferro afundam enquanto navios ocos flutuam."
+}

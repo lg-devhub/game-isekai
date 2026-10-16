@@ -1,0 +1,59 @@
+﻿{
+    "id":  "PUZ_LANG_006",
+    "title":  "Os Conectivos da Carta de Navegação",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Selecionar conjunções adequadas para articular relações de causa, oposição, concessão e conclusão em textos argumentativos.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Um guia fluvial do Rio Argênteo deixou instruções sobre os perigos da corredeira: \"As águas da garganta parecem tranquilas na superfície; [...], correntezas profundas puxam os barcos em direção às pedras submersas com força devastadora.\" O protagonista precisa preencher a lacuna com o conectivo que preserva a coerência do alerta.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Selecionar conjunções adequadas para articular relações de causa, oposição, concessão e conclusão em textos argumentativos.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "contudo.",
+    "step_by_step_explanation":  "1. A primeira oração apresenta uma percepção visual favorável: \"As águas parecem tranquilas\".\r\n  2. A segunda oração introduz um fato perigoso e inesperado: \"correntezas profundas puxam os barcos para as pedras\".\r\n  3. Entre essas duas orações há uma relação semântica de contraste, oposição ou quebra de expectativa.\r\n  4. Analisam-se as opções:\r\n     - *portanto* e *logo* são conjunções conclusivas (não há conclusão lógica).\r\n     - *porquanto* é uma conjunção causal/explicativa (equivalente a \u0027visto que\u0027).\r\n     - *contudo* é uma conjunção coordenativa adversativa (equivalente a \u0027porém\u0027, \u0027no entanto\u0027, \u0027todavia\u0027).\r\n  5. Portanto, o conectivo adversativo correto é **contudo**.",
+    "accepted_answers":  [
+                             "contudo",
+                             "Contudo`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "portanto",
+                              "feedback":  "\u0027Portanto\u0027 indicaria que as pedras são perigosas porque a água parece calma. A relação aqui é de contraste (oposição)."
+                          },
+                          {
+                              "pattern":  "porquanto",
+                              "feedback":  "\u0027Porquanto\u0027 significa \u0027porque\u0027 ou \u0027já que\u0027. O sentido exigido é de oposição (\u0027no entanto\u0027)."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "A primeira frase diz que parece calmo; a segunda diz que é perigoso. É uma relação de oposição."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Procure a palavra que tem o mesmo sentido de \u0027porém\u0027 ou \u0027no entanto\u0027."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "A única conjunção adversativa da lista é \u0027contudo\u0027."
+                  }
+              ],
+    "transfer_example":  "Redação dissertativo-argumentativa do ENEM e clareza na redação de relatórios científicos.",
+    "rewards":  {
+                    "erudition_xp":  110,
+                    "lumis":  55,
+                    "codex_entry_id":  "COD_LANG_006"
+                },
+    "validation_criteria":  "Teoria dos operadores argumentativos de Ducrot e tipologia gramatical clássica.",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "contudo",
+                    "portanto",
+                    "porquanto"
+                ]
+}

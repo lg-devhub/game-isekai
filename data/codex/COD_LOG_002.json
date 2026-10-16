@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_002",
+    "title":  "Encadeamento de Implicações e Modus Ponens",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Avaliar o valor de verdade de proposições condicionais ($p \\implies q$).",
+    "concept_summary":  "Uma porta automática possui uma placa de instruções deixada pelos guardiões: \"Se a alavanca Dourada for puxada, a alavanca Prateada também deve ser puxada. Se a alavanca Prateada for puxada, a alavanca de Ferro deve permanecer para cima.\" O protagonista observa que a alavanca Dourada foi puxada. O que deve ser feito com a alavanca de Ferro? Avaliar o valor de verdade de proposições condicionais ($p \\implies q$).",
+    "formal_explanation":  "1. Temos a premissa inicial factual: $D$ é Verdadeiro (Dourada está puxada).\r\n  2. Pela Regra 1 ($D \\implies P$), aplica-se a regra de inferência *Modus Ponens*: conclui-se que $P$ é Verdadeiro (Prateada deve estar puxada).\r\n  3. Pela Regra 2 ($P \\implies \\text{Ferro para cima}$), como $P$ é Verdadeiro, aplica-se novamente o *Modus Ponens*: conclui-se que a alavanca de Ferro deve obrigatoriamente estar **Para cima**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Temos a premissa inicial factual: $D$ é Verdadeiro (Dourada está puxada).\r\n  2. Pela Regra 1 ($D \\implies P$), aplica-se a regra de inferência *Modus Ponens*: conclui-se que $P$ é Verdadeiro (Prateada deve estar puxada).\r\n  3. Pela Regra 2 ($P \\implies \\text{Ferro para cima}$), como $P$ é Verdadeiro, aplica-se novamente o *Modus Ponens*: conclui-se que a alavanca de Ferro deve obrigatoriamente estar **Para cima**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_002"
+                                      ],
+    "related_real_world_application":  "Cadeias de condições em algoritmos de programação (`if ... then ... else`) e sistemas de segurança industrial."
+}

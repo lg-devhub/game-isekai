@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_009",
+    "title":  "Etimologia Greco-Latina nas Ciências",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Reconhecer radicais clássicos na formação de vocábulos eruditos e deduzir significados desconhecidos.",
+    "concept_summary":  "Em um tratado alquímico de Solemnia, o protagonista encontra o termo técnico *Termocromático* para descrever uma liga de bronze especial. O texto antigo diz: \"Esta placa é de natureza termocromática, sendo de grande utilidade para alertar os fundidores sobre riscos de incêndio.\" O que essa propriedade significa na prática? Reconhecer radicais clássicos na formação de vocábulos eruditos e deduzir significados desconhecidos.",
+    "formal_explanation":  "1. Decompõe-se o vocábulo em seus morfemas formativos:\r\n     - *Termo-* provém do grego *thérmē* (calor, temperatura).\r\n     - *-croma / -cromático* provém do grego *chrôma* (cor, matiz).\r\n     - *-tico* é sufixo adjetivador que indica relação ou pertencimento.\r\n  2. A junção semântica literal dos elementos resulta em \"relativo à cor provocada pelo calor\".\r\n  3. Portanto, um objeto termocromático é aquele que **muda de cor conforme a variação da temperatura**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Decompõe-se o vocábulo em seus morfemas formativos:\r\n     - *Termo-* provém do grego *thérmē* (calor, temperatura).\r\n     - *-croma / -cromático* provém do grego *chrôma* (cor, matiz).\r\n     - *-tico* é sufixo adjetivador que indica relação ou pertencimento.\r\n  2. A junção semântica literal dos elementos resulta em \"relativo à cor provocada pelo calor\".\r\n  3. Portanto, um objeto termocromático é aquele que **muda de cor conforme a variação da temperatura**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_009"
+                                      ],
+    "related_real_world_application":  "Compreensão do vocabulário científico e médico em artigos de biologia, química e física."
+}

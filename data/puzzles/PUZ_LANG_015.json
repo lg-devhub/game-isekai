@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_LANG_015",
+    "title":  "O Palimpsesto dos Dois Mundos",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Analisar textos corrompidos por palimpsestos e recompor o significado original através de coerência contextual e crítica interna.",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  true,
+    "narrative_context":  "No códice original do Núcleo Áfono, uma frase de síntese foi parcialmente raspada e sobrescrita por monges do Selo há 800 anos. O protagonista, utilizando sua *Sensibilidade Prismática*, consegue ver os dois estratos de tinta e precisa selecionar a reconstrução que respeita a gramática e o pensamento pré-cataclismo.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Analisar textos corrompidos por palimpsestos e recompor o significado original através de coerência contextual e crítica interna.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "ponte.",
+    "step_by_step_explanation":  "1. A frase organiza-se em torno de uma estrutura sintática antitética clássica: \"não é $X$, mas sim $Y$\".\r\n  2. O primeiro termo ($X$) é \"uma muralha para o esquecimento\" (uma barreira que bloqueia, isola e cega).\r\n  3. O segundo termo ($Y$) destina-se a produzir \"mútua iluminação\" (troca, intercâmbio, clareza e diálogo entre os dois mundos).\r\n  4. Para estabelecer o contraste perfeito com \"muralha\" (que separa) e viabilizar a \"iluminação mútua\" (que conecta), o substantivo metafórico ideal de passagem e ligação física e conceitual é **ponte**.\r\n  5. Os outros termos (*lâmina*, *prisão*, *cinza*) são destrutivos ou restritivos, contradizendo o sentido de iluminação e diálogo.",
+    "accepted_answers":  [
+                             "ponte",
+                             "Ponte`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "prisão ou lâmina",
+                              "feedback":  "A frase original contrapõe a separação da muralha a uma ferramenta de conexão e aprendizado mútuo."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no que faz o oposto exato de uma muralha: enquanto a muralha separa duas margens, o que liga duas margens?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "A palavra precisa expressar união, passagem e cooperação entre mundos."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "O termo correto é \u0027ponte\u0027."
+                  }
+              ],
+    "transfer_example":  "Crítica textual bíblica, filologia clássica e edição fidedigna de manuscritos históricos danificados.",
+    "rewards":  {
+                    "erudition_xp":  350,
+                    "lumis":  200,
+                    "codex_entry_id":  "COD_LANG_015"
+                },
+    "validation_criteria":  "Teoria da crítica textual de Paul Maas (Emendatio baseada no usus scribendi e paralelismo estilístico).",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "ponte",
+                    "prisão ou lâmina",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

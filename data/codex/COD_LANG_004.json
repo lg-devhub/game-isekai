@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_004",
+    "title":  "História da Criptografia: A Cifra de César",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Compreender o princípio de transposição e substituição monoalfabética com chave de deslocamento constante.",
+    "concept_summary":  "Lyra encontra uma anotação confidencial de seu avô sobre a localização das mudas medicinais raras. A mensagem foi cifrada com a Cifra de César com deslocamento de 3 posições à frente no alfabeto ($A \\to D, B \\to E, C \\to F, \\dots$). A palavra cifrada é **SRUWD**. Compreender o princípio de transposição e substituição monoalfabética com chave de deslocamento constante.",
+    "formal_explanation":  "1. Para cada letra do texto cifrado, recuam-se 3 posições no alfabeto:\r\n     - **S** $\\to$ recua 3 posições: R, Q, **P**.\r\n     - **R** $\\to$ recua 3 posições: Q, P, **O**.\r\n     - **U** $\\to$ recua 3 posições: T, S, **R**.\r\n     - **W** $\\to$ recua 3 posições: V, U, **T**.\r\n     - **D** $\\to$ recua 3 posições: C, B, **A**.\r\n  2. Juntando as letras decifradas, obtém-se a palavra **PORTA**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Para cada letra do texto cifrado, recuam-se 3 posições no alfabeto:\r\n     - **S** $\\to$ recua 3 posições: R, Q, **P**.\r\n     - **R** $\\to$ recua 3 posições: Q, P, **O**.\r\n     - **U** $\\to$ recua 3 posições: T, S, **R**.\r\n     - **W** $\\to$ recua 3 posições: V, U, **T**.\r\n     - **D** $\\to$ recua 3 posições: C, B, **A**.\r\n  2. Juntando as letras decifradas, obtém-se a palavra **PORTA**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_004"
+                                      ],
+    "related_real_world_application":  "História da criptografia militar antiga (Júlio César em Roma) e fundamentos da segurança digital contemporânea."
+}

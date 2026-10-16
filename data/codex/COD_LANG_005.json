@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_005",
+    "title":  "Figuras de Linguagem: Ironia, Sátira e Eufemismo",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Identificar o uso intencional de ironia, eufemismo e hipérbole a partir do tom discursivo e contexto.",
+    "concept_summary":  "Durante o interrogatório sobre o desaparecimento do livro fiscal, o guarda relata com amargura: \"Ah, sim, foi uma noite espetacularmente tranquila! Apenas desabou uma tempestade de areia que derrubou os postes de luz, um bando de contrabandistas arrombou o portão oeste e o alarme soou quatro vezes consecutivas. Uma verdadeira noite de paz e sossego para qualquer sentinela.\" Identificar o uso intencional de ironia, eufemismo e hipérbole a partir do tom discursivo e contexto.",
+    "formal_explanation":  "1. O guarda acabou de listar uma série de eventos caóticos e perigosos (tempestade de areia, postes caídos, invasão de contrabandistas e quatro alarmes).\r\n  2. Logo em seguida, ele classifica a mesma noite como \"paz e sossego\".\r\n  3. Dizer exatamente o oposto daquilo que a realidade concreta demonstra, com o intuito de destacar o absurdo, a irritação ou o estresse do momento, é a definição exata de **Ironia**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. O guarda acabou de listar uma série de eventos caóticos e perigosos (tempestade de areia, postes caídos, invasão de contrabandistas e quatro alarmes).\r\n  2. Logo em seguida, ele classifica a mesma noite como \"paz e sossego\".\r\n  3. Dizer exatamente o oposto daquilo que a realidade concreta demonstra, com o intuito de destacar o absurdo, a irritação ou o estresse do momento, é a definição exata de **Ironia**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_005"
+                                      ],
+    "related_real_world_application":  "Leitura crítica de charges de jornal, crônicas humorísticas e sátiras políticas."
+}

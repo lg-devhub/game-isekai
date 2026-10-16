@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Echoes of the Veil"
 config/description="RPG educativo narrativo de fantasia isekai centrado em investigacao, raciocinio logico e ciencias."
-config/version="0.2.0-dev"
+config/version="0.3.0-dev"
 run/main_scene="res://scenes/boot/Boot.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -34,6 +34,8 @@ InventoryManager="*res://scripts/gameplay/inventory_manager.gd"
 QuestManager="*res://scripts/gameplay/quest_manager.gd"
 CodiceManager="*res://scripts/gameplay/codice_manager.gd"
 PuzzleEngine="*res://scripts/puzzle/puzzle_engine.gd"
+DialogueManager="*res://scripts/gameplay/dialogue_manager.gd"
+ShopManager="*res://scripts/gameplay/shop_manager.gd"
 
 [display]
 
@@ -42,6 +44,12 @@ window/size/viewport_height=1920
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/handheld/orientation=1
+
+[gui]
+
+theme/custom="res://assets/theme/echoes_theme.tres"
+theme/custom_font="res://assets/fonts/font_body_text.otf"
+theme/default_font_size=24
 
 [rendering]
 

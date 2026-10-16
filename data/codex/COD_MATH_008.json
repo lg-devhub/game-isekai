@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_008",
+    "title":  "Sequências Numéricas e Relações de Recorrência",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Identificar a lei de formação recursiva de uma sequência e prever termos subsequentes.",
+    "concept_summary":  "Em uma câmara subterrânea sob as catacumbas, uma placa de bronze exibe quatro números gravados em círculos concêntricos: $2, 5, 11, 23, \\dots$ O quinto círculo está vazio e deve ser preenchido para destravar a passagem. Identificar a lei de formação recursiva de uma sequência e prever termos subsequentes.",
+    "formal_explanation":  "- **Método 1 (Diferenças sucessivas):**\r\n    - $5 - 2 = 3$\r\n    - $11 - 5 = 6$\r\n    - $23 - 11 = 12$\r\n    - As diferenças formam uma progressão geométrica de razão 2: $3, 6, 12, \\dots$\r\n    - A próxima diferença deve ser $12 \\times 2 = 24$.\r\n    - Portanto, o próximo número é $23 + 24 = 47$.\r\n  - **Método 2 (Função de recorrência):**\r\n    - Cada termo é o dobro do anterior mais um: $a_{n} = 2a_{n-1} + 1$.\r\n    - $2 \\times 2 + 1 = 5$\r\n    - $5 \\times 2 + 1 = 11$\r\n    - $11 \\times 2 + 1 = 23$\r\n    - $23 \\times 2 + 1 = 46 + 1 = 47$.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "- **Método 1 (Diferenças sucessivas):**\r\n    - $5 - 2 = 3$\r\n    - $11 - 5 = 6$\r\n    - $23 - 11 = 12$\r\n    - As diferenças formam uma progressão geométrica de razão 2: $3, 6, 12, \\dots$\r\n    - A próxima diferença deve ser $12 \\times 2 = 24$.\r\n    - Portanto, o próximo número é $23 + 24 = 47$.\r\n  - **Método 2 (Função de recorrência):**\r\n    - Cada termo é o dobro do anterior mais um: $a_{n} = 2a_{n-1} + 1$.\r\n    - $2 \\times 2 + 1 = 5$\r\n    - $5 \\times 2 + 1 = 11$\r\n    - $11 \\times 2 + 1 = 23$\r\n    - $23 \\times 2 + 1 = 46 + 1 = 47$."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_008"
+                                      ],
+    "related_real_world_application":  "Analisar o crescimento populacional de culturas bacterianas ou a duplicação exponencial de arquivos de dados."
+}

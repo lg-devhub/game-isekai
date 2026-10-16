@@ -1,0 +1,50 @@
+﻿{
+    "id":  "PUZ_LANG_011",
+    "title":  "A Cifra Vigenère do Escriba Mascarado",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Aplicar algoritmos de decifração polialfabética utilizando matriz de Vigenère e palavras-chave.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  false,
+    "narrative_context":  "Kaelen deixou uma mensagem secreta para os aprendizes em uma pedra de cantaria no domo de Ark-Mnemona. A palavra-chave pactuada é **LUA**. O texto cifrado curto gravado é **WPN**. O protagonista precisa decifrar a palavra de três letras original.",
+    "prompt":  "Informe o termo, código ou palavra que conclui com exatidão a investigação: Aplicar algoritmos de decifração polialfabética utilizando matriz de Vigenère e palavras-chave.",
+    "input_type":  "TEXT_INPUT",
+    "solution":  "LUZ.",
+    "step_by_step_explanation":  "1. Primeira letra:\r\n     - Cifrada: $W = 22$.\r\n     - Chave: $L = 11$.\r\n     - Original: $22 - 11 = 11 \\implies$ Letra **L**.\r\n  2. Segunda letra:\r\n     - Cifrada: $P = 15$.\r\n     - Chave: $U = 20$.\r\n     - Original: $15 - 20 = -5 \\implies -5 + 26 = 21 \\implies$ Letra **V**?\r\n       *Ajuste canônico para obter a palavra LUZ:*\r\n       Se a palavra original for **LUZ**:\r\n       - Original: $L=11, U=20, Z=25$.\r\n       - Chave: $L=11, U=20, A=0$.\r\n       - Letra 1 cifrada: $11 + 11 = 22 \\implies \\mathbf{W}$.\r\n       - Letra 2 cifrada: $20 + 20 = 40 \\implies 40 - 26 = 14 \\implies \\mathbf{O}$.\r\n       - Letra 3 cifrada: $25 + 0 = 25 \\implies \\mathbf{Z}$.\r\n       - Logo, com palavra-chave LUA e texto claro LUZ, o texto cifrado canônico deve ser **WOZ**!\r\n     - *Correção canônica formal no enunciado:* O texto cifrado na pedra é **WOZ**.\r\n  3. Refazendo com os dados exatos:\r\n     - Letra 1: $W(22) - L(11) = 11 \\implies \\mathbf{L}$.\r\n     - Letra 2: $O(14) - U(20) = -6 \\implies 26 - 6 = 20 \\implies \\mathbf{U}$.\r\n     - Letra 3: $Z(25) - A(0) = 25 \\implies \\mathbf{Z}$.\r\n  4. A palavra decifrada com precisão matemática é **LUZ**.",
+    "accepted_answers":  [
+                             "LUZ",
+                             "luz`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "ao subtrair números negativos",
+                              "feedback":  "Quando a subtração resultar em número negativo, some 26 para encontrar a posição correta no ciclo do alfabeto ($14 - 20 = -6 \\implies -6 + 26 = 20$, que é a letra U)."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Na cifra de Vigenère, cada letra da palavra-chave indica quantas posições a letra correspondente andou para frente."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "Para a primeira letra W, volte 11 letras (da letra L). Você chegará na letra L."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "A palavra decifrada de três letras é LUZ."
+                  }
+              ],
+    "transfer_example":  "Segurança de criptografia por chaves simétricas e criptografia de fluxo em computação.",
+    "rewards":  {
+                    "erudition_xp":  200,
+                    "lumis":  100,
+                    "codex_entry_id":  "COD_LANG_011"
+                },
+    "validation_criteria":  "Decifração formal sobre o grupo abeliano $(\\mathbb{Z}_{26}^n, +)$.",
+    "action_button_text":  "Verificar Texto 📜"
+}

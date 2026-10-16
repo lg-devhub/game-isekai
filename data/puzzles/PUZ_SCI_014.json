@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_SCI_014",
+    "title":  "A Órbita Elíptica do Planetário de Khorath",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Aplicar a Terceira Lei de Kepler ($T^2 / a^3 = k$) para relacionar o período orbital de planetas com suas distâncias médias ao sol.",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  false,
+    "narrative_context":  "No grande planetário mecânico de Ark-Mnemona, os eixos de latão reproduzem o sistema estelar original de Velathys. Um planeta interior (A) tem distância média de 1 Unidade Astronômica (UA) do sol central e completa sua órbita em exatamente 1 ano estelar ($T_A = 1$). Um planeta exterior (B) orbita a uma distância média de 4 Unidades Astronômicas ($a_B = 4$ UA). O protagonista precisa configurar a engrenagem que dita o tempo de translação do planeta B.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Aplicar a Terceira Lei de Kepler ($T^2 / a^3 = k$) para relacionar o período orbital de planetas com suas distâncias médias ao sol.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "8.",
+    "step_by_step_explanation":  "1. Aplica-se a Terceira Lei de Kepler (Lei dos Períodos):\r\n     $$\\frac{T_1^2}{a_1^3} = \\frac{T_2^2}{a_2^3}$$\r\n  2. Como para o primeiro planeta $T_A = 1$ ano e $a_A = 1$ UA, a constante do sistema solar é:\r\n     $$k = \\frac{1^2}{1^3} = 1$$\r\n  3. Para o planeta B, com $a_B = 4$ UA:\r\n     $$T_B^2 = a_B^3 = 4^3$$\r\n  4. Calcula-se o cubo de 4:\r\n     $$4^3 = 4 \\times 4 \\times 4 = 64$$\r\n  5. Extrai-se a raiz quadrada para encontrar o período $T_B$:\r\n     $$T_B = \\sqrt{64} = 8 \\text{ anos}$$\r\n  6. Portanto, o planeta B leva exatamente **8 anos** para completar uma volta ao redor do sol.",
+    "accepted_answers":  [
+                             "8",
+                             "8 anos",
+                             "8 anos estelares`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "4",
+                              "feedback":  "Kepler provou que planetas mais distantes viajam mais devagar. A relação não é linear: o quadrado do período é igual ao cubo da distância ($T^2 = a^3$)."
+                          },
+                          {
+                              "pattern":  "64",
+                              "feedback":  "64 é o quadrado do período ($T^2$). Calcule a raiz quadrada de 64 para achar o período real em anos."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Calcule primeiro quanto dá 4 elevado ao cubo ($4 \\times 4 \\times 4$)."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "$4 \\times 4 \\times 4 = 64$. Pela lei de Kepler, $T^2 = 64$."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "Qual número positivo multiplicado por si mesmo resulta em 64? O número 8."
+                  }
+              ],
+    "transfer_example":  "Trajetórias de satélites artificiais de GPS em órbita terrestre e cálculos de missões espaciais para Marte e Júpiter.",
+    "rewards":  {
+                    "erudition_xp":  300,
+                    "lumis":  150,
+                    "codex_entry_id":  "COD_SCI_014"
+                },
+    "validation_criteria":  "Solução analítica do problema de dois corpos de Newton sob força central inversamente proporcional ao quadrado da distância.",
+    "action_button_text":  "Confirmar Análise 🔬"
+}

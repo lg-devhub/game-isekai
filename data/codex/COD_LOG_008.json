@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_008",
+    "title":  "Problemas de Satisfação de Restrições e Ordenação Linear",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Determinar a ordem espacial de uma série de elementos respeitando restrições lineares relativas.",
+    "concept_summary":  "Na bancada do laboratório de Solemnia, cinco frascos numerados de 1 a 5 (da esquerda para a direita) contêm diferentes reagentes: Cobalto, Enxofre, Lápis, Mercúrio e Quartzo. Para evitar uma reação volátil, eles devem ser organizados seguindo as regras químicas dos antigos construtores: Determinar a ordem espacial de uma série de elementos respeitando restrições lineares relativas.",
+    "formal_explanation":  "1. A posição 1 já está definida: **[1: Enxofre]**.\r\n  2. Sobram as posições 2, 3, 4 e 5 para Cobalto, Mercúrio, Quartzo e Lápis.\r\n  3. Pela restrição 3, o Quartzo não pode estar na posição 2 (vizinho do Enxofre).\r\n  4. O par Cobalto-Mercúrio $(C, M)$ deve ocupar duas posições consecutivas. As opções para o par seriam $(2, 3)$ ou $(3, 4)$.\r\n  5. Se o par $(C, M)$ ocupasse as posições $(3, 4)$:\r\n     - A posição 2 teria que receber o Quartzo ou o Lápis. Mas a restrição 3 proíbe o Quartzo na posição 2, logo a posição 2 receberia o Lápis.\r\n     - Porém, a restrição 4 exige que o Lápis esteja à direita de Mercúrio. Se Lápis estiver na posição 2 e Mercúrio na posição 4, isso viola a regra ($2 \u003c 4$). Logo, o par não pode estar em $(3, 4)$.\r\n  6. Portanto, o par $(C, M)$ deve obrigatoriamente ocupar as posições **2 e 3**:\r\n     - Posição 2: Cobalto.\r\n     - Posição 3: **Mercúrio**.\r\n  7. Restam as posições 4 e 5 para Quartzo e Lápis. Como o Lápis deve estar à direita de Mercúrio, qualquer uma das duas posições atende a restrição 4.\r\n  8. A posição 3 (central) é inequivocamente ocupada pelo **Mercúrio**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A posição 1 já está definida: **[1: Enxofre]**.\r\n  2. Sobram as posições 2, 3, 4 e 5 para Cobalto, Mercúrio, Quartzo e Lápis.\r\n  3. Pela restrição 3, o Quartzo não pode estar na posição 2 (vizinho do Enxofre).\r\n  4. O par Cobalto-Mercúrio $(C, M)$ deve ocupar duas posições consecutivas. As opções para o par seriam $(2, 3)$ ou $(3, 4)$.\r\n  5. Se o par $(C, M)$ ocupasse as posições $(3, 4)$:\r\n     - A posição 2 teria que receber o Quartzo ou o Lápis. Mas a restrição 3 proíbe o Quartzo na posição 2, logo a posição 2 receberia o Lápis.\r\n     - Porém, a restrição 4 exige que o Lápis esteja à direita de Mercúrio. Se Lápis estiver na posição 2 e Mercúrio na posição 4, isso viola a regra ($2 \u003c 4$). Logo, o par não pode estar em $(3, 4)$.\r\n  6. Portanto, o par $(C, M)$ deve obrigatoriamente ocupar as posições **2 e 3**:\r\n     - Posição 2: Cobalto.\r\n     - Posição 3: **Mercúrio**.\r\n  7. Restam as posições 4 e 5 para Quartzo e Lápis. Como o Lápis deve estar à direita de Mercúrio, qualquer uma das duas posições atende a restrição 4.\r\n  8. A posição 3 (central) é inequivocamente ocupada pelo **Mercúrio**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_008"
+                                      ],
+    "related_real_world_application":  "Planejamento de sequenciamento em linhas de montagem fabril ou ordenação de tarefas em gerenciamento de projetos."
+}

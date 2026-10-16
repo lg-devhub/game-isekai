@@ -1,0 +1,59 @@
+﻿{
+    "id":  "PUZ_LOG_008",
+    "title":  "A Ordem dos Frascos de Reagentes",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Determinar a ordem espacial de uma série de elementos respeitando restrições lineares relativas.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  false,
+    "narrative_context":  "Na bancada do laboratório de Solemnia, cinco frascos numerados de 1 a 5 (da esquerda para a direita) contêm diferentes reagentes: Cobalto, Enxofre, Lápis, Mercúrio e Quartzo. Para evitar uma reação volátil, eles devem ser organizados seguindo as regras químicas dos antigos construtores:",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Determinar a ordem espacial de uma série de elementos respeitando restrições lineares relativas.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Mercúrio.",
+    "step_by_step_explanation":  "1. A posição 1 já está definida: **[1: Enxofre]**.\r\n  2. Sobram as posições 2, 3, 4 e 5 para Cobalto, Mercúrio, Quartzo e Lápis.\r\n  3. Pela restrição 3, o Quartzo não pode estar na posição 2 (vizinho do Enxofre).\r\n  4. O par Cobalto-Mercúrio $(C, M)$ deve ocupar duas posições consecutivas. As opções para o par seriam $(2, 3)$ ou $(3, 4)$.\r\n  5. Se o par $(C, M)$ ocupasse as posições $(3, 4)$:\r\n     - A posição 2 teria que receber o Quartzo ou o Lápis. Mas a restrição 3 proíbe o Quartzo na posição 2, logo a posição 2 receberia o Lápis.\r\n     - Porém, a restrição 4 exige que o Lápis esteja à direita de Mercúrio. Se Lápis estiver na posição 2 e Mercúrio na posição 4, isso viola a regra ($2 \u003c 4$). Logo, o par não pode estar em $(3, 4)$.\r\n  6. Portanto, o par $(C, M)$ deve obrigatoriamente ocupar as posições **2 e 3**:\r\n     - Posição 2: Cobalto.\r\n     - Posição 3: **Mercúrio**.\r\n  7. Restam as posições 4 e 5 para Quartzo e Lápis. Como o Lápis deve estar à direita de Mercúrio, qualquer uma das duas posições atende a restrição 4.\r\n  8. A posição 3 (central) é inequivocamente ocupada pelo **Mercúrio**.",
+    "accepted_answers":  [
+                             "Mercúrio",
+                             "MERCURIO`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Cobalto",
+                              "feedback":  "Se o Cobalto ficar na posição 3 e o Mercúrio na 4, onde você colocará o Lápis para que ele fique à direita do Mercúrio e respeite todas as outras regras?"
+                          },
+                          {
+                              "pattern":  "Quartzo",
+                              "feedback":  "Lembre-se de que Cobalto e Mercúrio formam um bloco inseparável de dois frascos juntos."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no Cobalto e no Mercúrio como um bloco único de dois frascos unidos: [Cobalto-Mercúrio]."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "A posição 1 é o Enxofre. Como o Quartzo não pode ser o 2 e o Lápis tem que ficar depois do Mercúrio, o bloco [Cobalto-Mercúrio] precisa começar imediatamente na posição 2."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "Com o Cobalto na posição 2, o Mercúrio obrigatoriamente ocupa a posição 3."
+                  }
+              ],
+    "transfer_example":  "Planejamento de sequenciamento em linhas de montagem fabril ou ordenação de tarefas em gerenciamento de projetos.",
+    "rewards":  {
+                    "erudition_xp":  150,
+                    "lumis":  75,
+                    "codex_entry_id":  "COD_LOG_008"
+                },
+    "validation_criteria":  "Teorema da atribuição com restrições lineares (CSP - Constraint Satisfaction Problem) com solução única para a posição central.",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Mercúrio",
+                    "Cobalto",
+                    "Quartzo"
+                ]
+}

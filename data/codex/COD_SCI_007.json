@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_007",
+    "title":  "Movimento Harmônico Simples e o Pêndulo de Galileu",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Compreender que o período de um pêndulo simples independe da massa oscilante e varia com a raiz do comprimento da haste ($T = 2\\pi\\sqrt{L/g}$).",
+    "concept_summary":  "Na entrada dos maquinários das catacumbas de Solemnia, dois pêndulos gigantes com blocos de quartzo regulam a abertura sincronizada de uma comporta de engrenagens. O pêndulo A tem haste de 1 metro e leva exatamente 2 segundos para dar uma oscilação completa de ida e volta ($T = 2$ s). Para fazer um segundo pêndulo (B) oscilar mais devagar, demorando exatamente 4 segundos para cada ciclo completo ($T = 4$ s), qual deve ser o comprimento da haste do pêndulo B? Compreender que o período de um pêndulo simples independe da massa oscilante e varia com a raiz do comprimento da haste ($T = 2\\pi\\sqrt{L/g}$).",
+    "formal_explanation":  "1. A fórmula clássica de Galileu e Huygens para o período do pêndulo simples é:\r\n     $$T = 2\\pi \\sqrt{\\frac{L}{g}}$$\r\n  2. Queremos que o novo período seja o dobro do período anterior:\r\n     $$\\frac{T_2}{T_1} = \\frac{4}{2} = 2$$\r\n  3. Relacionam-se os comprimentos das hastes:\r\n     $$\\frac{T_2}{T_1} = \\sqrt{\\frac{L_2}{L_1}} \\implies 2 = \\sqrt{\\frac{L_2}{1}}$$\r\n  4. Elevam-se ambos os membros ao quadrado para eliminar a raiz:\r\n     $$2^2 = L_2 \\implies L_2 = 4 \\text{ metros}$$\r\n  5. Portanto, para duplicar o tempo do período, a haste deve ter seu comprimento quadruplicado ($4$ metros).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A fórmula clássica de Galileu e Huygens para o período do pêndulo simples é:\r\n     $$T = 2\\pi \\sqrt{\\frac{L}{g}}$$\r\n  2. Queremos que o novo período seja o dobro do período anterior:\r\n     $$\\frac{T_2}{T_1} = \\frac{4}{2} = 2$$\r\n  3. Relacionam-se os comprimentos das hastes:\r\n     $$\\frac{T_2}{T_1} = \\sqrt{\\frac{L_2}{L_1}} \\implies 2 = \\sqrt{\\frac{L_2}{1}}$$\r\n  4. Elevam-se ambos os membros ao quadrado para eliminar a raiz:\r\n     $$2^2 = L_2 \\implies L_2 = 4 \\text{ metros}$$\r\n  5. Portanto, para duplicar o tempo do período, a haste deve ter seu comprimento quadruplicado ($4$ metros)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_007"
+                                      ],
+    "related_real_world_application":  "Funcionamento de relógios mecânicos de pêndulo de parede e amortecedores sísmicos em arranha-céus."
+}

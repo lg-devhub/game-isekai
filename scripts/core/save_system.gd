@@ -11,6 +11,8 @@ var current_save_data: Dictionary = {}
 
 func _ready() -> void:
 	ensure_save_directory_exists()
+	if current_save_data.is_empty():
+		current_save_data = get_default_save_data()
 
 func ensure_save_directory_exists() -> void:
 	var dir = DirAccess.open("user://")
@@ -118,16 +120,20 @@ func save_game(slot_id: int = 1) -> bool:
 		var dir = DirAccess.open(SAVE_DIR)
 		if dir:
 			if FileAccess.file_exists(bak_path):
-				dir.remove(bak_path.get_file())
-			dir.copy(base_path.get_file(), bak_path.get_file())
+				dir.remove(bak_path)
+			dir.copy(base_path, bak_path)
 	
 	var dir = DirAccess.open(SAVE_DIR)
 	if dir:
-		dir.rename(tmp_path.get_file(), base_path.get_file())
+		dir.rename(tmp_path, base_path)
 	
 	print("[SaveSystem] Jogo salvo com sucesso localmente no Slot %d (Operacao Atomica)." % slot_id)
 	emit_signal("save_completed", slot_id, true)
 	return true
+
+func has_existing_save(slot_id: int = 1) -> bool:
+	var base_path = SAVE_DIR + "slot_%d.json" % slot_id
+	return FileAccess.file_exists(base_path)
 
 func load_game(slot_id: int = 1) -> bool:
 	var base_path = SAVE_DIR + "slot_%d.json" % slot_id

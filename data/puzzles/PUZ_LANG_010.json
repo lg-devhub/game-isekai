@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_LANG_010",
+    "title":  "O Tratado Hermético de Khorath",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Distinguir a tese central de argumentos secundários e reconhecer a intencionalidade do autor em textos polêmicos.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  true,
+    "narrative_context":  "O protagonista e Mestre Vaelen encontram o testamento filosófico de um dos mestres fundadores de Khorath. O texto discute os limites éticos do saber: \"Erram gravemente aqueles que imaginam que o saber deve ser confinado a torres silenciosas para evitar o abuso dos homens. O fogo que cozinha o pão pode incendiar a cabana; nem por isso as aldeias extinguem suas lareiras. O perigo não habita a chama, mas o desamparo da ignorância sobre como contê-la.\"",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Distinguir a tese central de argumentos secundários e reconhecer a intencionalidade do autor em textos polêmicos.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "A) O conhecimento deve ser democratizado e ensinado, e não censurado ou trancado pelo medo de seus riscos.",
+    "step_by_step_explanation":  "1. O autor inicia refutando uma postura: \"Erram gravemente aqueles que imaginam que o saber deve ser confinado a torres silenciosas\".\r\n  2. Ele introduz uma analogia didática: o fogo traz benefícios (cozinhar o pão) e riscos (incêndio da cabana), mas ninguém abole o fogo por causa disso.\r\n  3. A frase conclusiva fecha a tese: \"O perigo não habita a chama, mas o desamparo da ignorância sobre como contê-la\".\r\n  4. A tese central, portanto, é que a solução para os perigos do conhecimento não é a censura ou o confinamento dogmático, mas a educação e a instrução ampla sobre como utilizá-lo eticamente (**Opção A**).",
+    "accepted_answers":  [
+                             "A) O conhecimento deve ser democratizado e ensinado, e não censurado ou trancado pelo medo de seus riscos.",
+                             "Opção A",
+                             "A`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Opção B",
+                              "feedback":  "O fogo foi usado apenas como metáfora para ilustrar o conhecimento. Não faça leitura literal da analogia."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "O autor usa a metáfora do fogo para falar sobre o quê? Sobre o conhecimento humano."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "O autor concorda com fechar as bibliotecas ou acha que isso é um erro?"
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "Ele afirma categoricamente que confinar o saber é um erro grave. A resposta correta é a Opção A."
+                  }
+              ],
+    "transfer_example":  "Interpretação de editoriais jornalísticos e redação crítica sobre dilemas éticos contemporâneos (como inteligência artificial ou engenharia genética).",
+    "rewards":  {
+                    "erudition_xp":  200,
+                    "lumis":  100,
+                    "codex_entry_id":  "COD_LANG_010"
+                },
+    "validation_criteria":  "Teoria da argumentação de Perelman e Olbrechts-Tyteca (distinção entre metáfora de sustentação e tese formal).",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "A) O conhecimento deve ser democratizado e ensinado, e não censurado ou trancado pelo medo de seus riscos",
+                    "Opção B",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

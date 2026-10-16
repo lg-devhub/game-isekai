@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_010",
+    "title":  "Identificação de Tese e Análise de Intencionalidade Discursiva",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Distinguir a tese central de argumentos secundários e reconhecer a intencionalidade do autor em textos polêmicos.",
+    "concept_summary":  "O protagonista e Mestre Vaelen encontram o testamento filosófico de um dos mestres fundadores de Khorath. O texto discute os limites éticos do saber: \"Erram gravemente aqueles que imaginam que o saber deve ser confinado a torres silenciosas para evitar o abuso dos homens. O fogo que cozinha o pão pode incendiar a cabana; nem por isso as aldeias extinguem suas lareiras. O perigo não habita a chama, mas o desamparo da ignorância sobre como contê-la.\" Distinguir a tese central de argumentos secundários e reconhecer a intencionalidade do autor em textos polêmicos.",
+    "formal_explanation":  "1. O autor inicia refutando uma postura: \"Erram gravemente aqueles que imaginam que o saber deve ser confinado a torres silenciosas\".\r\n  2. Ele introduz uma analogia didática: o fogo traz benefícios (cozinhar o pão) e riscos (incêndio da cabana), mas ninguém abole o fogo por causa disso.\r\n  3. A frase conclusiva fecha a tese: \"O perigo não habita a chama, mas o desamparo da ignorância sobre como contê-la\".\r\n  4. A tese central, portanto, é que a solução para os perigos do conhecimento não é a censura ou o confinamento dogmático, mas a educação e a instrução ampla sobre como utilizá-lo eticamente (**Opção A**).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. O autor inicia refutando uma postura: \"Erram gravemente aqueles que imaginam que o saber deve ser confinado a torres silenciosas\".\r\n  2. Ele introduz uma analogia didática: o fogo traz benefícios (cozinhar o pão) e riscos (incêndio da cabana), mas ninguém abole o fogo por causa disso.\r\n  3. A frase conclusiva fecha a tese: \"O perigo não habita a chama, mas o desamparo da ignorância sobre como contê-la\".\r\n  4. A tese central, portanto, é que a solução para os perigos do conhecimento não é a censura ou o confinamento dogmático, mas a educação e a instrução ampla sobre como utilizá-lo eticamente (**Opção A**)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_010"
+                                      ],
+    "related_real_world_application":  "Interpretação de editoriais jornalísticos e redação crítica sobre dilemas éticos contemporâneos (como inteligência artificial ou engenharia genética)."
+}

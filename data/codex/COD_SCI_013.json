@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_013",
+    "title":  "Leis da Termodinâmica e Ciclos de Carnot",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Aplicar o princípio da conservação da energia (Primeira Lei da Termodinâmica) e calcular o rendimento térmico de ciclos de calor ($Q_1 = W + Q_2$).",
+    "concept_summary":  "No interior do Santuário dos Axiomas, uma máquina térmica solemniana transforma energia geotérmica para acionar os giroscópios do Núcleo Áfono. A cada ciclo completo, a máquina absorve 500 Joules de calor da câmara magmática (fonte quente) e realiza 200 Joules de trabalho mecânico útil para mover os eixos de quartzo. Aplicar o princípio da conservação da energia (Primeira Lei da Termodinâmica) e calcular o rendimento térmico de ciclos de calor ($Q_1 = W + Q_2$).",
+    "formal_explanation":  "1. Pelo Princípio da Conservação de Energia (Primeira Lei da Termodinâmica):\r\n     $$Q_1 = W + Q_2 \\implies Q_2 = Q_1 - W$$\r\n     $$Q_2 = 500 \\text{ J} - 200 \\text{ J} = 300 \\text{ Joules de calor rejeitado}$$\r\n  2. Calcula-se a eficiência térmica (rendimento $\\eta$):\r\n     $$\\eta = \\frac{W}{Q_1} = \\frac{200}{500} = 0{,}40 = 40\\%$$\r\n  3. (Em conformidade estrita com a Segunda Lei da Termodinâmica, o rendimento é sempre inferior a 100%, sendo impossível converter todo o calor em trabalho sem dissipação).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Pelo Princípio da Conservação de Energia (Primeira Lei da Termodinâmica):\r\n     $$Q_1 = W + Q_2 \\implies Q_2 = Q_1 - W$$\r\n     $$Q_2 = 500 \\text{ J} - 200 \\text{ J} = 300 \\text{ Joules de calor rejeitado}$$\r\n  2. Calcula-se a eficiência térmica (rendimento $\\eta$):\r\n     $$\\eta = \\frac{W}{Q_1} = \\frac{200}{500} = 0{,}40 = 40\\%$$\r\n  3. (Em conformidade estrita com a Segunda Lei da Termodinâmica, o rendimento é sempre inferior a 100%, sendo impossível converter todo o calor em trabalho sem dissipação)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_013"
+                                      ],
+    "related_real_world_application":  "Funcionamento e eficiência de motores a combustão de automóveis, geladeiras domésticas e usinas termelétricas."
+}

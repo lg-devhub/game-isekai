@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_012",
+    "title":  "Pragmática Linguística: O que são Pressupostos e Subentendidos",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Identificar pressupostos e subentendidos ativados por gatilhos linguísticos em enunciados formais.",
+    "concept_summary":  "O Inquisidor-Geral Malakor publica um édito afixado na praça de Val-Serena: \"A cidade de Val-Serena finalmente deixou de contrabandear artefatos proibidos de Solemnia para o mercado exterior.\" O protagonista analisa a frase para alertar o conselho sobre a armadilha jurídica contida no texto. Identificar pressupostos e subentendidos ativados por gatilhos linguísticos em enunciados formais.",
+    "formal_explanation":  "1. Em linguística pragmática, verbos que indicam mudança de estado (como *deixar de*, *parar de*, *começar a*, *continuar a*) funcionam como ativadores de pressuposição.\r\n  2. Dizer que alguém \"deixou de fazer $X$\" assume como verdade prévia indiscutível que esse alguém \"fazia $X$ no passado\".\r\n  3. Portanto, mesmo que a frase pareça um elogio à conduta atual, ela embute uma confissão tácita de crime anterior: a cidade assume que contrabandeava relíquias antes deste édito (**Opção A**).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Em linguística pragmática, verbos que indicam mudança de estado (como *deixar de*, *parar de*, *começar a*, *continuar a*) funcionam como ativadores de pressuposição.\r\n  2. Dizer que alguém \"deixou de fazer $X$\" assume como verdade prévia indiscutível que esse alguém \"fazia $X$ no passado\".\r\n  3. Portanto, mesmo que a frase pareça um elogio à conduta atual, ela embute uma confissão tácita de crime anterior: a cidade assume que contrabandeava relíquias antes deste édito (**Opção A**)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_012"
+                                      ],
+    "related_real_world_application":  "Análise de perguntas capciosas em depoimentos jurídicos e interpretação de peças publicitárias."
+}

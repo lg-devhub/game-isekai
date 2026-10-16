@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_SCI_013",
+    "title":  "O Equilíbrio Termodinâmico do Núcleo",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Aplicar o princípio da conservação da energia (Primeira Lei da Termodinâmica) e calcular o rendimento térmico de ciclos de calor ($Q_1 = W + Q_2$).",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  true,
+    "narrative_context":  "No interior do Santuário dos Axiomas, uma máquina térmica solemniana transforma energia geotérmica para acionar os giroscópios do Núcleo Áfono. A cada ciclo completo, a máquina absorve 500 Joules de calor da câmara magmática (fonte quente) e realiza 200 Joules de trabalho mecânico útil para mover os eixos de quartzo.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Aplicar o princípio da conservação da energia (Primeira Lei da Termodinâmica) e calcular o rendimento térmico de ciclos de calor ($Q_1 = W + Q_2$).",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "Calor Rejeitado = 300, Rendimento = 40.",
+    "step_by_step_explanation":  "1. Pelo Princípio da Conservação de Energia (Primeira Lei da Termodinâmica):\r\n     $$Q_1 = W + Q_2 \\implies Q_2 = Q_1 - W$$\r\n     $$Q_2 = 500 \\text{ J} - 200 \\text{ J} = 300 \\text{ Joules de calor rejeitado}$$\r\n  2. Calcula-se a eficiência térmica (rendimento $\\eta$):\r\n     $$\\eta = \\frac{W}{Q_1} = \\frac{200}{500} = 0{,}40 = 40\\%$$\r\n  3. (Em conformidade estrita com a Segunda Lei da Termodinâmica, o rendimento é sempre inferior a 100%, sendo impossível converter todo o calor em trabalho sem dissipação).",
+    "accepted_answers":  [
+                             "300, 40",
+                             "300 J e 40%",
+                             "300; 40`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "(700, 40)",
+                              "feedback":  "Pela conservação da energia, a soma do trabalho e do calor rejeitado não pode ultrapassar o calor total que entrou ($500 = 200 + Q_2$)."
+                          },
+                          {
+                              "pattern":  "(300, 60)",
+                              "feedback":  "O rendimento mede o trabalho proveitoso ($200 / 500 = 40\\%$), e não a energia dissipada."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Entraram 500 Joules. Se 200 viraram trabalho mecânico, para onde foram os Joules restantes?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "O calor jogado fora é $500 - 200 = 300$ Joules. Para o rendimento, divida o que foi útil (200) pelo total que entrou (500)."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "Calor rejeitado: 300 Joules. Rendimento: $200 / 500 = 0{,}40$, ou seja, 40%."
+                  }
+              ],
+    "transfer_example":  "Funcionamento e eficiência de motores a combustão de automóveis, geladeiras domésticas e usinas termelétricas.",
+    "rewards":  {
+                    "erudition_xp":  300,
+                    "lumis":  150,
+                    "codex_entry_id":  "COD_SCI_013"
+                },
+    "validation_criteria":  "Teorema de Carnot e Primeira e Segunda Leis da Termodinâmica clássica de Clausius e Kelvin.",
+    "action_button_text":  "Confirmar Análise 🔬"
+}

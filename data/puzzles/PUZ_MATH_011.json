@@ -1,0 +1,54 @@
+﻿{
+    "id":  "PUZ_MATH_011",
+    "title":  "A Combinatória dos Selos Notariais",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Aplicar o princípio multiplicativo para calcular arranjos e combinações de elementos distintos.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  false,
+    "narrative_context":  "Para desarquivar um tratado histórico em Ark-Mnemona, o mecanismo exige um código gravado em três cilindros giratórios. O primeiro cilindro contém 4 símbolos geométricos diferentes; o segundo contém 5 runas alfabéticas distintas; e o terceiro contém 3 algarismos numéricos (1, 2, 3).",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Aplicar o princípio multiplicativo para calcular arranjos e combinações de elementos distintos.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "60.",
+    "step_by_step_explanation":  "1. De acordo com o Princípio Fundamental da Contagem (PFC), se um evento é composto por etapas sucessivas e independentes, o número total de possibilidades é o produto das possibilidades de cada etapa.\r\n  2. Multiplicam-se as opções de cada cilindro:\r\n     $$\\text{Total} = n_1 \\times n_2 \\times n_3 = 4 \\times 5 \\times 3$$\r\n  3. $4 \\times 5 = 20$\r\n  4. $20 \\times 3 = 60$ combinações possíveis.",
+    "accepted_answers":  [
+                             "60",
+                             "60 códigos`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "12",
+                              "feedback":  "Para cada um dos 4 símbolos, você pode escolher qualquer uma das 5 runas e qualquer um dos 3 números. É um produto de possibilidades, não uma soma."
+                          },
+                          {
+                              "pattern":  "20",
+                              "feedback":  "Não se esqueça do terceiro cilindro: existem 3 números possíveis para cada uma das 20 combinações anteriores."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Se você tivesse apenas 4 símbolos e 5 runas, quantas duplas poderia formar?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "Com 4 símbolos e 5 runas, você tem $4 \\times 5 = 20$ duplas. Agora, cada uma dessas duplas pode se juntar a 3 números diferentes."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "Multiplique todas as opções: $4 \\times 5 \\times 3 = 60$."
+                  }
+              ],
+    "transfer_example":  "Calcular o número de senhas possíveis para um cartão bancário de 4 dígitos ou de combinações de roupas (camisas, calças e calçados).",
+    "rewards":  {
+                    "erudition_xp":  200,
+                    "lumis":  100,
+                    "codex_entry_id":  "COD_MATH_011"
+                },
+    "validation_criteria":  "Teorema do produto cartesiano de conjuntos finitos: $|A \\times B \\times C| = |A| \\cdot |B| \\cdot |C|$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

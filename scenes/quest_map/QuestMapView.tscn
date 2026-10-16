@@ -1,0 +1,190 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scenes/quest_map/quest_map_view.gd" id="1_map"]
+[ext_resource type="Texture2D" path="res://assets/images/environments/bg_val_serena_market.png" id="2_bg"]
+
+[node name="QuestMapView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_map")
+
+[node name="TextureBackground" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRectOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.08, 0.14, 0.88)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="PanelTop" type="PanelContainer" parent="MarginContainer/VBox"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/PanelTop"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="HBox" type="HBoxContainer" parent="MarginContainer/VBox/PanelTop/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BtnBack" type="Button" parent="MarginContainer/VBox/PanelTop/Margin/HBox"]
+custom_minimum_size = Vector2(100, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀ Menu"
+
+[node name="LabelLocation" type="Label" parent="MarginContainer/VBox/PanelTop/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+theme_override_font_sizes/font_size = 24
+text = "🗺️ Mapa de Expedições"
+vertical_alignment = 1
+
+[node name="LabelLevel" type="Label" parent="MarginContainer/VBox/PanelTop/Margin/HBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "Nvl 1: Aprendiz"
+vertical_alignment = 1
+
+[node name="LabelLumis" type="Label" parent="MarginContainer/VBox/PanelTop/Margin/HBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.9, 0.7, 1)
+theme_override_font_sizes/font_size = 20
+text = "💎 50"
+vertical_alignment = 1
+
+[node name="BtnJournal" type="Button" parent="MarginContainer/VBox/PanelTop/Margin/HBox"]
+custom_minimum_size = Vector2(100, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Diário"
+
+[node name="BtnCodice" type="Button" parent="MarginContainer/VBox/PanelTop/Margin/HBox"]
+custom_minimum_size = Vector2(100, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Códice"
+
+[node name="HBoxContent" type="VBoxContainer" parent="MarginContainer/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="ScrollNodes" type="ScrollContainer" parent="MarginContainer/VBox/HBoxContent"]
+custom_minimum_size = Vector2(0, 520)
+layout_mode = 2
+
+[node name="VBoxNodes" type="VBoxContainer" parent="MarginContainer/VBox/HBoxContent/ScrollNodes"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="PanelDetails" type="PanelContainer" parent="MarginContainer/VBox/HBoxContent"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="MarginContainer/VBox/HBoxContent/PanelDetails"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="LabelQuestTitle" type="Label" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+theme_override_font_sizes/font_size = 26
+text = "Título da Região"
+
+[node name="HBoxBadges" type="HBoxContainer" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="LabelAreaBadge" type="Label" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "ÁREA: Matemática & Razões"
+
+[node name="LabelStatusBadge" type="Label" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.4, 1)
+theme_override_font_sizes/font_size = 20
+text = "STATUS: Disponível"
+
+[node name="ScrollDetails" type="ScrollContainer" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox/ScrollDetails"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="LabelSynopsis" type="Label" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox/ScrollDetails/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Sinopse narrativa..."
+autowrap_mode = 3
+
+[node name="LabelLore" type="Label" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox/ScrollDetails/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.75, 0.8, 1)
+theme_override_font_sizes/font_size = 18
+text = "Lore..."
+autowrap_mode = 3
+
+[node name="LabelRewards" type="Label" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox/ScrollDetails/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.9, 0.6, 1)
+theme_override_font_sizes/font_size = 18
+text = "Recompensas..."
+autowrap_mode = 3
+
+[node name="BtnAction" type="Button" parent="MarginContainer/VBox/HBoxContent/PanelDetails/Margin/VBox"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Iniciar Investigação ▶"

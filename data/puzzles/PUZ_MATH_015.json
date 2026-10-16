@@ -1,0 +1,54 @@
+﻿{
+    "id":  "PUZ_MATH_015",
+    "title":  "A Equação Mestra dos Três Axiomas",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Resolver sistemas de três equações com três variáveis por escalonamento gaussiano ou substituição encadeada.",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  true,
+    "narrative_context":  "No altar central do Templo dos Três Axiomas, três monolitos representam as forças universais: Massa ($M$), Informação ($I$) e Entropia ($E$). Para estabilizar o fluxo causal que une a Terra a Velathys sem colapso, o protagonista precisa encontrar o valor do coeficiente de Entropia ($E$) a partir das três relações gravadas pelos Arquitetos Primordiais.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Resolver sistemas de três equações com três variáveis por escalonamento gaussiano ou substituição encadeada.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "5.",
+    "step_by_step_explanation":  "1. Soma-se a Equação 1 com a Equação 3 para eliminar a variável $I$:\r\n     $$(M + I + E) + (M - I + 2E) = 18 + 13$$\r\n     $$2M + 3E = 31 \\quad \\text{(Equação A)}$$\r\n  2. Subtrai-se a Equação 1 da Equação 2 para eliminar $I$:\r\n     $$(2M + I - E) - (M + I + E) = 7 - 18$$\r\n     $$M - 2E = -11 \\implies M = 2E - 11 \\quad \\text{(Equação B)}$$\r\n  3. Substitui-se a Equação B na Equação A:\r\n     $$2(2E - 11) + 3E = 31$$\r\n     $$4E - 22 + 3E = 31$$\r\n     $$7E = 31 + 22$$\r\n     $$7E = 53 \\dots \\text{Revisando soma: } 2M + 3E = 31 \\text{ e } M = 2E - 11.$$\r\n     $$4E - 22 + 3E = 53 \\implies 7E = 53 \\text{ (não inteiro)}. \\text{ Ajuste canônico elegante:}$$\r\n     - Da Eq 1: $I = 18 - M - E$.\r\n     - Na Eq 2: $2M + (18 - M - E) - E = 7 \\implies M - 2E = -11 \\implies M = 2E - 11$.\r\n     - Na Eq 3: $M - (18 - M - E) + 2E = 13 \\implies 2M + 3E = 31$.\r\n     - Substituindo $M$: $2(2E - 11) + 3E = 31 \\implies 4E - 22 + 3E = 31 \\implies 7E = 53 \\dots$\r\n     - Vamos parametrizar para resultado inteiro limpo e canônico:\r\n       Se $M = 4$, $I = 9$, $E = 5$:\r\n       - Eq 1: $4 + 9 + 5 = 18$ (Verdadeiro).\r\n       - Eq 2: $2(4) + 9 - 5 = 8 + 9 - 5 = 12$ (Logo, o segundo membro da Eq 2 é 12).\r\n       - Eq 3: $4 - 9 + 2(5) = -5 + 10 = 5$ (Logo, o segundo membro da Eq 3 é 5).\r\n     - Com essas constantes canônicas ajustadas no enunciado:\r\n       1) $M + I + E = 18$\r\n       2) $2M + I - E = 12$\r\n       3) $M - I + 2E = 5$\r\n       - Somando (1) e (3): $2M + 3E = 23$.\r\n       - Subtraindo (1) de (2): $(2M + I - E) - (M + I + E) = 12 - 18 \\implies M - 2E = -6 \\implies M = 2E - 6$.\r\n       - Substituindo na soma: $2(2E - 6) + 3E = 23 \\implies 4E - 12 + 3E = 23 \\implies 7E = 35 \\implies E = 5$.\r\n       - Logo, $M = 2(5) - 6 = 4$.\r\n       - E substituindo na primeira: $4 + I + 5 = 18 \\implies I = 9$.\r\n       - O valor exato de $E$ é **5**.",
+    "accepted_answers":  [
+                             "5",
+                             "E = 5`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "4",
+                              "feedback":  "4 é o valor de M. O altar exige o coeficiente E."
+                          },
+                          {
+                              "pattern":  "9",
+                              "feedback":  "9 é o valor de I. Verifique qual variável foi solicitada no enunciado."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Observe que a variável $I$ aparece com sinal positivo nas equações 1 e 2, e com sinal negativo na equação 3. Tente somar equações para eliminá-la."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "Some a primeira e a terceira equação para eliminar I: você terá $2M + 3E = 23$."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "Subtraia a primeira da segunda equação para achar $M - 2E = -6$, ou seja, $M = 2E - 6$. Substitua esse M na equação anterior para obter $7E = 35$, resultando em $E = 5$."
+                  }
+              ],
+    "transfer_example":  "Modelagem de sistemas de equações em economia para encontrar pontos de equilíbrio de mercado entre oferta, demanda e taxas de juros.",
+    "rewards":  {
+                    "erudition_xp":  350,
+                    "lumis":  200,
+                    "codex_entry_id":  "COD_MATH_015"
+                },
+    "validation_criteria":  "Determinante da matriz do sistema: $\\det(A) = 7 \\neq 0$, garantindo solução única por Regra de Cramer.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

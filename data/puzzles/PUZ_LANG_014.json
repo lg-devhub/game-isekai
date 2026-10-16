@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_LANG_014",
+    "title":  "A Paleografia das Três Tábuas de Khor",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Decifrar regras gramaticais de uma língua construída arcaica a partir de amostras bilíngues reduzidas (método da Pedra de Roseta).",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  false,
+    "narrative_context":  "No subsolo do templo, o protagonista encontra três tábuas votivas com inscrições arcaicas e suas traduções parciais em dialeto solemniano:",
+    "prompt":  "Informe o termo, código ou palavra que conclui com exatidão a investigação: Decifrar regras gramaticais de uma língua construída arcaica a partir de amostras bilíngues reduzidas (método da Pedra de Roseta).",
+    "input_type":  "TEXT_INPUT",
+    "solution":  "LUM-AETHEL-VAL.",
+    "step_by_step_explanation":  "1. Compara-se a Tábua 1 e a Tábua 3:\r\n     - Ambas têm `-AETHEL-NOM` e ambas contêm \"constrói a cidade\".\r\n     - A única diferença no início é `KOR-` vs. `LUM-`.\r\n     - No texto solemniano, a diferença é \"A mente\" vs. \"A luz\".\r\n     - Conclui-se que: `KOR` = A mente, `LUM` = A luz.\r\n  2. Compara-se a Tábua 1 e a Tábua 2:\r\n     - Ambas começam com `KOR-AETHEL-` e contêm \"A mente [...] a cidade\".\r\n     - A diferença no final é `-NOM` vs. `-VAL`.\r\n     - No texto solemniano, a diferença é \"constrói\" vs. \"protege\".\r\n     - Conclui-se que: `-NOM` = constrói, `-VAL` = protege.\r\n  3. O radical intermediário `-AETHEL-` corresponde à raiz invariável \"a cidade\".\r\n  4. Para expressar \"A luz protege a cidade\", combinam-se os morfemas identificados:\r\n     - Sujeito: `LUM` (A luz).\r\n     - Objeto: `AETHEL` (a cidade).\r\n     - Verbo: `VAL` (protege).\r\n  5. A forma gramatical exata é **LUM-AETHEL-VAL**.",
+    "accepted_answers":  [
+                             "LUM-AETHEL-VAL",
+                             "LUM AETHEL VAL",
+                             "lum-aethel-val`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "LUM-AETHEL-NOM",
+                              "feedback":  "Verifique o final da Tábua 2: o morfema \u0027VAL\u0027 significa \u0027protege\u0027."
+                          },
+                          {
+                              "pattern":  "KOR-AETHEL-VAL",
+                              "feedback":  "Verifique a Tábua 3: a palavra para \u0027luz\u0027 é \u0027LUM\u0027."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Compare a Tábua 1 com a Tábua 3 para descobrir a palavra que significa \u0027A luz\u0027."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "Compare a Tábua 1 com a Tábua 2 para descobrir a palavra que significa \u0027protege\u0027."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "Junte \u0027LUM\u0027 no começo, \u0027AETHEL\u0027 no meio e \u0027VAL\u0027 no final: LUM-AETHEL-VAL."
+                  }
+              ],
+    "transfer_example":  "Decifração histórica de hieróglifos egípcios por Jean-François Champollion a partir da Pedra de Roseta.",
+    "rewards":  {
+                    "erudition_xp":  300,
+                    "lumis":  150,
+                    "codex_entry_id":  "COD_LANG_014"
+                },
+    "validation_criteria":  "Análise componencial de morfemas com isolamento biunívoco de raízes léxicas.",
+    "action_button_text":  "Verificar Texto 📜"
+}

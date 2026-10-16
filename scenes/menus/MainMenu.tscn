@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dm4k0x2xvw3y"]
+[gd_scene load_steps=3 format=3 uid="uid://dm4k0x2xvw3y"]
 
 [ext_resource type="Script" path="res://scenes/menus/main_menu.gd" id="1_menu"]
+[ext_resource type="Texture2D" path="res://assets/images/environments/bg_title_screen.png" id="2_bg"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -11,14 +12,26 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_menu")
 
-[node name="ColorRectBackground" type="ColorRect" parent="."]
+[node name="TextureBackground" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.08, 0.1, 0.15, 1)
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ColorRectOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05, 0.07, 0.12, 0.75)
+
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -69,17 +82,31 @@ layout_mode = 2
 layout_mode = 2
 theme_override_constants/separation = 28
 
+[node name="BtnContinue" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_colors/font_color = Color(0.95, 0.82, 0.45, 1)
+text = "Continuar Jornada"
+visible = false
+
 [node name="BtnStart" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
 custom_minimum_size = Vector2(0, 96)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "Iniciar Investigação (Protótipo)"
+text = "Iniciar Jogo"
+
+[node name="BtnMap" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Mapa de Expedições"
 
 [node name="BtnJournal" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
 custom_minimum_size = Vector2(0, 96)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "Diário do Investigador (Quests & Itens)"
+text = "Diário do Investigador"
 
 [node name="BtnCodice" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
 custom_minimum_size = Vector2(0, 96)
@@ -93,11 +120,18 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Personalização do Viajante"
 
+[node name="BtnShop" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Bazar dos Eruditos"
+
 [node name="BtnSettings" type="Button" parent="MarginContainer/VBoxContainer/VBoxButtons"]
 custom_minimum_size = Vector2(0, 96)
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Configurações"
+
 
 
 [node name="ControlSpacer2" type="Control" parent="MarginContainer/VBoxContainer"]
@@ -108,5 +142,6 @@ size_flags_vertical = 3
 layout_mode = 2
 theme_override_colors/font_color = Color(0.5, 0.55, 0.65, 1)
 theme_override_font_sizes/font_size = 20
-text = "Echoes of the Veil v0.2.0-dev | 100% Offline"
+text = "Echoes of the Veil v0.3.0-dev | 100% Offline"
 horizontal_alignment = 1
+

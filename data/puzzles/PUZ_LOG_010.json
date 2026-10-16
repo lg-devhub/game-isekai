@@ -1,0 +1,59 @@
+﻿{
+    "id":  "PUZ_LOG_010",
+    "title":  "A Rede de Classificação de Manuscritos",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Analisar grafos de dependência e identificar condições necessárias e suficientes para restauração de integridade em redes de informação.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  true,
+    "narrative_context":  "Para reativar o sistema de busca da biblioteca de Ark-Mnemona, Mestre Vaelen precisa rearmar os quatro nós de indexação: Alfabeto ($A$), Cronologia ($C$), Geografia ($G$) e Matéria ($M$). Pelas regras de redundância da biblioteca:",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Analisar grafos de dependência e identificar condições necessárias e suficientes para restauração de integridade em redes de informação.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Apenas G e C.",
+    "step_by_step_explanation":  "1. O objetivo exige que $G = 1$.\r\n  2. Pela Regra 2, para ter $G = 1$, precisamos que pelo menos um entre $C$ ou $M$ seja ativado:\r\n     - **Caminho 1: Ativar C.**\r\n       - Se $C = 1$, a Regra 1 ($A \\implies \\neg C$) exige por contraposição que $A = 0$ (inativo).\r\n       - Como $A = 0$, a Regra 3 ($M \\implies A$) exige que $M = 0$ (inativo).\r\n       - Verifica-se se há contradições:\r\n         - $A = 0$ (Regra 1 satisfeita: $0 \\implies \\text{qualquer coisa}$).\r\n         - $C = 1 \\lor M = 0$ satisfaz a necessidade de $G = 1$.\r\n         - Total de nós ativos: 2 nós ($G$ e $C$).\r\n     - **Caminho 2: Ativar M.**\r\n       - Se $M = 1$, pela Regra 3 é obrigatório que $A = 1$.\r\n       - Se $A = 1$, pela Regra 1 é obrigatório que $C = 0$.\r\n       - Total de nós ativos: 3 nós ($G, M$ e $A$).\r\n  3. Como o enunciado busca a solução com o menor número possível de nós energizados, a configuração com 2 nós (**Apenas G e C**) é a solução ótima.",
+    "accepted_answers":  [
+                             "Apenas G e C",
+                             "G e C`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "G, M e A",
+                              "feedback":  "Essa configuração funciona, mas ativa 3 nós. Verifique se é possível ativar o nó G ativando apenas o nó C."
+                          },
+                          {
+                              "pattern":  "Apenas G e M",
+                              "feedback":  "O nó M não pode funcionar sozinho: a Regra 3 exige que o nó A seja ligado junto com ele."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "O nó G precisa de C ou de M. Teste primeiro a opção de usar o nó C."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "Se você usar M, terá que ligar A também (já seriam 3 nós: G, M e A)."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "Se você ligar C, basta manter A desligado. Isso ativa apenas 2 nós: G e C."
+                  }
+              ],
+    "transfer_example":  "Resolução de dependências de pacotes em gerenciadores de software (como `apt` ou `npm`) e planejamento de rotas críticas.",
+    "rewards":  {
+                    "erudition_xp":  200,
+                    "lumis":  100,
+                    "codex_entry_id":  "COD_LOG_010"
+                },
+    "validation_criteria":  "Minimização de função de custo booleana sobre modelo de satisfabilidade de restrições (SAT).",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Apenas G e C",
+                    "G, M e A",
+                    "Apenas G e M"
+                ]
+}

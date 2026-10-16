@@ -1,0 +1,54 @@
+﻿{
+    "id":  "PUZ_MATH_002",
+    "title":  "A Repartição Justa da Carga de Trigo",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Decomposição fracionária de grandezas discretas com resto zero.",
+    "difficulty":  1,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "No mercado de Val-Serena, um agricultor precisa dividir 60 sacas de grãos entre três depósitos: o depósito municipal deve receber $1/2$ da carga, o hospital de campanha deve receber $1/3$, e a reserva de sementes receberá o restante.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Decomposição fracionária de grandezas discretas com resto zero.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "10.",
+    "step_by_step_explanation":  "1. Calcula-se a fração destinada ao armazém: $\\frac{1}{2} \\times 60 = 30$ sacas.\r\n  2. Calcula-se a fração destinada ao hospital: $\\frac{1}{3} \\times 60 = 20$ sacas.\r\n  3. Soma-se o que já foi distribuído: $30 + 20 = 50$ sacas.\r\n  4. Subtrai-se do total inicial: $60 - 50 = 10$ sacas restantes para a reserva.\r\n  5. Alternativamente, por frações: $1 - (1/2 + 1/3) = 1 - 5/6 = 1/6$. Então, $\\frac{1}{6} \\times 60 = 10$.",
+    "accepted_answers":  [
+                             "10",
+                             "10 sacas`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "20",
+                              "feedback":  "20 é a quantia destinada ao hospital. Não se esqueça de subtrair também as sacas do armazém."
+                          },
+                          {
+                              "pattern":  "50",
+                              "feedback":  "50 sacas foram alocadas. A pergunta pede quantas restaram para a reserva."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Encontre primeiro quantas sacas vão para o armazém e quantas vão para o hospital separadamente."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  10,
+                      "text":  "Metade de 60 é 30. A terça parte de 60 é 20. Quanto sobra de 60 após retirar essas duas partes?"
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  20,
+                      "text":  "Subtraia 30 e 20 de 60: $60 - 30 - 20 = 10$."
+                  }
+              ],
+    "transfer_example":  "Planejar a divisão do tempo de estudo diário (ex.: metade para tarefas escolares, um terço para leitura livre e o restante para revisão).",
+    "rewards":  {
+                    "erudition_xp":  60,
+                    "lumis":  30,
+                    "codex_entry_id":  "COD_MATH_002"
+                },
+    "validation_criteria":  "Equação aritmética $60 - (30 + 20) = 10$ com unicidade estrita.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

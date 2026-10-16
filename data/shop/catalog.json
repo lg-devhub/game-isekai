@@ -1,0 +1,46 @@
+{
+  "shop_name": "Bazar dos Eruditos de Val-Serena",
+  "currency": "Lúmis",
+  "items": [
+    {
+      "id": "ITEM_DICA_EXTRA",
+      "name": "Runa de Clareza",
+      "category": "consumivel",
+      "price_lumis": 30,
+      "description": "Uma runa gravada em pedra leve que desbloqueia uma dica adicional em qualquer enigma.",
+      "lore": "Fabricadas pelos artesãos de Solemnia para auxiliar aprendizes em suas provas de iniciação.",
+      "icon_key": "icon_hint_rune",
+      "max_purchases": -1
+    },
+    {
+      "id": "ITEM_OUTFIT_INVESTIGADOR",
+      "name": "Manto de Investigador de Valathys",
+      "category": "cosmetico",
+      "price_lumis": 120,
+      "description": "Um traje reforçado com bolsos internos especiais para anotações e instrumentos ópticos.",
+      "lore": "Vestimenta tradicional dos fiscais de obras e cartógrafos de campo de Ark-Mnemona.",
+      "icon_key": "outfit_investigador",
+      "max_purchases": 1
+    },
+    {
+      "id": "ITEM_DIARIO_COURO_NOBRE",
+      "name": "Caderno de Couro Vulcanizado",
+      "category": "cosmetico",
+      "price_lumis": 80,
+      "description": "Encadernação resistente à água e poeira de cristal para anotações permanentes.",
+      "lore": "Usado pelos escribas que desciam às catacumbas profundas de Valathys.",
+      "icon_key": "icon_journal",
+      "max_purchases": 1
+    },
+    {
+      "id": "ITEM_LENTE_AMBAR",
+      "name": "Lente de Filtro Âmbar",
+      "category": "utilitario",
+      "price_lumis": 60,
+      "description": "Monóculo com cristal de quartzo âmbar que facilita a leitura de inscrições desgastadas pelo tempo.",
+      "lore": "Aumenta o contraste visual sem causar fadiga ocular durante estudos noturnos.",
+      "icon_key": "icon_lens",
+      "max_purchases": 1
+    }
+  ]
+}

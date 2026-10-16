@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_MATH_009",
+    "title":  "O Sistema das Fontes de Bronze",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Resolver sistemas de duas equações do primeiro grau pelo método da substituição ou adição.",
+    "difficulty":  3,
+    "chapter":  2,
+    "is_mandatory":  true,
+    "narrative_context":  "Na praça das fontes de Solemnia, dois tipos de condutores de água (Tubos de Bronze e Tubos de Chumbo) abastecem um tanque central. Pelos registros históricos, 2 tubos de bronze e 3 de chumbo juntos fornecem 38 litros por minuto. Já 4 tubos de bronze e 1 de chumbo fornecem 36 litros por minuto. Para ajustar a pressão de emergência, Talos-4 precisa saber a vazão unitária de cada tubo de bronze.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Resolver sistemas de duas equações do primeiro grau pelo método da substituição ou adição.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "7.",
+    "step_by_step_explanation":  "1. Isola-se $C$ na segunda equação:\r\n     $$C = 36 - 4B$$\r\n  2. Substitui-se $C$ na primeira equação:\r\n     $$2B + 3(36 - 4B) = 38$$\r\n     $$2B + 108 - 12B = 38$$\r\n     $$-10B = 38 - 108$$\r\n     $$-10B = -70 \\implies B = 7 \\text{ litros/minuto}$$\r\n  3. Para conferência, calcula-se $C$:\r\n     $$C = 36 - 4(7) = 36 - 28 = 8 \\text{ litros/minuto}$$\r\n  4. Teste na primeira: $2(7) + 3(8) = 14 + 24 = 38$. Sistema perfeitamente verificado.",
+    "accepted_answers":  [
+                             "7",
+                             "7 L/min",
+                             "7 litros por minuto`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "8",
+                              "feedback":  "8 litros/minuto é a vazão do tubo de chumbo. O enigma pede especificamente a vazão do tubo de bronze."
+                          },
+                          {
+                              "pattern":  "9",
+                              "feedback":  "Ao multiplicar $3 \\times (36 - 4B)$, certifique-se de fazer $3 \\times 36 = 108$ e $3 \\times (-4B) = -12B$."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Escreva duas equações usando as letras B para Bronze e C para Chumbo."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  20,
+                      "text":  "Se $4B + C = 36$, então $C = 36 - 4B$. Troque o C da primeira equação por essa expressão."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  40,
+                      "text":  "A equação fica $2B + 108 - 12B = 38$. Isso leva a $10B = 70$, logo $B = 7$."
+                  }
+              ],
+    "transfer_example":  "Descobrir o preço individual de cadernos e canetas ao comprar dois pacotes com quantidades diferentes desses itens.",
+    "rewards":  {
+                    "erudition_xp":  160,
+                    "lumis":  80,
+                    "codex_entry_id":  "COD_MATH_009"
+                },
+    "validation_criteria":  "Solução única por determinantes: $\\det \\begin{pmatrix} 2 \u0026 3 \\\\ 4 \u0026 1 \\end{pmatrix} = 2 - 12 = -10 \\neq 0$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

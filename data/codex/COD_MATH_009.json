@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_009",
+    "title":  "Sistemas Lineares e Métodos de Eliminação",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Resolver sistemas de duas equações do primeiro grau pelo método da substituição ou adição.",
+    "concept_summary":  "Na praça das fontes de Solemnia, dois tipos de condutores de água (Tubos de Bronze e Tubos de Chumbo) abastecem um tanque central. Pelos registros históricos, 2 tubos de bronze e 3 de chumbo juntos fornecem 38 litros por minuto. Já 4 tubos de bronze e 1 de chumbo fornecem 36 litros por minuto. Para ajustar a pressão de emergência, Talos-4 precisa saber a vazão unitária de cada tubo de bronze. Resolver sistemas de duas equações do primeiro grau pelo método da substituição ou adição.",
+    "formal_explanation":  "1. Isola-se $C$ na segunda equação:\r\n     $$C = 36 - 4B$$\r\n  2. Substitui-se $C$ na primeira equação:\r\n     $$2B + 3(36 - 4B) = 38$$\r\n     $$2B + 108 - 12B = 38$$\r\n     $$-10B = 38 - 108$$\r\n     $$-10B = -70 \\implies B = 7 \\text{ litros/minuto}$$\r\n  3. Para conferência, calcula-se $C$:\r\n     $$C = 36 - 4(7) = 36 - 28 = 8 \\text{ litros/minuto}$$\r\n  4. Teste na primeira: $2(7) + 3(8) = 14 + 24 = 38$. Sistema perfeitamente verificado.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Isola-se $C$ na segunda equação:\r\n     $$C = 36 - 4B$$\r\n  2. Substitui-se $C$ na primeira equação:\r\n     $$2B + 3(36 - 4B) = 38$$\r\n     $$2B + 108 - 12B = 38$$\r\n     $$-10B = 38 - 108$$\r\n     $$-10B = -70 \\implies B = 7 \\text{ litros/minuto}$$\r\n  3. Para conferência, calcula-se $C$:\r\n     $$C = 36 - 4(7) = 36 - 28 = 8 \\text{ litros/minuto}$$\r\n  4. Teste na primeira: $2(7) + 3(8) = 14 + 24 = 38$. Sistema perfeitamente verificado."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_009"
+                                      ],
+    "related_real_world_application":  "Descobrir o preço individual de cadernos e canetas ao comprar dois pacotes com quantidades diferentes desses itens."
+}

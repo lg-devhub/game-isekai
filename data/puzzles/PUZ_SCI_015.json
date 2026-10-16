@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_SCI_015",
+    "title":  "A Síntese da Ressonância Eletromagnética",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Aplicar a equação fundamental da ondulatória ($v = \\lambda \\cdot f$) e relacionar frequência, comprimento de onda e energia de fótons.",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  true,
+    "narrative_context":  "No centro do Núcleo Áfono, para estabilizar o Véu de Axiomas na frequência de harmonia entre os dois mundos, o feixe de luz coerente viaja com velocidade constante de $300.000\\text{ km/s}$ ($3 \\times 10^8\\text{ m/s}$). O transmissor de quartzo deve emitir uma onda com frequência de $600\\text{ Terahertz}$ ($6 \\times 10^{14}\\text{ Hz}$). O protagonista precisa regular a abertura micrométrica da fenda para corresponder ao comprimento de onda ($\\lambda$) exato em nanômetros ($1\\text{ nm} = 10^{-9}\\text{ m}$).",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Aplicar a equação fundamental da ondulatória ($v = \\lambda \\cdot f$) e relacionar frequência, comprimento de onda e energia de fótons.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "500.",
+    "step_by_step_explanation":  "1. Aplica-se a equação fundamental da propagação de ondas:\r\n     $$v = \\lambda \\times f \\implies \\lambda = \\frac{v}{f}$$\r\n  2. Substituem-se os valores no Sistema Internacional (m/s e Hz):\r\n     $$\\lambda = \\frac{3 \\times 10^8 \\text{ m/s}}{6 \\times 10^{14} \\text{ Hz}} = \\frac{3}{6} \\times 10^{8 - 14} \\text{ m}$$\r\n     $$\\lambda = 0{,}5 \\times 10^{-6} \\text{ m} = 5 \\times 10^{-7} \\text{ m}$$\r\n  3. Converte-se metros para nanômetros ($1 \\text{ nm} = 10^{-9} \\text{ m}$):\r\n     $$\\lambda = 500 \\times 10^{-9} \\text{ m} = 500 \\text{ nanômetros}$$\r\n  4. (Nota de física: 500 nm situa-se na faixa da luz visível verde-azulada, a exata tonalidade da luminescência do Núcleo Áfono descrita na lore).",
+    "accepted_answers":  [
+                             "500",
+                             "500 nm",
+                             "500 nanômetros`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "2",
+                              "feedback":  "Comprimento de onda é velocidade dividida por frequência ($\\lambda = v / f$), e não o contrário."
+                          },
+                          {
+                              "pattern":  "50 ou 5000",
+                              "feedback":  "Lembre-se: $0{,}5 \\times 10^{-6} = 500 \\times 10^{-9}$ metros, o que equivale exatamente a 500 nanômetros."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Divida a velocidade ($3 \\times 10^8$) pela frequência ($6 \\times 10^{14}$)."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "A divisão dá $0{,}5 \\times 10^{-6}$ metros."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "Como 1 nanômetro é $10^{-9}$ metros, $0{,}5 \\times 10^{-6}$ metros equivalem a 500 nanômetros."
+                  }
+              ],
+    "transfer_example":  "Comunicação por fibra óptica de alta velocidade, transmissão de sinal Wi-Fi e radioterapia médica.",
+    "rewards":  {
+                    "erudition_xp":  350,
+                    "lumis":  200,
+                    "codex_entry_id":  "COD_SCI_015"
+                },
+    "validation_criteria":  "Teoria eletromagnética clássica de Maxwell: $c = \\lambda \\nu$ no vácuo.",
+    "action_button_text":  "Confirmar Análise 🔬"
+}

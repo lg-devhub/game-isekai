@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_SCI_004",
+    "title":  "O Sifão Hidráulico do Aqueduto",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Explicar o funcionamento de sifões hidráulicos a partir do princípio de vasos comunicantes e desnível de pressão gravitacional.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  true,
+    "narrative_context":  "Para transferir água de um reservatório superior para uma cisterna inferior passando por cima de uma mureta de pedra sem usar bombas mecânicas, os encanadores solemnianos usavam um tubo curvo em forma de U invertido (sifão). O protagonista precisa garantir que o fluxo contínuo de água se mantenha estável.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Explicar o funcionamento de sifões hidráulicos a partir do princípio de vasos comunicantes e desnível de pressão gravitacional.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "A) O ponto de saída da mangueira deve estar abaixo do nível da água do reservatório de entrada.",
+    "step_by_step_explanation":  "1. O funcionamento do sifão decorre da diferença de pressão hidrostática entre os dois ramos do tubo preenchido com líquido contínuo.\r\n  2. A coluna de líquido no ramo descendente (lado de saída) deve ser verticalmente mais longa do que a coluna de líquido no ramo ascendente (lado de entrada).\r\n  3. Isso cria uma pressão resultante descendente no ramo de saída, puxando o líquido para fora por gravidade, enquanto a pressão atmosférica e a coesão molecular da água sustentam a subida no ramo inicial.\r\n  4. Se o ponto de saída estiver na mesma altura ou acima do nível de água do reservatório de origem, a pressão hidrostática se iguala ou se inverte, e o fluxo cessa imediatamente.\r\n  5. Portanto, a saída do tubo deve estar obrigatoriamente **abaixo da superfície do líquido de origem** (**Opção A**).",
+    "accepted_answers":  [
+                             "A) O ponto de saída da mangueira deve estar abaixo do nível da água do reservatório de entrada.",
+                             "Opção A",
+                             "A`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Opção C",
+                              "feedback":  "Bolhas de ar interrompem a continuidade do fluido e desativam o sifão. O tubo deve estar 100% preenchido com líquido."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Para onde a água corre naturalmente devido à força da gravidade? Sempre de pontos mais altos para pontos mais baixos."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "O bocal por onde a água sai precisa ficar mais baixo do que a superfície de onde a água está saindo."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "A condição obrigatória é que a saída esteja em nível inferior ao reservatório de origem (Opção A)."
+                  }
+              ],
+    "transfer_example":  "Esvaziamento de aquários domésticos com mangueiras flexíveis e sistemas de drenagem de piscinas.",
+    "rewards":  {
+                    "erudition_xp":  100,
+                    "lumis":  50,
+                    "codex_entry_id":  "COD_SCI_004"
+                },
+    "validation_criteria":  "Equação de Bernoulli aplicada a linhas de corrente em escoamentos incompressíveis estacionários: $P_1 + \\frac{1}{2}\\rho v_1^2 + \\rho g z_1 = P_2 + \\frac{1}{2}\\rho v_2^2 + \\rho g z_2$.",
+    "action_button_text":  "Confirmar Análise 🔬",
+    "options":  [
+                    "A) O ponto de saída da mangueira deve estar abaixo do nível da água do reservatório de entrada",
+                    "Opção C",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

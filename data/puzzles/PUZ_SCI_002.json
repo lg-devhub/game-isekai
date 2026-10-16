@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_SCI_002",
+    "title":  "O Teste de Densidade dos Minerais",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Calcular a densidade absoluta ($d = m/V$) e prever se um corpo flutua ou afunda em líquidos de densidade conhecida.",
+    "difficulty":  1,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "No porto de Val-Serena, um mercador suspeita que um lingote vendido como \"cristal de quartzo puro\" é falso. Uma amostra do cristal tem massa de 60 gramas. Ao ser mergulhada em uma proveta graduada contendo água, o volume da água sobe de 100 mL para 120 mL.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Calcular a densidade absoluta ($d = m/V$) e prever se um corpo flutua ou afunda em líquidos de densidade conhecida.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "3.",
+    "step_by_step_explanation":  "1. Calcula-se o volume do mineral pelo método de deslocamento de líquido:\r\n     $$V = V_{\\text{final}} - V_{\\text{inicial}} = 120 \\text{ mL} - 100 \\text{ mL} = 20 \\text{ mL} = 20 \\text{ cm}^3$$\r\n  2. Aplica-se a fórmula fundamental da densidade:\r\n     $$d = \\frac{m}{V} = \\frac{60 \\text{ g}}{20 \\text{ cm}^3} = 3 \\text{ g/cm}^3$$\r\n  3. (Dado contextual: como o quartzo puro tem densidade de aproximadamente $2{,}65 \\text{ g/cm}^3$, o valor 3 revela que a peça é uma liga com minerais mais densos).",
+    "accepted_answers":  [
+                             "3",
+                             "3 g/cm3",
+                             "3 g/ml`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "0.5",
+                              "feedback":  "A fórmula da densidade é Massa dividida pelo Volume ($d = m / V$), e não o contrário."
+                          },
+                          {
+                              "pattern":  "1200",
+                              "feedback":  "Densidade expressa quanta matéria cabe em um certo espaço, obtida pela divisão da massa pelo volume."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "O mineral empurrou a água de 100 para 120 mL. Quantos mL de espaço ele ocupa?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  10,
+                      "text":  "O volume do mineral é $120 - 100 = 20 \\text{ cm}^3$. Agora divida a massa (60 g) por esse volume."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  20,
+                      "text":  "$60 / 20 = 3 \\text{ g/cm}^3$."
+                  }
+              ],
+    "transfer_example":  "Testar se um anel de ouro é genuíno sem danificá-lo, ou entender por que blocos maciços de ferro afundam enquanto navios ocos flutuam.",
+    "rewards":  {
+                    "erudition_xp":  60,
+                    "lumis":  30,
+                    "codex_entry_id":  "COD_SCI_002"
+                },
+    "validation_criteria":  "Definição operacional de densidade volumétrica no Sistema Internacional de Unidades.",
+    "action_button_text":  "Confirmar Análise 🔬"
+}

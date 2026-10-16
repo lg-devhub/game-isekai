@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_002",
+    "title":  "Frações de Quantidades Inteiras",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Decomposição fracionária de grandezas discretas com resto zero.",
+    "concept_summary":  "No mercado de Val-Serena, um agricultor precisa dividir 60 sacas de grãos entre três depósitos: o depósito municipal deve receber $1/2$ da carga, o hospital de campanha deve receber $1/3$, e a reserva de sementes receberá o restante. Decomposição fracionária de grandezas discretas com resto zero.",
+    "formal_explanation":  "1. Calcula-se a fração destinada ao armazém: $\\frac{1}{2} \\times 60 = 30$ sacas.\r\n  2. Calcula-se a fração destinada ao hospital: $\\frac{1}{3} \\times 60 = 20$ sacas.\r\n  3. Soma-se o que já foi distribuído: $30 + 20 = 50$ sacas.\r\n  4. Subtrai-se do total inicial: $60 - 50 = 10$ sacas restantes para a reserva.\r\n  5. Alternativamente, por frações: $1 - (1/2 + 1/3) = 1 - 5/6 = 1/6$. Então, $\\frac{1}{6} \\times 60 = 10$.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Calcula-se a fração destinada ao armazém: $\\frac{1}{2} \\times 60 = 30$ sacas.\r\n  2. Calcula-se a fração destinada ao hospital: $\\frac{1}{3} \\times 60 = 20$ sacas.\r\n  3. Soma-se o que já foi distribuído: $30 + 20 = 50$ sacas.\r\n  4. Subtrai-se do total inicial: $60 - 50 = 10$ sacas restantes para a reserva.\r\n  5. Alternativamente, por frações: $1 - (1/2 + 1/3) = 1 - 5/6 = 1/6$. Então, $\\frac{1}{6} \\times 60 = 10$."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_002"
+                                      ],
+    "related_real_world_application":  "Planejar a divisão do tempo de estudo diário (ex.: metade para tarefas escolares, um terço para leitura livre e o restante para revisão)."
+}

@@ -1,0 +1,56 @@
+﻿{
+    "id":  "PUZ_LANG_012",
+    "title":  "A Análise de Pressupostos no Édito Inquisitorial",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Identificar pressupostos e subentendidos ativados por gatilhos linguísticos em enunciados formais.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  false,
+    "narrative_context":  "O Inquisidor-Geral Malakor publica um édito afixado na praça de Val-Serena: \"A cidade de Val-Serena finalmente deixou de contrabandear artefatos proibidos de Solemnia para o mercado exterior.\" O protagonista analisa a frase para alertar o conselho sobre a armadilha jurídica contida no texto.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar pressupostos e subentendidos ativados por gatilhos linguísticos em enunciados formais.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "A) Pressupõe que a cidade anteriormente realizava contrabando de artefatos proibidos.",
+    "step_by_step_explanation":  "1. Em linguística pragmática, verbos que indicam mudança de estado (como *deixar de*, *parar de*, *começar a*, *continuar a*) funcionam como ativadores de pressuposição.\r\n  2. Dizer que alguém \"deixou de fazer $X$\" assume como verdade prévia indiscutível que esse alguém \"fazia $X$ no passado\".\r\n  3. Portanto, mesmo que a frase pareça um elogio à conduta atual, ela embute uma confissão tácita de crime anterior: a cidade assume que contrabandeava relíquias antes deste édito (**Opção A**).",
+    "accepted_answers":  [
+                             "A) Pressupõe que a cidade anteriormente realizava contrabando de artefatos proibidos.",
+                             "Opção A",
+                             "A`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Opção B",
+                              "feedback":  "Atenção ao verbo \u0027deixou de\u0027: você só pode deixar de fazer algo se você já fazia isso anteriormente."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Se alguém diz a você \u0027você finalmente parou de mentir\u0027, o que essa pessoa está afirmando sobre o seu passado?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "O verbo \u0027deixar de\u0027 carrega a certeza de que a ação vinha acontecendo até aquele momento."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "A frase pressupõe que o contrabando existia no passado. A alternativa correta é a A."
+                  }
+              ],
+    "transfer_example":  "Análise de perguntas capciosas em depoimentos jurídicos e interpretação de peças publicitárias.",
+    "rewards":  {
+                    "erudition_xp":  210,
+                    "lumis":  105,
+                    "codex_entry_id":  "COD_LANG_012"
+                },
+    "validation_criteria":  "Teoria dos atos de fala e gatilhos pressuposicionais de Stephen Levinson.",
+    "action_button_text":  "Verificar Texto 📜",
+    "options":  [
+                    "A) Pressupõe que a cidade anteriormente realizava contrabando de artefatos proibidos",
+                    "Opção B",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

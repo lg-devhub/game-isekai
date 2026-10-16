@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_SCI_010",
+    "title":  "A Geometria dos Espelhos Parabólicos",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Compreender a propriedade focal de espelhos côncavos/parabólicos na concentração de feixes luminosos paralelos.",
+    "difficulty":  4,
+    "chapter":  3,
+    "is_mandatory":  true,
+    "narrative_context":  "Na torre de heliógrafo de Ark-Mnemona, os escribas utilizam um espelho côncavo com raio de curvatura de 2 metros para concentrar a luz do sol em um cadinho e acender a tocha de sinalização noturna. O protagonista precisa posicionar o cadinho exatamente no ponto onde os raios solares paralelos convergem com máxima temperatura.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Compreender a propriedade focal de espelhos côncavos/parabólicos na concentração de feixes luminosos paralelos.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "1.",
+    "step_by_step_explanation":  "1. A luz do Sol viaja de uma distância astronômica praticamente infinita, chegando à Terra em feixes de raios perfeitamente paralelos ao eixo principal do espelho.\r\n  2. Pela primeira lei dos raios notáveis em espelhos côncavos esféricos e refletores parabólicos, qualquer raio paralelo ao eixo principal reflete convergindo no **ponto focal principal ($F$)**.\r\n  3. Para pequenos ângulos de abertura (condições de nitidez de Gauss), a distância focal ($f$) é exatamente igual à metade do raio de curvatura ($R$):\r\n     $$f = \\frac{R}{2}$$\r\n  4. Substituindo os dados:\r\n     $$f = \\frac{2 \\text{ metros}}{2} = 1 \\text{ metro}$$\r\n  5. Portanto, o cadinho deve ser fixado exatamente a **1 metro** do vértice do espelho.",
+    "accepted_answers":  [
+                             "1",
+                             "1 m",
+                             "1 metro`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "2",
+                              "feedback":  "2 metros é o centro de curvatura (C). Raios paralelos convergem no foco (F), que fica na metade da distância até o centro."
+                          },
+                          {
+                              "pattern":  "0.5",
+                              "feedback":  "A distância focal é a metade do raio de curvatura ($R/2$), e não a quarta parte."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Onde os raios do sol se cruzam depois de bater em um espelho côncavo? No ponto focal."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  25,
+                      "text":  "O foco fica exatamente no meio do caminho entre o espelho e o centro de curvatura."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  50,
+                      "text":  "Divida o raio de 2 metros por 2 para encontrar 1 metro."
+                  }
+              ],
+    "transfer_example":  "Antenas parabólicas de telecomunicações, telescópios astronômicos refletores e fornos solares de energia limpa.",
+    "rewards":  {
+                    "erudition_xp":  200,
+                    "lumis":  100,
+                    "codex_entry_id":  "COD_SCI_010"
+                },
+    "validation_criteria":  "Equação dos pontos conjugados de Gauss para objetos no infinito: $\\frac{1}{f} = \\frac{1}{p} + \\frac{1}{p\u0027} \\implies p\u0027 = f = R/2$.",
+    "action_button_text":  "Confirmar Análise 🔬"
+}

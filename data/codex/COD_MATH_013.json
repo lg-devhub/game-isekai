@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_013",
+    "title":  "Teoria dos Grafos e Algoritmo de Dijkstra",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Modelar rotas em grafos ponderados e determinar o caminho de menor custo (Algoritmo de Menor Caminho).",
+    "concept_summary":  "Para levar o aviso final aos assentamentos de Caelum-Vallis antes do alinhamento do Núcleo Áfono, o protagonista precisa traçar a rota mais curta do Ponto Inicial (A) até o Santuário Central (F) através da rede de postos avançados interligados por trilhas com distâncias em quilômetros gravadas. Modelar rotas em grafos ponderados e determinar o caminho de menor custo (Algoritmo de Menor Caminho).",
+    "formal_explanation":  "1. Aplica-se a busca de Dijkstra a partir do nó $A$:\r\n     - Distância para $C$: $A \\to C = 2$ km.\r\n     - Distância para $B$:\r\n       - Via direta $A \\to B = 4$ km.\r\n       - Via $C$: $A \\to C \\to B = 2 + 1 = 3$ km (mais curta!).\r\n     - Portanto, o menor custo até $B$ é 3 km.\r\n     - Distância para $D$:\r\n       - Via $B$: $3 + 5 = 8$ km.\r\n       - Via $C$: $2 + 8 = 10$ km.\r\n       - Menor custo até $D$: 8 km.\r\n     - Distância para $E$:\r\n       - Via $C$: $2 + 4 = 6$ km.\r\n       - Via $B$: $3 + 10 = 13$ km.\r\n       - Menor custo até $E$: 6 km.\r\n     - Distância final para $F$:\r\n       - Via $D$: $8 + 6 = 14$ km.\r\n       - Via $E$: $6 + 3 = 9$ km.\r\n  2. O caminho ótimo é $A \\to C \\to E \\to F$ com custo total:\r\n     $$2 + 4 + 3 = 9 \\text{ km}$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Aplica-se a busca de Dijkstra a partir do nó $A$:\r\n     - Distância para $C$: $A \\to C = 2$ km.\r\n     - Distância para $B$:\r\n       - Via direta $A \\to B = 4$ km.\r\n       - Via $C$: $A \\to C \\to B = 2 + 1 = 3$ km (mais curta!).\r\n     - Portanto, o menor custo até $B$ é 3 km.\r\n     - Distância para $D$:\r\n       - Via $B$: $3 + 5 = 8$ km.\r\n       - Via $C$: $2 + 8 = 10$ km.\r\n       - Menor custo até $D$: 8 km.\r\n     - Distância para $E$:\r\n       - Via $C$: $2 + 4 = 6$ km.\r\n       - Via $B$: $3 + 10 = 13$ km.\r\n       - Menor custo até $E$: 6 km.\r\n     - Distância final para $F$:\r\n       - Via $D$: $8 + 6 = 14$ km.\r\n       - Via $E$: $6 + 3 = 9$ km.\r\n  2. O caminho ótimo é $A \\to C \\to E \\to F$ com custo total:\r\n     $$2 + 4 + 3 = 9 \\text{ km}$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_013"
+                                      ],
+    "related_real_world_application":  "Algoritmos de roteamento de pacotes na internet ou sistemas de GPS que calculam o trajeto mais rápido no trânsito urbano."
+}

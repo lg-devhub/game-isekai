@@ -1,0 +1,59 @@
+﻿{
+    "id":  "PUZ_LOG_013",
+    "title":  "O Paradoxo dos Três Mundos",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Avaliar mundos possíveis, operadores de necessidade ($\\Box$) e possibilidade ($\\Diamond$).",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  true,
+    "narrative_context":  "No Santuário dos Axiomas, três inscrições definem os mundos possíveis da realidade cósmica:",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Avaliar mundos possíveis, operadores de necessidade ($\\Box$) e possibilidade ($\\Diamond$).",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Afirmação 2.",
+    "step_by_step_explanation":  "1. A Afirmação 3 define corretamente o operador modal de necessidade: algo necessário ($\\Box P$) é verdadeiro em todo mundo concebível e acessível.\r\n  2. A refração da luz é uma consequência estrita do princípio de Fermat e da conservação de momento da onda eletromagnética ao transitar entre meios com índices de refração distintos ($v_1 \\neq v_2$).\r\n  3. Portanto, em qualquer mundo físico onde existam meios com velocidades de propagação distintas, a refração é um fenômeno **necessário**.\r\n  4. Afirmar que \"é possível que a luz não sofra refração ao mudar de meio com velocidades distintas\" contraria o princípio causal da física ondulatória, tornando a Afirmação 2 logicamente contraditória.",
+    "accepted_answers":  [
+                             "Afirmação 2",
+                             "2`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Afirmação 1",
+                              "feedback":  "Em mecânica clássica não relativística, a conservação de massa é um princípio estruturante coerente em todos os mundos físicos propostos."
+                          },
+                          {
+                              "pattern":  "Afirmação 3",
+                              "feedback":  "A afirmação 3 é a própria definição axiomática de necessidade na lógica de Leibniz e Kripke."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense no que significa uma lei ser \u0027necessária\u0027: ela pode deixar de acontecer por acidente?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "Se a luz muda de velocidade ao entrar na água, a mudança de direção é obrigatória pela física de ondas."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "A Afirmação 2 diz que isso poderia não acontecer, o que contraria as leis fundamentais."
+                  }
+              ],
+    "transfer_example":  "Modelagem de sistemas de segurança à prova de falhas em engenharia aeroespacial com simulação de cenários críticos.",
+    "rewards":  {
+                    "erudition_xp":  300,
+                    "lumis":  150,
+                    "codex_entry_id":  "COD_LOG_013"
+                },
+    "validation_criteria":  "Semântica de Kripke para sistemas modais normais ($S5$).",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Afirmação 2",
+                    "Afirmação 1",
+                    "Afirmação 3"
+                ]
+}

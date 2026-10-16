@@ -1,0 +1,54 @@
+﻿{
+    "id":  "PUZ_MATH_003",
+    "title":  "O Perímetro da Horta Comunitária",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Calcular perímetros de figuras retangulares e prever custos de vedação.",
+    "difficulty":  1,
+    "chapter":  1,
+    "is_mandatory":  false,
+    "narrative_context":  "Lyra quer cercar um canteiro retangular de ervas medicinais com tábuas de proteção contra ventos fortes. O canteiro mede 8 metros de comprimento por 5 metros de largura. Cada metro de cerca exige 2 pranchas de madeira.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Calcular perímetros de figuras retangulares e prever custos de vedação.",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "52.",
+    "step_by_step_explanation":  "1. O perímetro de um retângulo é dado por $P = 2 \\times (\\text{comprimento} + \\text{largura})$.\r\n  2. $P = 2 \\times (8 + 5) = 2 \\times 13 = 26$ metros lineares.\r\n  3. Como cada metro precisa de 2 pranchas, multiplica-se o perímetro pela taxa unitária:\r\n     $$\\text{Total de pranchas} = 26 \\times 2 = 52$$",
+    "accepted_answers":  [
+                             "52",
+                             "52 pranchas`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "26",
+                              "feedback":  "26 metros é o comprimento total da cerca. Lembre-se de que cada metro consome 2 pranchas."
+                          },
+                          {
+                              "pattern":  "80",
+                              "feedback":  "A cerca contorna o perímetro (a borda da horta), e não sua área interna."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Lembre-se de que um retângulo possui quatro lados: dois comprimentos e duas larguras."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  10,
+                      "text":  "Some $8 + 5 + 8 + 5$ para achar o contorno total em metros. Depois dobre esse valor."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  20,
+                      "text":  "O perímetro é 26 m. Multiplique 26 por 2 para encontrar 52 pranchas."
+                  }
+              ],
+    "transfer_example":  "Comprar rodapés para um quarto retangular sabendo o comprimento e a largura das paredes.",
+    "rewards":  {
+                    "erudition_xp":  60,
+                    "lumis":  30,
+                    "codex_entry_id":  "COD_MATH_003"
+                },
+    "validation_criteria":  "Teorema euclidiano do perímetro de paralelogramos: $P = 2(a+b)$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_010",
+    "title":  "Espelhos Côncavos, Propriedade Focal e Antenas Parabólicas",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Compreender a propriedade focal de espelhos côncavos/parabólicos na concentração de feixes luminosos paralelos.",
+    "concept_summary":  "Na torre de heliógrafo de Ark-Mnemona, os escribas utilizam um espelho côncavo com raio de curvatura de 2 metros para concentrar a luz do sol em um cadinho e acender a tocha de sinalização noturna. O protagonista precisa posicionar o cadinho exatamente no ponto onde os raios solares paralelos convergem com máxima temperatura. Compreender a propriedade focal de espelhos côncavos/parabólicos na concentração de feixes luminosos paralelos.",
+    "formal_explanation":  "1. A luz do Sol viaja de uma distância astronômica praticamente infinita, chegando à Terra em feixes de raios perfeitamente paralelos ao eixo principal do espelho.\r\n  2. Pela primeira lei dos raios notáveis em espelhos côncavos esféricos e refletores parabólicos, qualquer raio paralelo ao eixo principal reflete convergindo no **ponto focal principal ($F$)**.\r\n  3. Para pequenos ângulos de abertura (condições de nitidez de Gauss), a distância focal ($f$) é exatamente igual à metade do raio de curvatura ($R$):\r\n     $$f = \\frac{R}{2}$$\r\n  4. Substituindo os dados:\r\n     $$f = \\frac{2 \\text{ metros}}{2} = 1 \\text{ metro}$$\r\n  5. Portanto, o cadinho deve ser fixado exatamente a **1 metro** do vértice do espelho.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A luz do Sol viaja de uma distância astronômica praticamente infinita, chegando à Terra em feixes de raios perfeitamente paralelos ao eixo principal do espelho.\r\n  2. Pela primeira lei dos raios notáveis em espelhos côncavos esféricos e refletores parabólicos, qualquer raio paralelo ao eixo principal reflete convergindo no **ponto focal principal ($F$)**.\r\n  3. Para pequenos ângulos de abertura (condições de nitidez de Gauss), a distância focal ($f$) é exatamente igual à metade do raio de curvatura ($R$):\r\n     $$f = \\frac{R}{2}$$\r\n  4. Substituindo os dados:\r\n     $$f = \\frac{2 \\text{ metros}}{2} = 1 \\text{ metro}$$\r\n  5. Portanto, o cadinho deve ser fixado exatamente a **1 metro** do vértice do espelho."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_010"
+                                      ],
+    "related_real_world_application":  "Antenas parabólicas de telecomunicações, telescópios astronômicos refletores e fornos solares de energia limpa."
+}

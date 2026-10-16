@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_MATH_013",
+    "title":  "A Otimização da Rota dos Mensageiros",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Modelar rotas em grafos ponderados e determinar o caminho de menor custo (Algoritmo de Menor Caminho).",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  true,
+    "narrative_context":  "Para levar o aviso final aos assentamentos de Caelum-Vallis antes do alinhamento do Núcleo Áfono, o protagonista precisa traçar a rota mais curta do Ponto Inicial (A) até o Santuário Central (F) através da rede de postos avançados interligados por trilhas com distâncias em quilômetros gravadas.",
+    "prompt":  "Com base nos dados da investigação, calcule o valor numérico exato necessário para: Modelar rotas em grafos ponderados e determinar o caminho de menor custo (Algoritmo de Menor Caminho).",
+    "input_type":  "NUMERIC_INPUT",
+    "solution":  "9.",
+    "step_by_step_explanation":  "1. Aplica-se a busca de Dijkstra a partir do nó $A$:\r\n     - Distância para $C$: $A \\to C = 2$ km.\r\n     - Distância para $B$:\r\n       - Via direta $A \\to B = 4$ km.\r\n       - Via $C$: $A \\to C \\to B = 2 + 1 = 3$ km (mais curta!).\r\n     - Portanto, o menor custo até $B$ é 3 km.\r\n     - Distância para $D$:\r\n       - Via $B$: $3 + 5 = 8$ km.\r\n       - Via $C$: $2 + 8 = 10$ km.\r\n       - Menor custo até $D$: 8 km.\r\n     - Distância para $E$:\r\n       - Via $C$: $2 + 4 = 6$ km.\r\n       - Via $B$: $3 + 10 = 13$ km.\r\n       - Menor custo até $E$: 6 km.\r\n     - Distância final para $F$:\r\n       - Via $D$: $8 + 6 = 14$ km.\r\n       - Via $E$: $6 + 3 = 9$ km.\r\n  2. O caminho ótimo é $A \\to C \\to E \\to F$ com custo total:\r\n     $$2 + 4 + 3 = 9 \\text{ km}$$",
+    "accepted_answers":  [
+                             "9",
+                             "9 km",
+                             "9 quilômetros`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "14",
+                              "feedback":  "Avalie passar pelo nó E. Caminhar até E através de C consome apenas 6 km, e de E até F são apenas 3 km."
+                          },
+                          {
+                              "pattern":  "15",
+                              "feedback":  "A rota que parece mais reta nem sempre tem os menores pesos somados. Teste todos os desvios."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Nem sempre o caminho com menos paradas é o mais curto em quilômetros. Compare passar por D versus passar por E."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "Chegar ao ponto E pelo caminho $A \\to C \\to E$ custa apenas $2 + 4 = 6$ km."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "De E até o destino final F faltam apenas 3 km. A soma $2 + 4 + 3 = 9$ km é a menor possível."
+                  }
+              ],
+    "transfer_example":  "Algoritmos de roteamento de pacotes na internet ou sistemas de GPS que calculam o trajeto mais rápido no trânsito urbano.",
+    "rewards":  {
+                    "erudition_xp":  300,
+                    "lumis":  150,
+                    "codex_entry_id":  "COD_MATH_013"
+                },
+    "validation_criteria":  "Teorema do caminho mínimo em grafos com pesos positivos (Dijkstra): $\\text{dist}(F) = \\min(8+6, 6+3) = 9$.",
+    "action_button_text":  "Calcular Dedução 📐"
+}

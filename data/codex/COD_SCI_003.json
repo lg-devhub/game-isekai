@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_003",
+    "title":  "Fisiologia da Germinação e Fatores de Dormência",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Identificar as condições ambientais indispensáveis para quebra de dormência e germinação de sementes.",
+    "concept_summary":  "Lyra está preparando mudas de anis em estufas protegidas. Ela colocou sementes em quatro pratos experimentais sob condições distintas para descobrir qual ambiente garante a germinação: Identificar as condições ambientais indispensáveis para quebra de dormência e germinação de sementes.",
+    "formal_explanation":  "1. A germinação tem início com a embebição de água, que hidrata os tecidos da semente e ativa enzimas digestivas que quebram o amido acumulado no endosperma ou cotilédones.\r\n  2. Sem água (Prato 1 e Prato 4), as sementes permanecem em dormência metabólica e não germinam.\r\n  3. A temperatura de congelamento (Prato 3 e Prato 4) inibe a atividade enzimática celular, impedindo a germinação.\r\n  4. Ao contrário de uma crença comum, a grande maioria das sementes germina sob a terra (no escuro), não necessitando de luz solar direta até que as primeiras folhas verdes (fotossintetizantes) rompam a superfície do solo.\r\n  5. Portanto, o ambiente com solo úmido, boa aeração e temperatura moderada (**Prato 2**) é o único que proporciona as condições biológicas adequadas para a germinação.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A germinação tem início com a embebição de água, que hidrata os tecidos da semente e ativa enzimas digestivas que quebram o amido acumulado no endosperma ou cotilédones.\r\n  2. Sem água (Prato 1 e Prato 4), as sementes permanecem em dormência metabólica e não germinam.\r\n  3. A temperatura de congelamento (Prato 3 e Prato 4) inibe a atividade enzimática celular, impedindo a germinação.\r\n  4. Ao contrário de uma crença comum, a grande maioria das sementes germina sob a terra (no escuro), não necessitando de luz solar direta até que as primeiras folhas verdes (fotossintetizantes) rompam a superfície do solo.\r\n  5. Portanto, o ambiente com solo úmido, boa aeração e temperatura moderada (**Prato 2**) é o único que proporciona as condições biológicas adequadas para a germinação."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_003"
+                                      ],
+    "related_real_world_application":  "Métodos agronômicos de plantio de hortaliças e conservação de grãos em silos agrícolas secos."
+}

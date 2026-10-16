@@ -1,17 +1,19 @@
-{
-  "id": "COD_MATH_001",
-  "title": "Razões e Proporções Básicas",
-  "educational_area": "MATHEMATICS",
-  "subcategory": "MATH-PRO",
-  "target_skill": "Calcular fatores de escala e relações multiplicativas constantes.",
-  "concept_summary": "Uma razão expressa a divisão comparativa entre duas grandezas. Quando duas razões são iguais, temos uma proporção. Se uma receita ou fórmula química precisa ser multiplicada, todas as suas partes devem crescer pelo mesmo fator multiplicativo constante (k).",
-  "formal_explanation": "Dada a razão a/b, ao multiplicarmos ambas as grandezas por um número real positivo k, a razão equivalente é (k*a)/(k*b) = a/b.",
-  "solved_examples": [
-    {
-      "problem": "Para preparar argamassa, usam-se 2 baldes de cimento para 5 baldes de areia (razão 2:5). Quantos baldes de areia são necessários para 6 baldes de cimento?",
-      "solution_steps": "1. Fator multiplicador k = 6 / 2 = 3.\n2. Areia necessária = 5 * 3 = 15 baldes de areia."
-    }
-  ],
-  "voluntary_revision_puzzle_ids": ["PUZ_MATH_001"],
-  "related_real_world_application": "Ajuste de doses farmacêuticas, ampliação de escalas em plantas de engenharia e proporções em culinária."
+﻿{
+    "id":  "COD_MATH_001",
+    "title":  "Razões e Proporções Básicas",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Calcular proporções diretas simples para dimensionar quantidades de reagentes.",
+    "concept_summary":  "Lyra precisa preparar uma infusão para estabilizar a respiração do protagonista na atmosfera da cratera. A receita base produz 1 dose com 4 folhas de anis e 6 gotas de óleo de linho, mas são necessárias 3 doses completas. Calcular proporções diretas simples para dimensionar quantidades de reagentes.",
+    "formal_explanation":  "1. Identifica-se a quantidade unitária por dose: $4$ folhas e $6$ gotas.\r\n  2. Multiplica-se cada quantidade pelo número de doses desejadas ($3$):\r\n     $$\\text{Folhas} = 4 \\times 3 = 12$$\r\n     $$\\text{Gotas} = 6 \\times 3 = 18$$\r\n  3. A proporção original $4/6 = 2/3$ mantém-se equivalente a $12/18 = 2/3$.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Identifica-se a quantidade unitária por dose: $4$ folhas e $6$ gotas.\r\n  2. Multiplica-se cada quantidade pelo número de doses desejadas ($3$):\r\n     $$\\text{Folhas} = 4 \\times 3 = 12$$\r\n     $$\\text{Gotas} = 6 \\times 3 = 18$$\r\n  3. A proporção original $4/6 = 2/3$ mantém-se equivalente a $12/18 = 2/3$."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_001"
+                                      ],
+    "related_real_world_application":  "Ajustar os ingredientes de uma receita culinária de bolo para 4 pessoas quando se deseja servir 12 convidados."
 }

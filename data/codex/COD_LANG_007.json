@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LANG_007",
+    "title":  "Polissemia Léxica e Semântica Contextual",
+    "educational_area":  "LANGUAGE",
+    "subcategory":  "LANG-GEN",
+    "target_skill":  "Determinar o sentido exato de palavras polissêmicas a partir do contexto histórico e gramatical.",
+    "concept_summary":  "Na entrada da Cripta dos Inscritos, uma placa de alabastro traz a seguinte inscrição: \"Nenhum homem erguerá sua mão contra a *planta* desta cidade, pois na *planta* de seus alicerces repousa a perenidade de nossos nomes.\" Talos-4 pergunta ao protagonista qual é o sentido da palavra \u0027planta\u0027 na segunda ocorrência. Determinar o sentido exato de palavras polissêmicas a partir do contexto histórico e gramatical.",
+    "formal_explanation":  "1. A palavra \u0027planta\u0027 é polissêmica na língua portuguesa, admitindo acepções botânicas (vegetal), anatômicas (planta do pé) e arquitetônicas (desenho topográfico ou corte horizontal de uma construção).\r\n  2. O contexto imediato associa o termo a \"alicerces\" e \"construção de cidade\".\r\n  3. \"Planta de alicerces\" refere-se inequivocamente ao projeto arquitetônico, à representação gráfica ou ao traçado geométrico das fundações dos edifícios.\r\n  4. Conclui-se que o sentido correto é **Desenho técnico/projeto arquitetônico**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A palavra \u0027planta\u0027 é polissêmica na língua portuguesa, admitindo acepções botânicas (vegetal), anatômicas (planta do pé) e arquitetônicas (desenho topográfico ou corte horizontal de uma construção).\r\n  2. O contexto imediato associa o termo a \"alicerces\" e \"construção de cidade\".\r\n  3. \"Planta de alicerces\" refere-se inequivocamente ao projeto arquitetônico, à representação gráfica ou ao traçado geométrico das fundações dos edifícios.\r\n  4. Conclui-se que o sentido correto é **Desenho técnico/projeto arquitetônico**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LANG_007"
+                                      ],
+    "related_real_world_application":  "Vocabulário técnico em manuais de instrução e termos com múltiplos sentidos em contratos legais."
+}

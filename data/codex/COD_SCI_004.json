@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_004",
+    "title":  "Hidrostática de Fluidos: O Princípio do Sifão",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Explicar o funcionamento de sifões hidráulicos a partir do princípio de vasos comunicantes e desnível de pressão gravitacional.",
+    "concept_summary":  "Para transferir água de um reservatório superior para uma cisterna inferior passando por cima de uma mureta de pedra sem usar bombas mecânicas, os encanadores solemnianos usavam um tubo curvo em forma de U invertido (sifão). O protagonista precisa garantir que o fluxo contínuo de água se mantenha estável. Explicar o funcionamento de sifões hidráulicos a partir do princípio de vasos comunicantes e desnível de pressão gravitacional.",
+    "formal_explanation":  "1. O funcionamento do sifão decorre da diferença de pressão hidrostática entre os dois ramos do tubo preenchido com líquido contínuo.\r\n  2. A coluna de líquido no ramo descendente (lado de saída) deve ser verticalmente mais longa do que a coluna de líquido no ramo ascendente (lado de entrada).\r\n  3. Isso cria uma pressão resultante descendente no ramo de saída, puxando o líquido para fora por gravidade, enquanto a pressão atmosférica e a coesão molecular da água sustentam a subida no ramo inicial.\r\n  4. Se o ponto de saída estiver na mesma altura ou acima do nível de água do reservatório de origem, a pressão hidrostática se iguala ou se inverte, e o fluxo cessa imediatamente.\r\n  5. Portanto, a saída do tubo deve estar obrigatoriamente **abaixo da superfície do líquido de origem** (**Opção A**).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. O funcionamento do sifão decorre da diferença de pressão hidrostática entre os dois ramos do tubo preenchido com líquido contínuo.\r\n  2. A coluna de líquido no ramo descendente (lado de saída) deve ser verticalmente mais longa do que a coluna de líquido no ramo ascendente (lado de entrada).\r\n  3. Isso cria uma pressão resultante descendente no ramo de saída, puxando o líquido para fora por gravidade, enquanto a pressão atmosférica e a coesão molecular da água sustentam a subida no ramo inicial.\r\n  4. Se o ponto de saída estiver na mesma altura ou acima do nível de água do reservatório de origem, a pressão hidrostática se iguala ou se inverte, e o fluxo cessa imediatamente.\r\n  5. Portanto, a saída do tubo deve estar obrigatoriamente **abaixo da superfície do líquido de origem** (**Opção A**)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_004"
+                                      ],
+    "related_real_world_application":  "Esvaziamento de aquários domésticos com mangueiras flexíveis e sistemas de drenagem de piscinas."
+}

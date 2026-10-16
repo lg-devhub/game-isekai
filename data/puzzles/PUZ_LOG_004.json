@@ -1,0 +1,55 @@
+﻿{
+    "id":  "PUZ_LOG_004",
+    "title":  "A Cronologia dos Vigias da Comporta",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Identificar contradições entre relatos de testemunhas e deduzir quem está falando a verdade.",
+    "difficulty":  2,
+    "chapter":  1,
+    "is_mandatory":  true,
+    "narrative_context":  "Na investigação de Val-Serena sobre o fechamento indevido da comporta de irrigação, o Inspetor Corvus interroga os dois vigias do turno da noite, Varis e Jonan. Sabe-se que exatamente um deles está mentindo para se proteger.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Identificar contradições entre relatos de testemunhas e deduzir quem está falando a verdade.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "Varis mente / Jonan não fechou (ou Jonan mente / Jonan fechou conforme consistência).",
+    "step_by_step_explanation":  "1. A perícia confirmou o fato empírico: Jonan não fechou a comporta.\r\n  2. Avalia-se o depoimento de Jonan: \"Eu não fechei a comporta\". Esse relato coincide com o fato empírico, logo Jonan está falando a **verdade**.\r\n  3. Avalia-se o depoimento de Varis: \"Jonan fechou a comporta\". Como Jonan não fechou, a afirmação de Varis é falsa. Portanto, Varis é quem **mentiu**.",
+    "accepted_answers":  [
+                             "Varis",
+                             "VARIS`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Jonan",
+                              "feedback":  "A perícia comprovou que Jonan não esteve na cabine. Logo, ao dizer que não fechou a comporta, Jonan disse a verdade."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Compare a afirmação de Jonan com o resultado do exame da perícia."
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  15,
+                      "text":  "Se a perícia diz que Jonan não esteve na cabine, a frase dele é verdadeira."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  30,
+                      "text":  "Se a frase de Jonan é verdadeira, a acusação feita por Varis é falsa. Quem mentiu foi Varis."
+                  }
+              ],
+    "transfer_example":  "Análise de contradições em depoimentos judiciais e verificação de integridade de logs de computadores em segurança da informação.",
+    "rewards":  {
+                    "erudition_xp":  100,
+                    "lumis":  50,
+                    "codex_entry_id":  "COD_LOG_004"
+                },
+    "validation_criteria":  "Teorema do valor de verdade sob atribuição de fatos empíricos externos verificáveis.",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "Varis mente / Jonan não fechou (ou Jonan mente / Jonan fechou conforme consistência)",
+                    "Jonan",
+                    "Hipótese nula / Inconclusivo"
+                ]
+}

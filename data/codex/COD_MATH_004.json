@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_MATH_004",
+    "title":  "Problemas Clássicos de Torneiras e Vazão",
+    "educational_area":  "MATHEMATICS",
+    "subcategory":  "MATH-GEN",
+    "target_skill":  "Resolver problemas de vazão combinada com tempos diferentes de enchimento.",
+    "concept_summary":  "Um dos reservatórios de Val-Serena está vazio. O aqueduto superior consegue enchê-lo sozinho em 6 horas, enquanto o aqueduto lateral leva 3 horas para enchê-lo sozinho. O protagonista precisa calcular quanto tempo levará para encher o reservatório se ambos forem abertos simultaneamente. Resolver problemas de vazão combinada com tempos diferentes de enchimento.",
+    "formal_explanation":  "1. Em 1 hora, o duto A enche $\\frac{1}{6}$ do tanque.\r\n  2. Em 1 hora, o duto B enche $\\frac{1}{3} = \\frac{2}{6}$ do tanque.\r\n  3. Juntos, em 1 hora enchem:\r\n     $$\\frac{1}{6} + \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2} \\text{ do tanque por hora}$$\r\n  4. Se enchem metade do tanque em 1 hora, para encher o tanque inteiro ($1$) levarão:\r\n     $$t = \\frac{1}{1/2} = 2 \\text{ horas}$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Em 1 hora, o duto A enche $\\frac{1}{6}$ do tanque.\r\n  2. Em 1 hora, o duto B enche $\\frac{1}{3} = \\frac{2}{6}$ do tanque.\r\n  3. Juntos, em 1 hora enchem:\r\n     $$\\frac{1}{6} + \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2} \\text{ do tanque por hora}$$\r\n  4. Se enchem metade do tanque em 1 hora, para encher o tanque inteiro ($1$) levarão:\r\n     $$t = \\frac{1}{1/2} = 2 \\text{ horas}$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_MATH_004"
+                                      ],
+    "related_real_world_application":  "Calcular o tempo para duas pessoas pintarem uma sala juntas conhecendo a velocidade individual de cada uma."
+}

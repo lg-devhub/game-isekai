@@ -1,0 +1,60 @@
+﻿{
+    "id":  "PUZ_LOG_014",
+    "title":  "O Testamento Causal dos Arquitetos",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Rastrear cadeias causais contrafatuais do tipo \"Se X não tivesse ocorrido, Y teria acontecido?\".",
+    "difficulty":  5,
+    "chapter":  4,
+    "is_mandatory":  false,
+    "narrative_context":  "Talos-4 e o protagonista examinam o arquivo histórico da Grande Fratura. O registro lista a cadeia causal do evento:",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Rastrear cadeias causais contrafatuais do tipo \"Se X não tivesse ocorrido, Y teria acontecido?\".",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "A vitrificação da cratera (E).",
+    "step_by_step_explanation":  "1. No modelo causal formal (Teoria Causal de Judea Pearl):\r\n     - A intervenção cirúrgica no nó $B$ ($\\text{do}(\\neg B)$) desfaz a aresta $A \\to B$ ou anula $B$, impedindo a propagação para $C$ ($C$ não ocorre).\r\n     - No entanto, o ramo causal independente que parte de $A$ permanece intacto:\r\n       $$A \\implies D \\implies E$$\r\n     - Como $A$ já ocorreu, a sobrecarga térmica ($D$) ainda se manifesta, gerando a vitrificação da cratera ($E$).\r\n  2. Portanto, mesmo evitando $B$ e $C$, o efeito $E$ (a vitrificação da cratera) ainda ocorreria inevitavelmente.",
+    "accepted_answers":  [
+                             "A vitrificação da cratera (E)",
+                             "Vitrificação da cratera",
+                             "E`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "Nenhuma consequência",
+                              "feedback":  "A intervenção proposta foi evitar B, e não A. Como o evento A já ocorreu, o outro ramo causal derivado dele continuará ativo."
+                          },
+                          {
+                              "pattern":  "O rompimento do selo (C)",
+                              "feedback":  "C é causado diretamente por B. Se B foi evitado, C não acontecerá."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Olhe a árvore causal como dois galhos que saem do mesmo tronco (A). Cortar um galho afeta o outro?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  30,
+                      "text":  "O evento B leva a C. O evento D leva a E. Impedir B salva apenas o evento C."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  60,
+                      "text":  "O evento E vem pelo caminho de D, que não depende de B. Portanto, a vitrificação (E) ainda acontece."
+                  }
+              ],
+    "transfer_example":  "Análise forense de acidentes aéreos e avaliação de impacto em políticas públicas de saúde preventiva.",
+    "rewards":  {
+                    "erudition_xp":  300,
+                    "lumis":  150,
+                    "codex_entry_id":  "COD_LOG_014"
+                },
+    "validation_criteria":  "Cálculo de intervenção causal (do-calculus) em Modelos Estruturais Causais (SCM).",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "A vitrificação da cratera (E)",
+                    "Nenhuma consequência",
+                    "O rompimento do selo (C)"
+                ]
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_012",
+    "title":  "Circuitos Elétricos e a Primeira Lei de Ohm",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Calcular a resistência equivalente de resistores em série e em paralelo e determinar a corrente elétrica total ($U = R \\cdot i$).",
+    "concept_summary":  "Para ativar um condutor de cobre nas fundações de Ark-Mnemona, uma bateria arcaica de discos de zinco e cobre fornece uma tensão contínua de 24 Volts. O circuito possui dois resistores idênticos de 6 Ohms ligados em série, que estão conectados em sequência com um terceiro resistor de 12 Ohms também em série. Calcular a resistência equivalente de resistores em série e em paralelo e determinar a corrente elétrica total ($U = R \\cdot i$).",
+    "formal_explanation":  "1. Em uma associação de resistores em série, a resistência equivalente total ($R_{\\text{eq}}$) é a soma simples de todas as resistências individuais:\r\n     $$R_{\\text{eq}} = R_1 + R_2 + R_3$$\r\n     $$R_{\\text{eq}} = 6\\,\\Omega + 6\\,\\Omega + 12\\,\\Omega = 24\\,\\Omega$$\r\n  2. Aplica-se a Primeira Lei de Ohm para encontrar a corrente elétrica ($i$):\r\n     $$U = R_{\\text{eq}} \\times i \\implies i = \\frac{U}{R_{\\text{eq}}}$$\r\n  3. Substituem-se os valores:\r\n     $$i = \\frac{24 \\text{ Volts}}{24 \\text{ Ohms}} = 1 \\text{ Ampere}$$",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Em uma associação de resistores em série, a resistência equivalente total ($R_{\\text{eq}}$) é a soma simples de todas as resistências individuais:\r\n     $$R_{\\text{eq}} = R_1 + R_2 + R_3$$\r\n     $$R_{\\text{eq}} = 6\\,\\Omega + 6\\,\\Omega + 12\\,\\Omega = 24\\,\\Omega$$\r\n  2. Aplica-se a Primeira Lei de Ohm para encontrar a corrente elétrica ($i$):\r\n     $$U = R_{\\text{eq}} \\times i \\implies i = \\frac{U}{R_{\\text{eq}}}$$\r\n  3. Substituem-se os valores:\r\n     $$i = \\frac{24 \\text{ Volts}}{24 \\text{ Ohms}} = 1 \\text{ Ampere}$$"
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_012"
+                                      ],
+    "related_real_world_application":  "Instalações elétricas residenciais e dimensionamento de circuitos em placas de computador e robótica escolar."
+}

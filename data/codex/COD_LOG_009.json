@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_009",
+    "title":  "Álgebra Booleana e Circuitos Lógicos",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Avaliar circuitos lógicos combinatórios formados por portas E (AND), OU (OR) e NÃO (NOT).",
+    "concept_summary":  "Para liberar a comporta do reservatório subterrâneo, o protagonista precisa configurar três chaves mecânicas de entrada ($A, B, C$) que podem estar ativadas (1) ou desativadas (0). O sinal passa por um circuito de engrenagens lógicas: Avaliar circuitos lógicos combinatórios formados por portas E (AND), OU (OR) e NÃO (NOT).",
+    "formal_explanation":  "1. Avalia-se a primeira ramificação ($X$):\r\n     $$X = A \\text{ AND } B = 1 \\text{ AND } 0 = 0$$\r\n  2. Substitui-se $X$ na expressão da saída final ($S$):\r\n     $$S = X \\text{ OR } Y = 0 \\text{ OR } Y = Y$$\r\n  3. Para que a saída $S$ seja 1, é obrigatório que $Y = 1$.\r\n  4. Analisa-se a segunda ramificação ($Y$):\r\n     $$Y = \\text{NOT } C$$\r\n  5. Para que $\\text{NOT } C$ seja igual a 1, a entrada $C$ deve ser obrigatoriamente **0 (Desativada)**.",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Avalia-se a primeira ramificação ($X$):\r\n     $$X = A \\text{ AND } B = 1 \\text{ AND } 0 = 0$$\r\n  2. Substitui-se $X$ na expressão da saída final ($S$):\r\n     $$S = X \\text{ OR } Y = 0 \\text{ OR } Y = Y$$\r\n  3. Para que a saída $S$ seja 1, é obrigatório que $Y = 1$.\r\n  4. Analisa-se a segunda ramificação ($Y$):\r\n     $$Y = \\text{NOT } C$$\r\n  5. Para que $\\text{NOT } C$ seja igual a 1, a entrada $C$ deve ser obrigatoriamente **0 (Desativada)**."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_009"
+                                      ],
+    "related_real_world_application":  "Funcionamento de processadores de computador, circuitos integrados e comandos lógicos em automação residencial."
+}

@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_SCI_015",
+    "title":  "Equação Fundamental das Ondas e Espectro Eletromagnético",
+    "educational_area":  "SCIENCES",
+    "subcategory":  "SCI-GEN",
+    "target_skill":  "Aplicar a equação fundamental da ondulatória ($v = \\lambda \\cdot f$) e relacionar frequência, comprimento de onda e energia de fótons.",
+    "concept_summary":  "No centro do Núcleo Áfono, para estabilizar o Véu de Axiomas na frequência de harmonia entre os dois mundos, o feixe de luz coerente viaja com velocidade constante de $300.000\\text{ km/s}$ ($3 \\times 10^8\\text{ m/s}$). O transmissor de quartzo deve emitir uma onda com frequência de $600\\text{ Terahertz}$ ($6 \\times 10^{14}\\text{ Hz}$). O protagonista precisa regular a abertura micrométrica da fenda para corresponder ao comprimento de onda ($\\lambda$) exato em nanômetros ($1\\text{ nm} = 10^{-9}\\text{ m}$). Aplicar a equação fundamental da ondulatória ($v = \\lambda \\cdot f$) e relacionar frequência, comprimento de onda e energia de fótons.",
+    "formal_explanation":  "1. Aplica-se a equação fundamental da propagação de ondas:\r\n     $$v = \\lambda \\times f \\implies \\lambda = \\frac{v}{f}$$\r\n  2. Substituem-se os valores no Sistema Internacional (m/s e Hz):\r\n     $$\\lambda = \\frac{3 \\times 10^8 \\text{ m/s}}{6 \\times 10^{14} \\text{ Hz}} = \\frac{3}{6} \\times 10^{8 - 14} \\text{ m}$$\r\n     $$\\lambda = 0{,}5 \\times 10^{-6} \\text{ m} = 5 \\times 10^{-7} \\text{ m}$$\r\n  3. Converte-se metros para nanômetros ($1 \\text{ nm} = 10^{-9} \\text{ m}$):\r\n     $$\\lambda = 500 \\times 10^{-9} \\text{ m} = 500 \\text{ nanômetros}$$\r\n  4. (Nota de física: 500 nm situa-se na faixa da luz visível verde-azulada, a exata tonalidade da luminescência do Núcleo Áfono descrita na lore).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. Aplica-se a equação fundamental da propagação de ondas:\r\n     $$v = \\lambda \\times f \\implies \\lambda = \\frac{v}{f}$$\r\n  2. Substituem-se os valores no Sistema Internacional (m/s e Hz):\r\n     $$\\lambda = \\frac{3 \\times 10^8 \\text{ m/s}}{6 \\times 10^{14} \\text{ Hz}} = \\frac{3}{6} \\times 10^{8 - 14} \\text{ m}$$\r\n     $$\\lambda = 0{,}5 \\times 10^{-6} \\text{ m} = 5 \\times 10^{-7} \\text{ m}$$\r\n  3. Converte-se metros para nanômetros ($1 \\text{ nm} = 10^{-9} \\text{ m}$):\r\n     $$\\lambda = 500 \\times 10^{-9} \\text{ m} = 500 \\text{ nanômetros}$$\r\n  4. (Nota de física: 500 nm situa-se na faixa da luz visível verde-azulada, a exata tonalidade da luminescência do Núcleo Áfono descrita na lore)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_SCI_015"
+                                      ],
+    "related_real_world_application":  "Comunicação por fibra óptica de alta velocidade, transmissão de sinal Wi-Fi e radioterapia médica."
+}

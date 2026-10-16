@@ -1,0 +1,19 @@
+﻿{
+    "id":  "COD_LOG_007",
+    "title":  "Validade Lógica vs. Falácia da Afirmação do Consequente",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Identificar a falácia formal de afirmação do consequente e validar argumentos lógicos dedutivos.",
+    "concept_summary":  "No debate com o Inquisidor Malakor, o inquisidor apresenta o seguinte argumento para justificar a censura: \"Sempre que um vilarejo perde a fé nas leis da Ordem, a terra se mineraliza em sal. A terra do Vale de Korath mineralizou-se em sal. Logo, os habitantes do Vale de Korath perderam a fé nas leis da Ordem.\" O protagonista precisa demonstrar qual erro de lógica invalida a conclusão do inquisidor. Identificar a falácia formal de afirmação do consequente e validar argumentos lógicos dedutivos.",
+    "formal_explanation":  "1. A estrutura condicional afirma que $P$ é condição suficiente para $Q$ ($P \\implies Q$).\r\n  2. No entanto, $Q$ pode ser provocado por múltiplas outras causas independentes ($R \\implies Q$, $S \\implies Q$, como seca prolongada, salinização do solo ou abandono dos canais de irrigação).\r\n  3. Constatar que a consequência $Q$ ocorreu não prova logicamente que a causa específica $P$ foi a responsável.\r\n  4. Essa falha de inferência chama-se formalmente de **Falácia da Afirmação do Consequente** (confundir condição suficiente com condição necessária).",
+    "solved_examples":  [
+                            {
+                                "problem":  "",
+                                "solution_steps":  "1. A estrutura condicional afirma que $P$ é condição suficiente para $Q$ ($P \\implies Q$).\r\n  2. No entanto, $Q$ pode ser provocado por múltiplas outras causas independentes ($R \\implies Q$, $S \\implies Q$, como seca prolongada, salinização do solo ou abandono dos canais de irrigação).\r\n  3. Constatar que a consequência $Q$ ocorreu não prova logicamente que a causa específica $P$ foi a responsável.\r\n  4. Essa falha de inferência chama-se formalmente de **Falácia da Afirmação do Consequente** (confundir condição suficiente com condição necessária)."
+                            }
+                        ],
+    "voluntary_revision_puzzle_ids":  [
+                                          "PUZ_LOG_007"
+                                      ],
+    "related_real_world_application":  "Diagnósticos médicos: ter febre não prova necessariamente gripe, pois diversas outras infecções também provocam febre."
+}

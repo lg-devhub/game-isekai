@@ -1,60 +1,70 @@
 {
-  "id": "PUZ_LOG_001",
-  "title": "O Registro de Observação do Agrimensor",
-  "educational_area": "LOGIC",
-  "subcategory": "LOG-DED",
-  "target_skill": "Preencher matrizes de dedução lógica e cruzar premissas para determinar correspondências unívocas.",
-  "prior_knowledge": ["Princípio da não contradição e eliminação"],
-  "difficulty": 1,
-  "chapter": 0,
-  "is_mandatory": true,
-  "narrative_context": "No abrigo da cratera, três ferramentas de pesquisa (Bússola, Luneta, Termômetro) pertenciam a três agrimensores históricos (Aron, Bruna e Caio). O protagonista precisa associar corretamente quem usava a Luneta.",
-  "prompt": "Descubra qual ferramenta pertencia a Caio com base nas três pistas verídicas:\n1) Quem usava a Luneta não era mulher.\n2) A ferramenta de Aron quebrou-se por causa da temperatura (logo, ele não usava o Termômetro nem a Luneta).\n3) Bruna nunca utilizou instrumentos de navegação magnética (logo, não usava a Bússola).\nQual instrumento pertencia a Caio?",
-  "data_and_constraints": {
-    "people": ["Aron", "Bruna", "Caio"],
-    "tools": ["Bússola", "Luneta", "Termômetro"]
-  },
-  "input_type": "MULTI_CHOICE",
-  "solution": "Luneta",
-  "step_by_step_explanation": "1. Pela pista 2, Aron não usava o Termômetro nem a Luneta. Logo, Aron usava a Bússola.\n2. Pela pista 3, Bruna não usava a Bússola, e pela pista 1, não usava a Luneta. Resta a Bruna o Termômetro.\n3. Sobrando Caio e a Luneta, conclui-se necessariamente que Caio usava a Luneta.",
-  "accepted_answers": [
-    "Luneta",
-    "LUNETA",
-    "luneta"
-  ],
-  "common_errors": [
-    {
-      "pattern": "bussola",
-      "feedback": "Aron não usava Termômetro nem Luneta, logo a Bússola pertence a Aron por eliminação."
+    "id": "PUZ_LOG_001",
+    "title": "O Registro de Observação do Agrimensor",
+    "educational_area": "LOGIC",
+    "subcategory": "LOG-GEN",
+    "target_skill": "Preencher matrizes de dedução lógica e cruzar premissas para determinar correspondências unívocas.",
+    "difficulty": 1,
+    "chapter": 0,
+    "is_mandatory": true,
+    "narrative_context": "No armário do antigo abrigo geológico, três instrumentos científicos (Bússola, Luneta, Termômetro) pertenceram a três agrimensores históricos (Aron, Bruna e Caio). Para destravar o compartimento selado, você deve associar as pistas do diário e deduzir qual instrumento pertencia a Caio.",
+    "prompt": "Com base nas três pistas resgatadas do registro histórico, qual instrumento pertencia ao agrimensor Caio?",
+    "input_type": "MULTIPLE_CHOICE",
+    "options": [
+        "Luneta",
+        "Bússola",
+        "Termômetro"
+    ],
+    "action_button_text": "Confirmar Instrumento 🔍",
+    "visual_data": {
+        "type": "clues",
+        "title": "Pistas Resgatadas do Registro Histórico",
+        "items": [
+            "Pista 1: O agrimensor que utilizava a Luneta não era mulher.",
+            "Pista 2: Aron nunca utilizou o Termômetro nem a Luneta.",
+            "Pista 3: Bruna não utilizava a Bússola."
+        ]
     },
-    {
-      "pattern": "termometro",
-      "feedback": "Bruna não pode usar a Luneta nem a Bússola, logo o Termômetro pertence a Bruna."
-    }
-  ],
-  "hints": [
-    {
-      "level": 1,
-      "cost_lumis": 0,
-      "text": "Descubra primeiro quem usava a Bússola analisando as restrições de Aron."
+    "solution": "Luneta.",
+    "step_by_step_explanation": "1. Analisando a Pista 2: Aron não usava o Termômetro nem a Luneta. Como existem apenas 3 instrumentos, Aron obrigatoriamente usava a Bússola.\n2. Analisando a Pista 3 e Pista 1: Restam Bruna e Caio, e os instrumentos Luneta e Termômetro. Pela Pista 1, o usuário da Luneta não era mulher, logo Bruna não pode ter a Luneta. Portanto, o Termômetro pertence a Bruna.\n3. Por eliminação unívoca, o instrumento restante (a Luneta) pertence necessariamente a Caio.",
+    "accepted_answers": [
+        "Luneta",
+        "luneta",
+        "A Luneta",
+        "Caio usava a Luneta"
+    ],
+    "common_errors": [
+        {
+            "pattern": "Bússola",
+            "feedback": "Revise a Pista 2: Aron não utilizava o Termômetro nem a Luneta. Portanto, a Bússola pertencia a Aron, e não a Caio."
+        },
+        {
+            "pattern": "Termômetro",
+            "feedback": "Revise as Pistas 1 e 3: Bruna não usava a Bússola e quem usava a Luneta não era mulher. Logo, o Termômetro pertencia a Bruna, e não a Caio."
+        }
+    ],
+    "hints": [
+        {
+            "level": 1,
+            "cost_lumis": 0,
+            "text": "Comece descobrindo quem usava a Bússola analisando as restrições diretas sobre Aron na Pista 2."
+        },
+        {
+            "level": 2,
+            "cost_lumis": 10,
+            "text": "Se a Bússola pertence a Aron, sobram apenas a Luneta e o Termômetro para Bruna e Caio."
+        },
+        {
+            "level": 3,
+            "cost_lumis": 20,
+            "text": "A Pista 1 afirma que o usuário da Luneta não era mulher. Como Bruna é mulher, quem fica com a Luneta?"
+        }
+    ],
+    "transfer_example": "Organizar atribuições em equipes cruzando disponibilidades e restrições sem conflitos.",
+    "rewards": {
+        "erudition_xp": 50,
+        "lumis": 25,
+        "codex_entry_id": "COD_LOG_001"
     },
-    {
-      "level": 2,
-      "cost_lumis": 10,
-      "text": "Se Aron usava a Bússola, sobram apenas Luneta e Termômetro para Bruna e Caio."
-    },
-    {
-      "level": 3,
-      "cost_lumis": 20,
-      "text": "Bruna não pode ter a Luneta (não era mulher). Logo, a Luneta pertence a Caio."
-    }
-  ],
-  "transfer_example": "Organizar escalas de trabalho em equipe associando cada profissional à sua função sem duplicidade.",
-  "rewards": {
-    "erudition_xp": 50,
-    "lumis": 25,
-    "codex_entry_id": "COD_LOG_001"
-  },
-  "prerequisites": [],
-  "validation_criteria": "Bijeção finita e eliminação sistemática de pares incompatíveis."
+    "validation_criteria": "Matriz de dedução lógica por bijeção em conjuntos finitos."
 }

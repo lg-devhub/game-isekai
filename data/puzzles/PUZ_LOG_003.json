@@ -1,0 +1,59 @@
+﻿{
+    "id":  "PUZ_LOG_003",
+    "title":  "O Rastreio das Pegadas na Sílica",
+    "educational_area":  "LOGIC",
+    "subcategory":  "LOG-GEN",
+    "target_skill":  "Reconstruir uma linha temporal cronológica coerente a partir de pistas físicas sobrepostas.",
+    "difficulty":  1,
+    "chapter":  0,
+    "is_mandatory":  false,
+    "narrative_context":  "No solo arenoso da orla da cratera, o protagonista e Lyra encontram três marcas de pegadas e rastros sobrepostos: as pegadas de uma bota pesada de patrulheiro, as marcas das rodas da carroça de Lyra e os passos de um cervo selvagem. É preciso saber quem passou por último para garantir que a área está segura.",
+    "prompt":  "Analise as informações do registro e selecione a conclusão correta para: Reconstruir uma linha temporal cronológica coerente a partir de pistas físicas sobrepostas.",
+    "input_type":  "MULTIPLE_CHOICE",
+    "solution":  "O patrulheiro.",
+    "step_by_step_explanation":  "1. Princípio fundamental da sobreposição: se um rastro $A$ altera ou deforma o rastro $B$, $A$ ocorreu após $B$ no tempo ($B \u003c A$).\r\n  2. Como as rodas cortaram as pegadas do cervo: $\\text{Cervo} \u003c \\text{Carroça}$.\r\n  3. Como a bota pisou sobre as marcas das rodas da carroça: $\\text{Carroça} \u003c \\text{Patrulheiro}$.\r\n  4. Ordenação cronológica transitiva completa: $\\text{Cervo} \u003c \\text{Carroça} \u003c \\text{Patrulheiro}$.\r\n  5. Portanto, o evento mais recente (o último a passar) foi o **patrulheiro**.",
+    "accepted_answers":  [
+                             "O patrulheiro",
+                             "Patrulheiro`."
+                         ],
+    "common_errors":  [
+                          {
+                              "pattern":  "O cervo",
+                              "feedback":  "O cervo foi o primeiro a passar, pois suas pegadas foram pisoteadas pelas rodas da carroça."
+                          },
+                          {
+                              "pattern":  "A carroça",
+                              "feedback":  "A carroça passou depois do cervo, mas algo pisou por cima das marcas da carroça depois disso."
+                          }
+                      ],
+    "hints":  [
+                  {
+                      "level":  1,
+                      "cost_lumis":  0,
+                      "text":  "Pense como um perito: se você pisar em cima de um papel no chão, o que foi colocado antes: o papel ou a sua pisada?"
+                  },
+                  {
+                      "level":  2,
+                      "cost_lumis":  10,
+                      "text":  "A marca da bota do patrulheiro está por cima do sulco da roda. Isso significa que a bota veio depois da roda."
+                  },
+                  {
+                      "level":  3,
+                      "cost_lumis":  20,
+                      "text":  "Como nada está por cima da pegada do patrulheiro, ele foi o último a passar."
+                  }
+              ],
+    "transfer_example":  "Métodos arqueológicos e geológicos de datação relativa de camadas de rochas e fósseis.",
+    "rewards":  {
+                    "erudition_xp":  60,
+                    "lumis":  30,
+                    "codex_entry_id":  "COD_LOG_003"
+                },
+    "validation_criteria":  "Relação de ordem estrita transitiva em sequências temporais finitas.",
+    "action_button_text":  "Validar Dedução 🧩",
+    "options":  [
+                    "O patrulheiro",
+                    "O cervo",
+                    "A carroça"
+                ]
+}
